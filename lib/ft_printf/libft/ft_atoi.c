@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 17:29:40 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/02 18:39:49 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/02 21:45:41 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,19 +20,10 @@ static int	ft_isspace(char a)
 	return (0);
 }
 
-static long	process_flow(int sign)
-{
-	if (sign == -1)
-	{
-		return (LONG_MIN);
-	}
-	return (LONG_MAX);
-}
-
-long	ft_atoi(const char *str)
+long long	ft_atoi(const char *str, int *status)
 {
 	size_t		i;
-	long		num;
+	long long	num;
 	int			sign;
 
 	num = 0;
@@ -51,9 +42,9 @@ long	ft_atoi(const char *str)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		if ((num * 10 + (str[i] - '0')) / 10 != num)
-			return ((long)process_flow(sign));
+			*status = false;
 		num = (num * 10) + (str[i] - '0');
 		i++;
 	}
-	return ((long)(num * sign));
+	return ((num * sign));
 }

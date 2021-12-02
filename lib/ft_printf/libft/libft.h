@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 17:33:36 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/10/25 16:39:49 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/02 21:45:55 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <limits.h>
+# include <stdbool.h>
 
 typedef struct s_list
 {
@@ -32,7 +33,7 @@ typedef struct s_errlist
 
 # define STR_BUFF_SIZE 1000000
 
-int		ft_atoi(const char *str);
+long long	ft_atoi(const char *str, int *status);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_isalnum(int c);

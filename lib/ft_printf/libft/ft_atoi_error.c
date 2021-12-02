@@ -6,15 +6,21 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 18:27:52 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/02 18:36:53 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/02 21:46:08 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-ssize_t	ft_atoi_error(const char *str, int *status)
+long long	ft_atoi_error(const char *str, int *status)
 {
-	int	error;
+	long long	ret;
 
-	error = ft_atoi(str);
+	*status = true;
+	ret = ft_atoi(str, status);
+	if (ret > INT_MAX || ret < INT_MIN)
+	{
+		*status = false;
+	}
+	return (ret);
 }
