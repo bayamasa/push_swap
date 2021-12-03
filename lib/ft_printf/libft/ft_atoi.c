@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 17:29:40 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/02 21:45:41 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/03 09:40:36 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,8 @@ long long	ft_atoi(const char *str, int *status)
 	while (ft_isspace(str[i]))
 		i++;
 	if (str[i] == '+' || str[i] == '-')
-	{
-		if (str[i] == '-')
+		if (str[i++] == '-')
 			sign = -1;
-		i++;
-	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		if ((num * 10 + (str[i] - '0')) / 10 != num)
@@ -46,5 +43,7 @@ long long	ft_atoi(const char *str, int *status)
 		num = (num * 10) + (str[i] - '0');
 		i++;
 	}
+	if (str[i] != '\0')
+		*status = false;
 	return ((num * sign));
 }

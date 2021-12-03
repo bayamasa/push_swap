@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 17:33:36 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/02 21:48:42 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/03 12:01:41 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <unistd.h>
 # include <limits.h>
 # include <stdbool.h>
+# include <stdio.h>
 
 typedef struct s_list
 {

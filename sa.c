@@ -1,46 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   sa.c                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/02 17:21:35 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/03 11:40:15 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/12/03 11:44:59 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/03 14:17:30 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
-void	print_error(void)
+// 前提として同じ数値は入ることがないので、同じ数値があることへのバリデーションはつくらない
+int	sa(t_plist **a)
 {
-	ft_putstr_fd(ERROR, 1);
-	exit(1);
-}
+	t_plist	tmp;
+	size_t	size;
 
-void	args_error_handling(int argc, char const *argv[])
-{
-	int			i;
-	int			status;
-
-	i = 0;
-	if (argc <= 1)
-	{
-		print_error();
-	}
-	while (i < argc - 1)
-	{
-		ft_atoi_error(argv[i + 1], &status);
-		if (status == false)
-			print_error();
-		i++;
-	}
-}
-
-int	main(int argc, char const *argv[])
-{
-	args_error_handling(argc, argv);
-	
-	return (0);
+	size = ft_plstsize(*a);
+	if (size <= 1)
+		return (false);
+	ft_plstadd_front(a, (*a)->next);
+	return (true);
 }

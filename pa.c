@@ -1,46 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   pa.c                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/02 17:21:35 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/03 11:40:15 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/12/03 11:41:58 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/03 17:50:07 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
-void	print_error(void)
+int	pa(t_plist **a, t_plist **b)
 {
-	ft_putstr_fd(ERROR, 1);
-	exit(1);
-}
+	t_plist	*tmp;
 
-void	args_error_handling(int argc, char const *argv[])
-{
-	int			i;
-	int			status;
-
-	i = 0;
-	if (argc <= 1)
+	// debug用
+	if (a == NULL || b == NULL)
 	{
-		print_error();
+		MYDEBUG();
+		return (false);
 	}
-	while (i < argc - 1)
+	if (*b == NULL)
 	{
-		ft_atoi_error(argv[i + 1], &status);
-		if (status == false)
-			print_error();
-		i++;
+		MYDEBUG();
+		return (true);
 	}
-}
-
-int	main(int argc, char const *argv[])
-{
-	args_error_handling(argc, argv);
-	
-	return (0);
+	if (*a == NULL)
+	{
+		*a = ft_plstnew((*b)->num);
+		ft_plstdel_front(b);
+		return (true);
+	}
+	else
+	{
+		ft_plstaddone_front(a, *b);
+		ft_plstdel_front(b);
+		return (true);
+	}
+	return (true);
 }
