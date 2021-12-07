@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 17:21:35 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/07 17:00:09 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/07 17:29:27 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ static t_plist	*args_error_handling(int argc, char const *argv[])
 	return (first);
 }
 
-static void	process_algo(t_plist *stack)
+void	process_algo(t_plist *stack)
 {
 	int		i;
 	t_plist	*tmp;
