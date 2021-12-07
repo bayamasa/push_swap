@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 17:24:40 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/03 20:37:59 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/06 14:44:17 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ t_plist	*ft_plstnew(int num);
 t_plist	*ft_plstmap(t_plist *lst, int (*f)(void *), void (*del)(void *));
 
 t_plist	*ft_plstlast(t_plist *lst);
-void	ft_plstdelone(t_plist *lst, void (*del)(void *));
+void	ft_plstdelone(t_plist *lst);
 void	ft_plstclear(t_plist **lst, void (*del)(void *));
 void	ft_plstadd_front(t_plist **lst, t_plist *new);
 void	ft_plstadd_back(t_plist **lst, t_plist *new);
@@ -38,12 +38,10 @@ void	ft_plstaddone_front(t_plist **lst, t_plist *new);
 
 void	args_error_handling(int argc, char const *argv[]);
 void	print_error(void);
-int		sa(t_plist **a);
-int		sb(t_plist **b);
-int		ss(t_plist **a, t_plist **b);
-int		pa(t_plist **a, t_plist **b);
+int		swap(t_plist **a);
+int		push(t_plist **a, t_plist **b);
 int		rotate(t_plist *tg);
-int		reverse_rotate(t_plist *tg);
+int		reverse_rotate(t_plist **tg);
 
 
 #endif

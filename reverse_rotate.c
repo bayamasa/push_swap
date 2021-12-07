@@ -6,28 +6,34 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 18:05:16 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/03 21:47:00 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/06 14:36:17 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	reverse_rotate(t_plist *tg)
+// やること
+// firstを保存しておく
+// lastの一個手前のnextをnullにする →　循環にならないように
+// lastを保存しておく
+// add_frontに入れる
+int	reverse_rotate(t_plist **a)
 {
 	t_plist		*first;
-	int			tmp;
-	int			next;
-	if (tg == NULL)
-	{
-		return (true);
-	}
+	t_plist		*last;
+	t_plist		*last_prev;
+	t_plist		*tg;
+
+	tg = *a;
 	first = tg;
-	while (tg->next != NULL)
-	{
-		tmp = tg->next->num;
-		tg->next->num = tg->next;
+	if (tg == NULL)
+		return (true);
+	while (tg->next->next != NULL)
 		tg = tg->next;
-	}
-	first->num = tmp;
+	last_prev = tg;
+	last = tg->next;
+	last_prev->next = NULL;
+	tg = first;
+	ft_plstaddone_front(a, last);
 	return (true);
 }

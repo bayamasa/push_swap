@@ -1,38 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pa.c                                               :+:      :+:    :+:   */
+/*   swap.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/03 11:41:58 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/03 17:57:55 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/12/03 11:44:59 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/06 14:43:36 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	pa(t_plist **a, t_plist **b)
+// 前提として同じ数値は入ることがないので、同じ数値があることへのバリデーションはつくらない
+int	swap(t_plist **a)
 {
-	t_plist	*tmp;
+	t_plist	tmp;
+	size_t	size;
 
-	// debug用
-	if (a == NULL || b == NULL)
-	{
-		MYDEBUG();
+	size = ft_plstsize(*a);
+	if (size <= 1)
 		return (false);
-	}
-	if (*b == NULL)
-		return (true);
-	if (*a == NULL)
-	{
-		*a = ft_plstnew((*b)->num);
-		ft_plstdel_front(b);
-	}
-	else
-	{
-		ft_plstaddone_front(a, *b);
-		ft_plstdel_front(b);
-	}
+	ft_plstadd_front(a, (*a)->next);
 	return (true);
 }

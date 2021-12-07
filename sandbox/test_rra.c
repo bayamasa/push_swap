@@ -21,10 +21,12 @@ int	main()
 	printf("a->next->next->num = %d\n", a->next->next->num);
 	printf("a->next->next->next->num = %d\n", a->next->next->next->num);
 
-	reverse_rotate(a);
+	reverse_rotate(&a);
+	printf("after reverse_rotate\n");
 	printf("a->num = %d\n", a->num);
 	printf("a->next->num = %d\n", a->next->num);
 	printf("a->next->next->num = %d\n", a->next->next->num);
 	printf("a->next->next->next->num = %d\n", a->next->next->next->num);
+	printf("a->next->next->next->num = %s\n", a->next->next->next->next);
 	return (0);
 }
