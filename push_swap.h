@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 17:24:40 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/06 14:44:17 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/07 12:22:21 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ int		ft_plstdel_front(t_plist **lst);
 void	ft_plstaddone_front(t_plist **lst, t_plist *new);
 
 void	args_error_handling(int argc, char const *argv[]);
-void	print_error(void);
 int		swap(t_plist **a);
 int		push(t_plist **a, t_plist **b);
 int		rotate(t_plist *tg);
