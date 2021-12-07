@@ -1,0 +1,10 @@
+
+{
+	"push_swap": {
+		"prefix": "pjh",
+		"body": [
+			"#include \"push_swap.h\""
+		],
+		"description": "pj header"
+	}
+}

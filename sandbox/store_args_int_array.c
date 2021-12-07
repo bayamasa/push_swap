@@ -23,7 +23,6 @@ int main(int argc, char const *argv[])
 		printf("*(a + i) = %d\n", *(a + i));
 		i++;
 	}
-
 	return 0;
 }
 

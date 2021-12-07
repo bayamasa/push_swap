@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sb.c                                               :+:      :+:    :+:   */
+/*   process_two.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/03 14:12:18 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/07 17:00:03 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/12/07 16:41:11 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/07 16:57:55 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	sb(t_plist **b)
+void	process_two(t_plist *stack)
 {
-	swap(b);
-	ft_putstr_fd(SB, 1);
+	if (stack->num > stack->next->num)
+		swap(&stack);
 }
