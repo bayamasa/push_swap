@@ -6,7 +6,7 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2021/12/07 17:28:46 by mhirabay         ###   ########.fr        #
+#    Updated: 2021/12/08 14:40:56 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,15 +44,14 @@ SRCS = 	swap.c \
 		ft_plstnew.c \
 		ft_plstdel_front.c \
 		ft_plstaddone_front.c \
+		min.c \
 		main.c \
 
 PLST_SRCS = ft_plstadd_back.c \
 			ft_plstadd_front.c \
-			ft_plstclear.c \
 			ft_plstdelone.c \
 			ft_plstiter.c \
 			ft_plstlast.c \
-			ft_plstmap.c \
 			ft_plstsize.c \
 			ft_plstnew.c \
 			ft_plstdel_front.c \

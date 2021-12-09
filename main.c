@@ -6,14 +6,14 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 17:21:35 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/07 17:29:27 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/08 12:36:41 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include <stdio.h>
 
-static void	print_error(t_plist *stack)
+void	print_error(t_plist *stack)
 {
 	// 使用したstackを全て削除しなくてはならない。
 	free(stack);
@@ -56,35 +56,41 @@ static t_plist	*args_error_handling(int argc, char const *argv[])
 			stack = stack->next;
 		}
 		stack = tmp;
-		stack->next = (t_plist *)malloc(sizeof(t_plist));
 		i++;
+		if (i >= argc - 1)
+			break ;
+		stack->next = (t_plist *)malloc(sizeof(t_plist));
+		stack = stack->next;
 	}
+	// freeして、NULL埋めしてもサイズが減少しない→なぜか今度検証する。
+	// sizeが減少しないし、nextの指す値がNULLにならない。
+	// free(stack);
+	// stack = NULL;
 	return (first);
+}
+
+void	finish(t_plist *stack)
+{
+	free(stack);
+	exit(0);
 }
 
 void	process_algo(t_plist *stack)
 {
-	int		i;
-	t_plist	*tmp;
+	int		size;
 
-	i = 1;
-	tmp = stack;
-	while (tmp != NULL)
-	{
-		tmp = tmp->next;
-		i++;
-	}
-	if (i == 1)
+	size = ft_plstsize(stack);
+	if (size == 1)
 		process_one(stack);
-	else if (i == 2)
+	else if (size == 2)
 		process_two(stack);
-	else if (i == 3)
+	else if (size == 3)
 		process_three(stack);
-	else if (i > 3 && i < 7)
+	else if (size > 3 && size < 7)
 		process_less_than_seven(stack);
 	else
 		process_quick_sort(stack);
-	exit(0);
+	finish(stack);
 }
 
 int	main(int argc, char const *argv[])

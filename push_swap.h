@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 17:24:40 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/07 17:29:40 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/08 13:01:32 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,17 @@
 #define MYDEBUG() printf("\x1b[46m%s[%d] %s\x1b[49m\n", __FILE__, __LINE__, __func__);
 
 # define ERROR "Error\n"
-# define SA "sa"
-# define SB "sb"
-# define SS "ss"
-# define PA "pa"
-# define PB "pb"
-# define RA "ra"
-# define RB "rb"
-# define RR "rr"
-# define RRA "rra"
-# define RRB "rrb"
-# define RRR "rrr"
+# define SA "sa\n"
+# define SB "sb\n"
+# define SS "ss\n"
+# define PA "pa\n"
+# define PB "pb\n"
+# define RA "ra\n"
+# define RB "rb\n"
+# define RR "rr\n"
+# define RRA "rra\n"
+# define RRB "rrb\n"
+# define RRR "rrr\n"
 
 # include "lib/ft_printf/ft_printf.h"
 
@@ -70,5 +70,8 @@ void	process_two(t_plist *stack);
 void	process_three(t_plist *stack);
 void	process_less_than_seven(t_plist *stack);
 void	process_quick_sort(t_plist *stack);
+void	print_error(t_plist *stack);
+void	finish(t_plist *stack);
+int		min(t_plist *stack);
 
 #endif
