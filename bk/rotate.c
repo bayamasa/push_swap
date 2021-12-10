@@ -6,13 +6,13 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 18:05:16 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/06 13:50:53 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/10 09:34:44 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	rotate(t_plist *tg)
+int	rotate(t_lst *tg)
 {
 	int		first;
 

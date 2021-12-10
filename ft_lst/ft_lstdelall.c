@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_plstsize.c                                      :+:      :+:    :+:   */
+/*   ft_lstdelall.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/18 17:31:40 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/03 12:14:44 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/12/10 14:26:37 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/10 14:29:04 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "ft_lst.h"
 
-size_t	ft_plstsize(t_plist *lst)
+int	ft_lstdelall(t_lst *lst)
 {
-	size_t		i;
-	t_plist		*tmp;
-
-	if (!lst)
-		return (0);
-	tmp = lst;
-	i = 0;
-	while (tmp)
+	if (lst == NULL)
+		return (false);
+	while (lst != NULL)
 	{
-		tmp = tmp->next;
-		i++;
+		ft_lstdelone(lst);
+		
 	}
-	return (i);
+	return (true);
 }
+

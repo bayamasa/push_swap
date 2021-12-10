@@ -34,16 +34,17 @@ SRCS =	ft_atoi.c \
 			ft_tolower.c \
 			ft_toupper.c \
 			ft_atoi_error.c \
+			ft_strtoll.c \
 
-BONUS = ft_lstiter.c \
-			ft_lstlast.c \
-			ft_lstmap.c \
-			ft_lstadd_back.c \
-			ft_lstadd_front.c \
-			ft_lstclear.c \
-			ft_lstnew.c \
-			ft_lstsize.c \
-			ft_lstdelone.c \
+# BONUS = ft_lstiter.c \
+# 			ft_lstlast.c \
+# 			ft_lstmap.c \
+# 			ft_lstadd_back.c \
+# 			ft_lstadd_front.c \
+# 			ft_lstclear.c \
+# 			ft_lstnew.c \
+# 			ft_lstsize.c \
+# 			ft_lstdelone.c \
 
 OBJS = ${SRCS:.c=.o}
 OBJS_B = ${BONUS:.c=.o}

@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_plstdel_front.c                                 :+:      :+:    :+:   */
+/*   ft_lstaddone_front.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/03 15:31:59 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/03 17:54:52 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/12/03 16:59:40 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/09 15:33:46 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "ft_lst.h"
 
-int	ft_plstdel_front(t_plist **lst)
+int	ft_lstaddone_front(t_lst **lst, t_lst *new)
 {	
-	t_plist	*tmp;
+	t_lst	*tmp;
 
-	if (lst == NULL)
+	if (!lst || !new)
 		return (false);
-	// lstに一つしか要素がない場合、つまりnextがnullの場合lstはnullになる
-	tmp = (*lst)->next;
-	free(*lst);
+	tmp = ft_lstnew(new->num);
+	if (tmp == NULL)
+		return (false);
+	tmp->next = *lst;
 	*lst = tmp;
 	return (true);
 }

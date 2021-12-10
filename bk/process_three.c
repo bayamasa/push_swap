@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 17:29:59 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/08 14:40:11 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/10 09:34:44 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	check_case(int f, int s, int t)
 	return (-1);
 }
 
-void	process_three(t_plist *stack)
+void	process_three(t_lst *stack)
 {
 	int	caze;
 

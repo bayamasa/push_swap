@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 17:33:36 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/03 12:01:41 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/10 10:13:15 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ typedef struct s_errlist
 
 # define STR_BUFF_SIZE 1000000
 
-long long	ft_atoi_error(const char *str, int *status);
+int			ft_atoi_error(const char *str, int *status);
+long long	ft_strtoll(const char *str, int *status);
 long long	ft_atoi(const char *str, int *status);
 void		ft_bzero(void *s, size_t n);
 void		*ft_calloc(size_t count, size_t size);
@@ -69,14 +70,14 @@ char		*ft_strtrim(char const *s1, char const *set);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
-t_list		*ft_lstnew(void *content);
-void		ft_lstadd_front(t_list **lst, t_list *new_list);
-int			ft_lstsize(t_list *lst);
-t_list		*ft_lstlast(t_list *lst);
-void		ft_lstadd_back(t_list **lst, t_list *new_list);
-void		ft_lstdelone(t_list *lst, void (*del)(void *));
-void		ft_lstclear(t_list **lst, void (*del)(void *));
-void		ft_lstiter(t_list *lst, void (*f)(void *));
-t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+// t_list		*ft_lstnew(void *content);
+// void		ft_lstadd_front(t_list **lst, t_list *new_list);
+// int			ft_lstsize(t_list *lst);
+// t_list		*ft_lstlast(t_list *lst);
+// void		ft_lstadd_back(t_list **lst, t_list *new_list);
+// void		ft_lstdelone(t_list *lst, void (*del)(void *));
+// void		ft_lstclear(t_list **lst, void (*del)(void *));
+// void		ft_lstiter(t_list *lst, void (*f)(void *));
+// t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif

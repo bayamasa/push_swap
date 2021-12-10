@@ -5,99 +5,102 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/02 17:21:35 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/09 16:21:21 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/10 14:41:38 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
-void	print_error(t_plist *stack)
+void	abort_push_swap(void *heap)
 {
 	// 使用したstackを全て削除しなくてはならない。
-	free(stack);
+	if (heap != NULL)
+		free(heap);
 	ft_putstr_fd(ERROR, 2);
 	exit(1);
 }
 
-static t_plist	*args_error_handling(int argc, char const *argv[])
+int	*check_num_validation(int size, char const *argv[])
 {
-	int			i;
-	int			status;
-	t_plist		*first;
-	t_plist		*stack;
-	t_plist		*tmp;
-	int			value;
+	int	i;
+	int	status;
+	int	*value;
 
 	i = 0;
-	stack = (t_plist *)malloc(sizeof(t_plist));
-	first = stack;
-	if (argc <= 1)
-		print_error(stack);
-	while (i < argc - 1)
+	value = (int *)malloc(sizeof(int) * (size));
+	if (value == NULL)
+		abort_push_swap((void *)value);
+	while (i < size)
 	{
-		value = (int)ft_atoi_error(argv[i + 1], &status);
-		stack->num = value;
+		*(value + i) = (int)ft_atoi_error(argv[i + 1], &status);
 		if (status == false)
-		{
-			MYDEBUG();
-			print_error(stack);
-		}
-		tmp = stack;
-		stack = first;
-		while (stack != tmp)
-		{
-			if (stack->num == value)
-			{
-				MYDEBUG();
-				print_error(stack);
-			}
-			stack = stack->next;
-		}
-		stack = tmp;
+			abort_push_swap((void *)value);
 		i++;
-		if (i >= argc - 1)
-			break ;
-		stack->next = (t_plist *)malloc(sizeof(t_plist));
-		stack = stack->next;
 	}
-	// freeして、NULL埋めしてもサイズが減少しない→なぜか今度検証する。
-	// sizeが減少しないし、nextの指す値がNULLにならない。
-	// free(stack);
-	// stack = NULL;
-	return (first);
+	return (value);
 }
 
-void	finish(t_plist *stack)
+void	check_not_same_num(int size, int *value)
 {
-	free(stack);
-	exit(0);
+	int	i;
+	int	j;
+
+	i = 0;
+	while (i < size)
+	{
+		j = i + 1;
+		while (j < size)
+		{
+			if (value[i] == value[j])
+				abort_push_swap((void *)value);
+			j++;
+		}
+		i++;
+	}
 }
 
-void	process_algo(t_plist *stack)
+t_lst	*store_all_values(t_lst *stack, int *value, int size)
 {
-	int		size;
+	int	i;
 
-	size = ft_plstsize(stack);
-	if (size == 1)
-		process_one(stack);
-	else if (size == 2)
-		process_two(stack);
-	else if (size == 3)
-		process_three(stack);
-	else if (size > 3 && size < 7)
-		process_less_than_seven(stack);
-	else
-		process_quick_sort(stack);
-	finish(stack);
+	i = 0;
+	while (i < size)
+	{
+		stack = ft_lstnew(value[i]);
+		if (stack == NULL)
+		
+		
+	}
+	
 }
 
-int	main(int argc, char const *argv[])
-{
-	t_plist	*stack;
 
+
+static t_lst	*args_error_handling(int argc , char const *argv[])
+{
+	int			size;
+	t_lst		*stack;
+	int			*value;
+
+	// 引数の数のチェック
+	if (argc <= 1)
+		abort_push_swap(NULL);
+	size = argc - 1;
+	// 数値が来ているかチェック
+	// intの範囲内にあるかチェック
+	value = check_num_validation(size, argv);
+	// 同じ数字があるかチェック
+	check_not_same_num(size, value);
+	// valueをstackに格納
+	stack = store_all_values(stack, value, size);
+	return (NULL);
+}
+
+int main(int argc, char const *argv[])
+{
+	t_lst *stack;
 	stack = args_error_handling(argc, argv);
-	process_algo(stack);
-	return (0);
+	return 0;
 }
+

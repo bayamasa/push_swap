@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_plstnew.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/18 17:31:37 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/03 12:16:03 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:31:24 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/06 14:02:27 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "ft_lst.h"
 
-t_plist	*ft_plstnew(int num)
+void	ft_lstdelone(t_lst *lst)
 {
-	t_plist	*new_list;
-
-	new_list = (t_plist *)malloc(sizeof(t_plist));
-	if (new_list == NULL)
-		return (NULL);
-	new_list->num = num;
-	new_list->next = NULL;
-	return (new_list);
+	if (!lst)
+		return ;
+	lst->next = NULL;
+	free(lst);
 }

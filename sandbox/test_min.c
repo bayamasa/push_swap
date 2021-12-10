@@ -7,13 +7,13 @@
 
 int	main()
 {
-	t_plist *a = ft_plstnew(2);
-	t_plist *b = ft_plstnew(3);
-	t_plist *c = ft_plstnew(1);
-	t_plist *d = ft_plstnew(4);
-	ft_plstadd_back(&a, b);
-	ft_plstadd_back(&a, c);
-	ft_plstadd_back(&a, d);
+	t_lst *a = ft_lstnew(2);
+	t_lst *b = ft_lstnew(3);
+	t_lst *c = ft_lstnew(1);
+	t_lst *d = ft_lstnew(4);
+	ft_lstadd_back(&a, b);
+	ft_lstadd_back(&a, c);
+	ft_lstadd_back(&a, d);
 	printf("min(a) = %d\n", min(a));
 	return (0);
 }

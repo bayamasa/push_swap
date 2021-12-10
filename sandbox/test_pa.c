@@ -8,8 +8,8 @@
 // test pa
 int	main()
 {
-	t_plist *a = ft_plstnew(1);
-	t_plist **b = (t_plist **)malloc(sizeof(t_plist *));
+	t_lst *a = ft_lstnew(1);
+	t_lst **b = (t_lst **)malloc(sizeof(t_lst *));
 
 
 	// case 1 a = 1, b = empty
@@ -23,19 +23,19 @@ int	main()
 	printf("(*b)->num = %d\n", (*b)->num);
 	printf("a = %p\n", a);
 
-	t_plist *c = ft_plstnew(2);
-	t_plist *d = ft_plstnew(3);
+	t_lst *c = ft_lstnew(2);
+	t_lst *d = ft_lstnew(3);
 	// case 3 a = 1, b = 1
 	pa(&c, &d);
 	printf("c->next->num = %d\n", c->num);
 	printf("c->next->num = %d\n", c->next->num);
 	printf("d = %p\n", d);
 
-	t_plist *e = ft_plstnew(1);
-	t_plist *f = ft_plstnew(2);
-	t_plist *g = ft_plstnew(3);
+	t_lst *e = ft_lstnew(1);
+	t_lst *f = ft_lstnew(2);
+	t_lst *g = ft_lstnew(3);
 	// case 4 a = 1, b = 2
-	ft_plstadd_back(&f, g);
+	ft_lstadd_back(&f, g);
 	printf("e->num = %d\n", e->num);
 	printf("f->num = %d\n", f->num);
 	printf("f->next->num = %d\n", f->next->num);

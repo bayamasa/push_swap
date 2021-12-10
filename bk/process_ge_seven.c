@@ -6,13 +6,13 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 17:18:38 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/09 17:02:19 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/10 09:34:44 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	push_min_B_to_A(t_plist **a_stack, t_plist **b_stack)
+int	push_min_B_to_A(t_lst **a_stack, t_lst **b_stack)
 {
 	int	i;
 	int	i_min;
@@ -27,7 +27,7 @@ int	push_min_B_to_A(t_plist **a_stack, t_plist **b_stack)
 	ra(a_stack);
 }
 
-int	push_lt_A_to_B(t_plist **a_stack, t_plist **b_stack)
+int	push_lt_A_to_B(t_lst **a_stack, t_lst **b_stack)
 {
 	int	pivot;
 
@@ -35,7 +35,7 @@ int	push_lt_A_to_B(t_plist **a_stack, t_plist **b_stack)
 	{
 		if (pivot > (*a_stack)->num)
 		{
-			*b_stack = (t_plist *)malloc(sizeof(t_plist));
+			*b_stack = (t_lst *)malloc(sizeof(t_lst));
 				// 何かエラーが出たときにはErrorとだけ出力するべきなのだから、
 				// mallocのnullなどが全て終わったタイミングでprintしないといけないのでは？
 			if (*b_stack == NULL)
@@ -48,7 +48,7 @@ int	push_lt_A_to_B(t_plist **a_stack, t_plist **b_stack)
 	return (true);
 }
 
-int	check_sort_complete(t_plist *a_stack)
+int	check_sort_complete(t_lst *a_stack)
 {
 	while (a_stack->next != NULL)
 	{
@@ -59,9 +59,9 @@ int	check_sort_complete(t_plist *a_stack)
 	return (true);
 }
 
-void	process_ge_seven(t_plist *a_stack)
+void	process_ge_seven(t_lst *a_stack)
 {
-	t_plist	*b_stack;
+	t_lst	*b_stack;
 
 	// これを全ての値がソートされるまで繰り返すだけ
 	while (!check_sort_complete(a_stack))

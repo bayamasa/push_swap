@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_plstaddone_front.c                              :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/03 16:59:40 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/09 15:33:46 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:30:33 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/10 14:33:55 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "ft_lst.h"
 
-int	ft_plstaddone_front(t_plist **lst, t_plist *new)
-{	
-	t_plist	*tmp;
+void	ft_lstclear(t_lst **lst, void (*del)(void *))
+{
+	t_lst	*tmp;
 
-	if (!lst || !new)
-		return (false);
-	tmp = ft_plstnew(new->num);
-	if (tmp == NULL)
-		return (false);
-	tmp->next = *lst;
-	*lst = tmp;
-	return (true);
+	if (!lst || !del)
+		return ;
+	while (*lst != NULL)
+	{
+		tmp = (*lst)->next;
+		ft_lstdelone(*lst);
+		(*lst) = tmp;
+	}
 }

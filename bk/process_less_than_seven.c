@@ -6,13 +6,13 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 17:29:59 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/08 14:40:34 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/10 09:34:44 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	push_min_to_b(t_plist **a_stack, t_plist **b_stack)
+int	push_min_to_b(t_lst **a_stack, t_lst **b_stack)
 {
 	int	i;
 	int	i_min;
@@ -23,22 +23,22 @@ int	push_min_to_b(t_plist **a_stack, t_plist **b_stack)
 	{
 		ra(a_stack);
 	}
-	*b_stack = (t_plist *)malloc(sizeof(t_plist));
+	*b_stack = (t_lst *)malloc(sizeof(t_lst));
 	if (b_stack == NULL)
 		return (-1);
 	pb(a_stack, b_stack);
 	return (1);
 }
 
-void	process_less_than_seven(t_plist *a_stack)
+void	process_less_than_seven(t_lst *a_stack)
 {
 	int		i;
 	int		size;
 	int		status;
-	t_plist	*b_stack;
+	t_lst	*b_stack;
 
 	i = 0;
-	size = ft_plstsize(a_stack);
+	size = ft_lstsize(a_stack);
 	while (i < size - 3)
 	{
 		status = push_min_to_b(&a_stack, &b_stack);

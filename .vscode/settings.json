@@ -4,6 +4,7 @@
 		"push_swap.h": "c",
 		"libft.h": "c",
 		"queue": "c",
-		"stack": "c"
+		"stack": "c",
+		"ft_lst.h": "c"
 	}
 }

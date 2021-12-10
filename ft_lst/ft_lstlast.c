@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_plstlast.c                                      :+:      :+:    :+:   */
+/*   ft_lstlast.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "ft_lst.h"
 
-t_plist	*ft_plstlast(t_plist *lst)
+t_lst	*ft_lstlast(t_lst *lst)
 {
 	if (!lst)
 		return (lst);

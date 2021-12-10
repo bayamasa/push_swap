@@ -6,16 +6,16 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/08 12:39:19 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/08 14:09:54 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/10 09:34:44 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
 // 最小値のindexを返す
-int	min(t_plist *stack)
+int	min(t_lst *stack)
 {
-	t_plist	*min;
+	t_lst	*min;
 	int		index;
 	int		ret;
 

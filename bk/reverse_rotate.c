@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 18:05:16 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/06 14:36:17 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/10 09:34:44 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@
 // lastの一個手前のnextをnullにする →　循環にならないように
 // lastを保存しておく
 // add_frontに入れる
-int	reverse_rotate(t_plist **a)
+int	reverse_rotate(t_lst **a)
 {
-	t_plist		*first;
-	t_plist		*last;
-	t_plist		*last_prev;
-	t_plist		*tg;
+	t_lst		*first;
+	t_lst		*last;
+	t_lst		*last_prev;
+	t_lst		*tg;
 
 	tg = *a;
 	first = tg;
@@ -34,6 +34,6 @@ int	reverse_rotate(t_plist **a)
 	last = tg->next;
 	last_prev->next = NULL;
 	tg = first;
-	ft_plstaddone_front(a, last);
+	ft_lstaddone_front(a, last);
 	return (true);
 }

@@ -6,48 +6,13 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2021/12/10 13:15:51 by mhirabay         ###   ########.fr        #
+#    Updated: 2021/12/10 14:50:46 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = a.out 
-lst_NAME = lst.a
+NAME = lst.a
 
-LIB_NAME = libftprintf 
-
-SRCS = 	main.c \
-		# push.c \
-		# rotate.c \
-		# reverse_rotate.c \
-		# sa.c \
-		# sb.c \
-		# ss.c \
-		# pa.c \
-		# pb.c \
-		# ra.c \
-		# rb.c \
-		# rr.c \
-		# rra.c \
-		# rrb.c \
-		# rrr.c \
-		# process_one.c \
-		# process_two.c \
-		# process_three.c \
-		# process_less_than_seven.c \
-		# process_quick_sort.c \
-		# ft_lstadd_back.c \
-		# ft_lstadd_front.c \
-		# ft_lstdelone.c \
-		# ft_lstiter.c \
-		# ft_lstlast.c \
-		# ft_lstsize.c \
-		# ft_lstnew.c \
-		# ft_lstdel_front.c \
-		# ft_lstaddone_front.c \
-		# min.c \
-		# main.c \
-
-lst_SRCS = ft_lstadd_back.c \
+SRCS = ft_lstadd_back.c \
 			ft_lstadd_front.c \
 			ft_lstdelone.c \
 			ft_lstiter.c \
@@ -57,35 +22,25 @@ lst_SRCS = ft_lstadd_back.c \
 			ft_lstdel_front.c \
 			ft_lstaddone_front.c \
 
-			
-
 OBJS = ${SRCS:.c=.o}
-lst_OBJS = ${lst_SRCS:.c=.o}
 
 CC = gcc 
 CFLAGS = -Wall -Werror -Wextra
 
 all: ${LIB_NAME} ${NAME}
 
-${LIB_NAME} :
-	make -C lib/ft_printf
 
 $(NAME) : $(OBJS)
-	$(CC) $(CFLAGS) $(SRCS) -Llib/ft_printf -lftprintf -o $(NAME)
-
-lst : ${lst_OBJS}
-	ar rcs ${lst_NAME} ${lst_OBJS}
+	ar rcs ${NAME} ${OBJS}
 
 .c.o:
 		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 clean: 
-	make clean -C lib/ft_printf
-	${RM} ${SERVER_OBJS} ${CLIENT_OBJS} ${SERVER_BONUS_OBJS} ${CLIENT_BONUS_OBJS}
+	${RM} ${OBJS}
 
 fclean: clean
-	make fclean -C lib/ft_printf
-	${RM} ${NAME} ${lst_NAME} ${lst_OBJS}
+	${RM} ${NAME} ${OBJS}
 re:		fclean all
 
 .PHONY: all clean fclean re .c.o 

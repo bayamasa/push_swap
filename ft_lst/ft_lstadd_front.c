@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_plstiter.c                                      :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/18 17:31:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/03 13:19:02 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:30:30 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/10 09:34:44 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "ft_lst.h"
 
-void	ft_plstiter(t_plist *lst, void (*f)(void *))
-{
-	t_plist	*tmp;
-
-	if (!lst || !f)
+void	ft_lstadd_front(t_lst **lst, t_lst *new)
+{	
+	if (!lst || !new)
 		return ;
-	tmp = lst;
-	while (tmp != NULL)
-	{
-		f((void *)tmp);
-		tmp = tmp->next;
-	}
+	new->next = *lst;
+	*lst = new;
 }

@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/18 17:30:33 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/03 12:11:42 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:30:27 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/03 13:10:06 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "ft_lst.h"
 
-void	ft_plstclear(t_plist **lst, void (*del)(void *))
+void	ft_lstadd_back(t_lst **lst, t_lst *new)
 {
-	t_plist	*tmp;
+	t_lst	*tmp;
 
-	if (!lst || !del)
+	if (!lst || !new)
 		return ;
-	while (*lst != NULL)
+	if (*lst == NULL)
+		*lst = new;
+	else
 	{
-		tmp = (*lst)->next;
-		ft_plstdelone(*lst, del);
-		(*lst) = tmp;
+		tmp = ft_lstlast(*lst);
+		tmp->next = new;
 	}
 }

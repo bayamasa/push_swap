@@ -1,42 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_plstmap.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/18 17:31:34 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/03 13:20:34 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:31:37 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/03 12:16:03 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "ft_lst.h"
 
-t_plist	*ft_plstmap(t_plist *lst, int (*f)(void *), void (*del)(void *))
+t_lst	*ft_lstnew(int num)
 {
-	t_plist	*new_list;
-	t_plist	*tmp;
+	t_lst	*new_list;
 
-	if (!lst || !f)
-		return (NULL);
-	new_list = ft_plstnew(f((void *)lst));
+	new_list = (t_lst *)malloc(sizeof(t_lst));
 	if (new_list == NULL)
-	{
-		ft_plstclear(&new_list, del);
 		return (NULL);
-	}
-	tmp = new_list;
-	lst = lst->next;
-	while (lst)
-	{
-		tmp->next = ft_plstnew(f((void *)lst));
-		if (!tmp->next)
-		{
-			ft_plstclear(&new_list, del);
-			return (NULL);
-		}
-		lst = lst->next;
-		tmp = tmp->next;
-	}
+	new_list->num = num;
+	new_list->next = NULL;
 	return (new_list);
 }

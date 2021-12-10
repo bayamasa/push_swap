@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_plstdelone.c                                    :+:      :+:    :+:   */
+/*   ft_lstiter.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/18 17:31:24 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/06 14:02:27 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:31:27 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/03 13:19:02 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "ft_lst.h"
 
-void	ft_plstdelone(t_plist *lst)
+void	ft_lstiter(t_lst *lst, void (*f)(void *))
 {
-	if (!lst)
+	t_lst	*tmp;
+
+	if (!lst || !f)
 		return ;
-	lst->next = NULL;
-	free(lst);
+	tmp = lst;
+	while (tmp != NULL)
+	{
+		f((void *)tmp);
+		tmp = tmp->next;
+	}
 }

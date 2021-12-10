@@ -6,13 +6,13 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 17:06:35 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/07 17:07:29 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/10 09:34:44 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ra(t_plist **a)
+void	ra(t_lst **a)
 {
 	rotate(*a);
 	ft_putstr_fd(RA, 1);
