@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/10 14:41:38 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/10 17:20:06 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,24 +60,52 @@ void	check_not_same_num(int size, int *value)
 	}
 }
 
-t_lst	*store_all_values(t_lst *stack, int *value, int size)
+void	free_all(t_lst **stack)
 {
-	int	i;
+	t_lst	*tmp;
 
-	i = 0;
-	while (i < size)
+	tmp = *stack;
+	printf("stack : %p\n", stack);
+	printf("*stack : %d\n", (*stack)->num);
+	while (*stack != NULL)
 	{
-		stack = ft_lstnew(value[i]);
-		if (stack == NULL)
-		
-		
+		MYDEBUG();
+		free(*stack);
+		*stack = (*stack)->next;
 	}
-	
+	free(stack);
 }
 
+t_lst	**store_all_values(t_lst **stack, int *value, int size)
+{
+	int	i;
+	t_lst *tmp;
 
+	i = 0;
+	if(stack == NULL)
+		printf("stack is NULL\n");
+	if(*stack == NULL)
+		printf("*stack is NULL\n");
+	printf("*stack = %p\n", *stack);
+	while (i < size)
+	{
+		tmp = ft_lstnew(value[i]);
+		printf("tmp->num = %d\n", tmp->num);
+		ft_lstadd_back(stack, tmp);
+		if (*stack == NULL)
+		{
+			MYDEBUG();
+			free_all(stack);
+			abort_push_swap(value);
+		}
+		MYDEBUG();
+		(*stack) = (*stack)->next;
+		i++;
+	}
+	return (stack);
+}
 
-static t_lst	*args_error_handling(int argc , char const *argv[])
+static t_lst	*args_to_stack(int argc , char const *argv[])
 {
 	int			size;
 	t_lst		*stack;
@@ -87,20 +115,25 @@ static t_lst	*args_error_handling(int argc , char const *argv[])
 	if (argc <= 1)
 		abort_push_swap(NULL);
 	size = argc - 1;
+	printf("*stack = %p\n", *stack);
+	// stack = (t_lst **)malloc(sizeof(t_lst *));
 	// 数値が来ているかチェック
 	// intの範囲内にあるかチェック
 	value = check_num_validation(size, argv);
 	// 同じ数字があるかチェック
 	check_not_same_num(size, value);
 	// valueをstackに格納
-	stack = store_all_values(stack, value, size);
+	store_all_values(&stack, value, size);
+	// free_all(stack);
+	free(value);
 	return (NULL);
 }
 
 int main(int argc, char const *argv[])
 {
 	t_lst *stack;
-	stack = args_error_handling(argc, argv);
+	stack = args_to_stack(argc, argv);
+	system("leaks a.out");
 	return 0;
 }
 

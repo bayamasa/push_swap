@@ -12,17 +12,23 @@
 
 #include "ft_lst.h"
 
-void	ft_lstadd_back(t_lst **lst, t_lst *new)
+int	ft_lstadd_back(t_lst **lst, t_lst *new)
 {
 	t_lst	*tmp;
 
+	MYDEBUG();
 	if (!lst || !new)
-		return ;
+		return (false);
 	if (*lst == NULL)
+	{
 		*lst = new;
+		MYDEBUG();
+	}
 	else
 	{
+		MYDEBUG();
 		tmp = ft_lstlast(*lst);
 		tmp->next = new;
 	}
+	return (true);
 }

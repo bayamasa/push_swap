@@ -6,14 +6,15 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2021/12/10 13:15:51 by mhirabay         ###   ########.fr        #
+#    Updated: 2021/12/10 15:57:38 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = a.out 
 lst_NAME = lst.a
 
-LIB_NAME = libftprintf 
+LIB_NAME = libftprintf
+LIB_LST_NAME = lst
 
 SRCS = 	main.c \
 		# push.c \
@@ -63,15 +64,16 @@ OBJS = ${SRCS:.c=.o}
 lst_OBJS = ${lst_SRCS:.c=.o}
 
 CC = gcc 
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra 
 
 all: ${LIB_NAME} ${NAME}
 
 ${LIB_NAME} :
 	make -C lib/ft_printf
+	make -C ft_lst
 
 $(NAME) : $(OBJS)
-	$(CC) $(CFLAGS) $(SRCS) -Llib/ft_printf -lftprintf -o $(NAME)
+	$(CC) $(CFLAGS) $(SRCS) -Llib/ft_printf -lftprintf -Lft_lst -llst -o $(NAME)
 
 lst : ${lst_OBJS}
 	ar rcs ${lst_NAME} ${lst_OBJS}

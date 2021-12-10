@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:32:37 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/10 10:03:46 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/10 17:12:39 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,15 @@
 # include <stdbool.h>
 # include <stdio.h>
 
+#define MYDEBUG() printf("\x1b[46m%s[%d] %s\x1b[49m\n", __FILE__, __LINE__, __func__);
+
 typedef struct s_lst
 {
 	int				num;
 	struct s_lst	*next;
 }	t_lst;
 
-void	ft_lstadd_back(t_lst **lst, t_lst *new);
+int		ft_lstadd_back(t_lst **lst, t_lst *new);
 void	ft_lstadd_front(t_lst **lst, t_lst *new);
 int		ft_lstaddone_front(t_lst **lst, t_lst *new);
 void	ft_lstclear(t_lst **lst, void (*del)(void *));

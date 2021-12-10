@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/10 13:07:28 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/10 16:52:08 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # include <stdio.h>
 # include "ft_lst/ft_lst.h"
 # include "lib/ft_printf/ft_printf.h"
-
+#define MYDEBUG() printf("\x1b[46m%s[%d] %s\x1b[49m\n", __FILE__, __LINE__, __func__);
 # define ERROR "Error\n"
 # define SA "sa\n"
 # define SB "sb\n"

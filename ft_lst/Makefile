@@ -6,11 +6,11 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2021/12/10 14:50:46 by mhirabay         ###   ########.fr        #
+#    Updated: 2021/12/10 15:40:13 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = lst.a
+NAME = liblst.a
 
 SRCS = ft_lstadd_back.c \
 			ft_lstadd_front.c \

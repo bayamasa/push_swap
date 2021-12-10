@@ -14,9 +14,9 @@
 
 t_lst	*ft_lstlast(t_lst *lst)
 {
-	if (!lst)
+	if (lst == NULL)
 		return (lst);
-	while (lst->next)
+	while (lst->next != NULL)
 		lst = lst->next;
 	return (lst);
 }
