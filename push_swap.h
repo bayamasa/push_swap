@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/10 16:52:08 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/13 15:58:06 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,11 @@
 # define RRB "rrb\n"
 # define RRR "rrr\n"
 
-
+void	process_one(void);
+void	process_two(t_lst **stack);
+void	process_three(t_lst **stack);
+void	pa(t_lst **a, t_lst **b);
+int		push(t_lst **a, t_lst **b);
 
 #endif
 

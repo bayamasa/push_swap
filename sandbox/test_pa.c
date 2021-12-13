@@ -11,7 +11,6 @@ int	main()
 	t_lst *a = ft_lstnew(1);
 	t_lst **b = (t_lst **)malloc(sizeof(t_lst *));
 
-
 	// case 1 a = 1, b = empty
 	// nothing done status true
 	pa(&a, b);
@@ -27,9 +26,10 @@ int	main()
 	t_lst *d = ft_lstnew(3);
 	// case 3 a = 1, b = 1
 	pa(&c, &d);
-	printf("c->next->num = %d\n", c->num);
+	printf("c->num = %d\n", c->num);
 	printf("c->next->num = %d\n", c->next->num);
 	printf("d = %p\n", d);
+	// printf("d->num = %d\n", d->num);
 
 	t_lst *e = ft_lstnew(1);
 	t_lst *f = ft_lstnew(2);

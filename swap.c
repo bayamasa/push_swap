@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push.c                                             :+:      :+:    :+:   */
+/*   swap.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/03 11:41:58 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/13 15:49:03 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/12/03 11:44:59 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/10 09:34:44 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	push(t_lst **a, t_lst **b)
+// 前提として同じ数値は入ることがないので、同じ数値があることへのバリデーションはつくらない
+int	swap(t_lst **a)
 {
-	// debug用
-	if (a == NULL || b == NULL)
-	{
-		MYDEBUG();
+	size_t	size;
+
+	size = ft_lstsize(*a);
+	if (size <= 1)
 		return (false);
-	}
-	if (*b == NULL)
-		return (true);
-	ft_lstadd_front(a, *b);
-	ft_lstdel_front(b);
+	ft_lstadd_front(a, (*a)->next);
 	return (true);
 }

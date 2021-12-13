@@ -17,6 +17,13 @@ void	printp(t_lst **tmp)
 int	main()
 {
 	t_lst *tmp;
+	t_lst *null;
+	char *a;
+
+	null = NULL;
+	printf("tmp = %p\n", tmp);
+	printf("a = %p\n", a);
 	printp(&tmp);
+	printp(&null);
 	return (0);
 }

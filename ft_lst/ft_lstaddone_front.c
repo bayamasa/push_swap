@@ -14,11 +14,9 @@
 
 int	ft_lstaddone_front(t_lst **lst, t_lst *new)
 {	
-	t_lst	*tmp;
-
 	if (!lst || !new)
 		return (false);
-	tmp = ft_lstnew(new->num);
+	
 	if (tmp == NULL)
 		return (false);
 	tmp->next = *lst;

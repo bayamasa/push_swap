@@ -1,28 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push.c                                             :+:      :+:    :+:   */
+/*   rotate.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/03 11:41:58 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/13 15:49:03 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/12/03 18:05:16 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/10 09:34:44 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	push(t_lst **a, t_lst **b)
+int	rotate(t_lst *tg)
 {
-	// debug用
-	if (a == NULL || b == NULL)
+	int		first;
+
+	if (tg == NULL)
 	{
-		MYDEBUG();
-		return (false);
-	}
-	if (*b == NULL)
 		return (true);
-	ft_lstadd_front(a, *b);
-	ft_lstdel_front(b);
+	}
+	first = (tg)->num;
+	printf("first = %d\n", first);
+	while ((tg)->next != NULL)
+	{
+		printf("(*tg)->num = %d\n", (tg)->num);
+		(tg)->num = (tg)->next->num;
+		(tg) = (tg)->next;
+	}
+	(tg)->num = first;
 	return (true);
 }
