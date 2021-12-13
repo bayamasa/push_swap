@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/13 15:58:06 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/13 17:14:59 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,11 @@ void	process_one(void);
 void	process_two(t_lst **stack);
 void	process_three(t_lst **stack);
 void	pa(t_lst **a, t_lst **b);
+void	pb(t_lst **a, t_lst **b);
 int		push(t_lst **a, t_lst **b);
+void	sa(t_lst **a);
+void	sb(t_lst **b);
+void	ss(t_lst **a, t_lst **b);
+int		swap(t_lst **a);
 
 #endif
-

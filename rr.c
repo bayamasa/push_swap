@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pa.c                                               :+:      :+:    :+:   */
+/*   rr.c                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/13 15:55:42 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/13 17:07:24 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/12/07 17:06:35 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/10 09:34:44 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	pa(t_lst **a, t_lst **b)
+void	rr(t_lst **a, t_lst **b)
 {
-	push(a, b);
-	ft_putstr_fd(PA, 1);
+	rotate(*a);
+	rotate(*b);
+	ft_putstr_fd(RR, 1);
 }
