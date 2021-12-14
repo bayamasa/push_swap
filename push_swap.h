@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/13 17:14:59 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/14 10:17:58 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,11 @@
 void	process_one(void);
 void	process_two(t_lst **stack);
 void	process_three(t_lst **stack);
+void	process_less_than_seven(t_lst **a_stack);
+
+void	free_all(t_lst **stack);
+void	abort_push_swap(void *heap);
+int		min(t_lst *stack);
 void	pa(t_lst **a, t_lst **b);
 void	pb(t_lst **a, t_lst **b);
 int		push(t_lst **a, t_lst **b);
@@ -44,5 +49,12 @@ void	sa(t_lst **a);
 void	sb(t_lst **b);
 void	ss(t_lst **a, t_lst **b);
 int		swap(t_lst **a);
+int		rotate(t_lst *tg);
+void	ra(t_lst **a);
+void	rb(t_lst **b);
+int		reverse_rotate(t_lst **a);
+void	rra(t_lst **a);
+void	rrb(t_lst **b);
+void	rrr(t_lst **a, t_lst **b);
 
 #endif

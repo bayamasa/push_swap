@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/13 14:25:35 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/13 21:15:40 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,20 +65,18 @@ void	free_all(t_lst **stack)
 	t_lst	*tmp;
 
 	tmp = *stack;
-	
-	while (*stack != NULL)
+	while ((*stack) != NULL)
 	{
-		
 		free(*stack);
-		*stack = (*stack)->next;
+		(*stack) = (*stack)->next;
 	}
 	free(stack);
 }
 
 t_lst	**store_all_values(t_lst **stack, int *value, int size)
 {
-	int	i;
-	t_lst *tmp;
+	int		i;
+	t_lst	*tmp;
 
 	i = 0;
 	while (i < size)
@@ -86,9 +84,7 @@ t_lst	**store_all_values(t_lst **stack, int *value, int size)
 		tmp = ft_lstnew(value[i]);
 		ft_lstadd_back(stack, tmp);
 		if (*stack == NULL)
-		{
 			abort_push_swap(value);
-		}
 		i++;
 	}
 	return (stack);
@@ -116,35 +112,55 @@ static t_lst	**args_to_stack(int argc , char const *argv[])
 	// valueをstackに格納
 	store_all_values(stack, value, size);
 	// free_all(stack);
-	// free(value);
+	free(value);
 	return (stack);
 }
 
 void	process_algo(t_lst **stack)
 {
-	int		size;
+	size_t		size;
 
 	size = ft_lstsize(*stack);
-	printf("*stack = %p\n", *stack);
-	printf("*stack->num = %d\n", (*stack)->num);
+	printf("size = %zu\n", size);
 	if (size == 1)
-		process_one(stack);
+		process_one();
 	else if (size == 2)
 		process_two(stack);
 	else if (size == 3)
 		process_three(stack);
 	else if (size > 3 && size < 7)
 		process_less_than_seven(stack);
-	else
-		process_quick_sort(stack);
-	finish(stack);
+	// else
+	// 	process_quick_sort(stack);
 }
+
+void	print_all(t_lst **stack)
+{
+	t_lst *tmp;
+	int		i;
+
+	i = 1;
+
+	tmp = *stack;
+	while(tmp != NULL)
+	{
+		printf("stack No.%d, is %d\n", i, (tmp)->num);
+		tmp = tmp->next;
+		i++;
+	}
+}
+
 
 int main(int argc, char const *argv[])
 {
 	t_lst **stack;
 	stack = args_to_stack(argc, argv);
+	// printf("(*stack)->num = %d\n", (*stack)->num);
+	// printf("(*stack)->next->num = %d\n", (*stack)->next->num);
+	// printf("(*stack)->next->next->num = %d\n", (*stack)->next->next->num);
 	process_algo(stack);
+	print_all(stack);
+	free_all(stack);
 	// system("leaks a.out");
 	return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 18:05:16 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/10 09:34:44 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/13 17:19:30 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,6 @@ int	reverse_rotate(t_lst **a)
 	last = tg->next;
 	last_prev->next = NULL;
 	tg = first;
-	ft_lstaddone_front(a, last);
+	ft_lstadd_front(a, last);
 	return (true);
 }

@@ -6,7 +6,7 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2021/12/10 15:57:38 by mhirabay         ###   ########.fr        #
+#    Updated: 2021/12/13 17:42:18 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,24 +17,26 @@ LIB_NAME = libftprintf
 LIB_LST_NAME = lst
 
 SRCS = 	main.c \
-		# push.c \
-		# rotate.c \
-		# reverse_rotate.c \
-		# sa.c \
-		# sb.c \
-		# ss.c \
-		# pa.c \
-		# pb.c \
-		# ra.c \
-		# rb.c \
-		# rr.c \
-		# rra.c \
-		# rrb.c \
-		# rrr.c \
-		# process_one.c \
-		# process_two.c \
-		# process_three.c \
-		# process_less_than_seven.c \
+		push.c \
+		swap.c \
+		rotate.c \
+		reverse_rotate.c \
+		min.c \
+		sa.c \
+		sb.c \
+		ss.c \
+		pa.c \
+		pb.c \
+		ra.c \
+		rb.c \
+		rr.c \
+		rra.c \
+		rrb.c \
+		rrr.c \
+		process_one.c \
+		process_two.c \
+		process_three.c \
+		process_less_than_seven.c \
 		# process_quick_sort.c \
 		# ft_lstadd_back.c \
 		# ft_lstadd_front.c \
@@ -45,7 +47,6 @@ SRCS = 	main.c \
 		# ft_lstnew.c \
 		# ft_lstdel_front.c \
 		# ft_lstaddone_front.c \
-		# min.c \
 		# main.c \
 
 lst_SRCS = ft_lstadd_back.c \
