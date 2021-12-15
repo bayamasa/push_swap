@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/13 21:15:40 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/15 11:04:00 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,23 +133,6 @@ void	process_algo(t_lst **stack)
 	// else
 	// 	process_quick_sort(stack);
 }
-
-void	print_all(t_lst **stack)
-{
-	t_lst *tmp;
-	int		i;
-
-	i = 1;
-
-	tmp = *stack;
-	while(tmp != NULL)
-	{
-		printf("stack No.%d, is %d\n", i, (tmp)->num);
-		tmp = tmp->next;
-		i++;
-	}
-}
-
 
 int main(int argc, char const *argv[])
 {

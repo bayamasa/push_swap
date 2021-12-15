@@ -1,42 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   process_less_than_seven.c                          :+:      :+:    :+:   */
+/*   process_greater_equal_seven.c                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/07 17:29:59 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/15 10:57:16 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/12/15 20:47:46 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	process_less_than_seven(t_lst **a_stack)
-{
-	int		i;
-	int		size;
-	int		status;
-	t_lst	*b_stack;
+// pivotを求める → 理想は中央値であるが、めんどいので今回は最初の値にする。
+// 
 
-	i = 0;
+void	process_greater_equal_seven(t_lst **a_stack)
+{
+	int		pivot;
+	t_lst	*b_stack;
+	int		index;
+
 	b_stack = NULL;
-	size = ft_lstsize(*a_stack);
-	while (i < size - 3)
+	index = 0;
+	pivot = median(*a_stack);
+	ra(a_stack);
+	while ((*a_stack)->num != pivot)
 	{
-		status = push_min_to_b(a_stack, &b_stack);
-		if (status == -1)
-		{
-			free_all(&b_stack);
-			abort_push_swap(a_stack);
-		}
-		i++;
+		if (pivot > (*a_stack)->num)
+			pb(a_stack, &b_stack);
+		else
+			ra(a_stack);
 	}
-	process_three(a_stack);
-	i = 0;
-	while (i < size - 3)
+	while (*b_stack == NULL)
 	{
-		pa(a_stack, &b_stack);
-		i++;
+		push_min_to_b(a_stack, &b_stack);
+		ra(a_stack);
 	}
 }

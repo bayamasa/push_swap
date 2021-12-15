@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/08 12:39:19 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/14 10:39:40 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/15 10:59:33 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	min(t_lst *stack)
 	min = stack;
 	index = 0;
 	ret = index;
+	if (stack == NULL)
+		return (-1);
 	while (stack->next != NULL)
 	{
 		index++;
