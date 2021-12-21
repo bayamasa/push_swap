@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/15 11:04:00 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/20 17:06:51 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,12 +116,11 @@ static t_lst	**args_to_stack(int argc , char const *argv[])
 	return (stack);
 }
 
-void	process_algo(t_lst **stack)
+int	process_algo(t_lst **stack)
 {
-	size_t		size;
+	int		size;
 
 	size = ft_lstsize(*stack);
-	printf("size = %zu\n", size);
 	if (size == 1)
 		process_one();
 	else if (size == 2)
@@ -130,8 +129,9 @@ void	process_algo(t_lst **stack)
 		process_three(stack);
 	else if (size > 3 && size < 7)
 		process_less_than_seven(stack);
-	// else
-	// 	process_quick_sort(stack);
+	else
+		process_greater_equal_seven(stack);
+	return (size);
 }
 
 int main(int argc, char const *argv[])

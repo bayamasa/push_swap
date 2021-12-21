@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 17:29:59 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/15 10:57:16 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/20 17:02:43 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	process_less_than_seven(t_lst **a_stack)
 	size = ft_lstsize(*a_stack);
 	while (i < size - 3)
 	{
-		status = push_min_to_b(a_stack, &b_stack);
+		status = push_min(a_stack, &b_stack);
 		if (status == -1)
 		{
 			free_all(&b_stack);

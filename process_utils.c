@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:56:58 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/15 20:46:41 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/20 17:04:01 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,6 @@ int	median(t_lst *a_stack)
 	int		stack[ARG_MAX];
 	int		size;
 	int		i;
-	int		j;
 
 	i = 0;
 	size = ft_lstsize(a_stack);

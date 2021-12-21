@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/15 20:46:57 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/20 17:14:09 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,8 @@ void	print_all(t_lst **stack);
 int		push_min(t_lst **from, t_lst **to);
 int		bubble_sort(int *stack, int size);
 int		median(t_lst *a_stack);
+int		process_algo(t_lst **stack);
+
+int		b_to_a(t_lst **a_stack, t_lst **b_stack);
 
 #endif
