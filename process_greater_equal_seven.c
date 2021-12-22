@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/21 17:46:05 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/22 13:57:00 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,20 +126,38 @@ int	push_sorted_b(t_lst **a_stack, t_lst **b_stack)
 
 int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pa_count)
 {
-	int	a_size;
-	int	i;
+	int		a_size;
+	int		i;
+	int		pivot;
+	int		last;
+	int		left;
 
 	i = 0;
 	a_size = ft_lstsize(*a_stack);
-	if (a_size <= 3)
-		// sortが必要？
+	if (is_sorted(*a_stack))
 		return (true);
-	// 常にalgoに入るときには、b_stackのsizeは3で有ることを保証する
-	push_sorted_b(a_stack, b_stack);
-	while (i < pa_count)
+	left = is_sorted_except_top(*a_stack);
+	if (left)
+		return (sort_top(a_stack, left));
+	if (pa_count == 0)
 	{
-		pb(a_stack, b_stack);
-		i++;
+		pivot = median(*a_stack);
+		last = ft_lstlast(*a_stack)->num;
+		while ((*a_stack)->num != last)
+		{
+			if (pivot > (*a_stack)->num)
+				pb(a_stack, b_stack);
+			else
+				ra(a_stack);
+		}
+	}
+	else
+	{
+		while (i < pa_count)
+		{
+			pb(a_stack, b_stack);
+			i++;
+		}
 	}
 	b_to_a(a_stack, b_stack);
 	return (true);
@@ -155,7 +173,10 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 	pa_count = 0;
 	size = ft_lstsize(*b_stack);
 	if (size <= 3)
+	{
+		push_sorted_b(a_stack, b_stack);
 		return (true);
+	}
 	pivot = median(*b_stack);
 	printf("pivot = %d\n", pivot);
 	last = ft_lstlast(*b_stack)->num;
@@ -177,19 +198,9 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 
 void	process_greater_equal_seven(t_lst **a_stack)
 {
-	int		pivot;
-	int		last;
 	t_lst	*b_stack;
 
 	b_stack = NULL;
-	pivot = median(*a_stack);
-	last = ft_lstlast(*a_stack)->num;
-	while ((*a_stack)->num != last)
-	{
-		if (pivot > (*a_stack)->num)
-			pb(a_stack, &b_stack);
-		else
-			ra(a_stack);
-	}
-	b_to_a(a_stack, &b_stack);
+
+	a_to_b(a_stack, &b_stack, 0);
 }

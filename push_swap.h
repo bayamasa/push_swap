@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/20 17:14:09 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/22 13:57:12 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,8 @@ int		median(t_lst *a_stack);
 int		process_algo(t_lst **stack);
 
 int		b_to_a(t_lst **a_stack, t_lst **b_stack);
+int		is_sorted(t_lst *a_stack);
+int		is_sorted_except_top(t_lst *a_stack);
+int		sort_top(t_lst **a_stack, int left);
 
 #endif

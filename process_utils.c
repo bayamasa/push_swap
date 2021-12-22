@@ -6,12 +6,36 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:56:58 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/20 17:04:01 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:11:17 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
+int	is_sorted_except_top(t_lst *a_stack)
+{
+	int	min_index;
+	int	i;
+
+	i = 0;
+	min_index = min(a_stack);
+	while (i < min_index)
+	{
+		a_stack = a_stack->next;
+		i++;
+	}
+	if (i > 4)
+		return (false);
+	while (a_stack->next != NULL)
+	{
+		if (a_stack->num > a_stack->next->num)
+			return (false);
+		a_stack = a_stack->next;
+	}
+	return (true);
+}
+
+\
 int	push_min(t_lst **from, t_lst **to)
 {
 	int	i;
@@ -85,4 +109,18 @@ int	median(t_lst *a_stack)
 		i++;
 	}
 	return (bubble_sort(stack, size));
+}
+
+int	is_sorted(t_lst *a_stack)
+{
+	t_lst	*tmp;
+
+	tmp = a_stack;
+	while (tmp->next != NULL)
+	{
+		if (tmp->num > tmp->next->num)
+			return (false);
+		tmp = tmp->next;
+	}
+	return (true);
 }
