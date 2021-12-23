@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/23 10:18:27 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/23 16:18:54 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,20 +59,20 @@ void	process_three_b(t_lst **b_stack)
 	if (caze == 0)
 		;
 	else if (caze == 1)
-		rra(b_stack);
+		rrb(b_stack);
 	else if (caze == 2)
 	{
-		sa(b_stack);
-		ra(b_stack);
+		sb(b_stack);
+		rb(b_stack);
 	}
 	else if (caze == 3)
-		ra(b_stack);
+		rb(b_stack);
 	else if (caze == 4)
-		sa(b_stack);
+		sb(b_stack);
 	else if (caze == 5)
 	{
-		sa(b_stack);
-		rra(b_stack);
+		sb(b_stack);
+		rrb(b_stack);
 	}
 	else
 		abort_push_swap(b_stack);
@@ -81,7 +81,7 @@ void	process_three_b(t_lst **b_stack)
 void	process_two_b(t_lst **stack)
 {
 	if ((*stack)->num < (*stack)->next->num)
-		sa(stack);
+		sb(stack);
 }
 
 int	process_algo_b(t_lst **stack)
@@ -122,13 +122,14 @@ int	push_sorted_b(t_lst **a_stack, t_lst **b_stack)
 	return (true);
 }
 
-int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int ra_count)
+int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 {
 	int		a_size;
 	int		i;
 	int		pivot;
 	int		last_num;
 	int		flag;
+	int		ra_count;
 
 	i = 0;
 	flag = false;
@@ -136,7 +137,7 @@ int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int ra_count)
 	if (is_sorted(*a_stack))
 		return (true);
 	if (a_size - pb_count <= 3)
-		return (sort_top(a_stack, ra_count));
+		return (sort_top(a_stack, a_size - pb_count));
 	last_num = last_unsorted(*a_stack, pb_count, &flag);
 	pivot = median_by_last_num(*a_stack, last_num);
 	ra_count = 0;
@@ -154,7 +155,7 @@ int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int ra_count)
 			ra_count++;
 		}
 	}
-	if (flag)
+	if (first)
 	{
 		if (pivot > (*a_stack)->num)
 		{
@@ -167,16 +168,17 @@ int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int ra_count)
 			ra_count++;
 		}	
 	}
-	
-	while (i < ra_count)
+	if (!first)
 	{
-		rra(a_stack);
-		i++;
+		while (i < ra_count)
+		{
+			rra(a_stack);
+			i++;
+		}
 	}
-
 	// ワンプッシュが終わる
 	b_to_a(a_stack, b_stack);
-	a_to_b(a_stack, b_stack, pb_count, ra_count);
+	a_to_b(a_stack, b_stack, pb_count, false);
 	return (true);
 }
 
@@ -207,6 +209,10 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 		push_sorted_b(a_stack, b_stack);
 		return (true);
 	}
+	// printf("a\n");
+	// print_all(a_stack);
+	// printf("b\n");
+	// print_all(b_stack);
 	pivot = median(*b_stack);
 	last_num = ft_lstlast(*b_stack)->num;
 	while ((*b_stack)->num != last_num)
@@ -219,6 +225,13 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 		else
 			rb(b_stack);
 	}
+	if (pivot < (*b_stack)->num)
+	{
+		pa(a_stack, b_stack);
+		pa_count++;
+	}
+	else
+		rb(b_stack);
 	b_to_a(a_stack, b_stack);
 	push_back(a_stack, b_stack, pa_count);
 	return (true);
@@ -230,6 +243,9 @@ void	process_greater_equal_seven(t_lst **a_stack)
 
 	b_stack = NULL;
 
-	a_to_b(a_stack, &b_stack, 0, 0);
-
+	a_to_b(a_stack, &b_stack, 0, true);
+	// printf("a\n");
+	// print_all(a_stack);
+	// printf("b\n");
+	// print_all(&b_stack);
 }

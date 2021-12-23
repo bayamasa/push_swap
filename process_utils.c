@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:56:58 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/23 10:17:43 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/23 19:12:22 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,20 +35,30 @@ int	is_sorted_except_top(t_lst *a_stack)
 	return (true);
 }
 
-\
 int	push_min(t_lst **from, t_lst **to)
 {
-	int	i;
-	int	i_min;
+	int		i;
+	int		ret;
+	int		size;
+	int		i_min;
+	t_lst	*tmp;
 
 	i = 0;
 	i_min = min(*from);
-	if (i_min == -1)
+	size = ft_lstsize(*from);
+	ret = min_num(*from);
+	tmp = *from;
+	if (ret == -1)
 		return (false);
-	while (i < i_min)
+	if (size / 2 > i_min)
 	{
-		ra(from);
-		i++;
+		while ((*from)->num != ret)
+			ra(from);
+	}
+	else
+	{
+		while ((*from)->num != ret)
+			rra(from);
 	}
 	pb(from, to);
 	return (true);

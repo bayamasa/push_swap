@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/23 13:10:59 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/23 13:47:21 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ int	*check_num_validation(int size, char const *argv[])
 	while (i < size)
 	{
 		*(value + i) = (int)ft_atoi_error(argv[i + 1], &status);
-		printf("*(value + i) = %d\n", *(value + i));
 		if (status == false)
 			abort_push_swap((void *)value);
 		i++;
@@ -138,12 +137,11 @@ int	process_algo(t_lst **stack)
 int main(int argc, char const *argv[])
 {
 	t_lst **stack;
-	printf("argc = %d\n", argc);
 	stack = args_to_stack(argc, argv);
 	process_algo(stack);
 	// print_all(stack);
 	free_all(stack);
-	// system("leaks a.out");
+	// system("leaks push_swap");
 	return 0;
 }
 
