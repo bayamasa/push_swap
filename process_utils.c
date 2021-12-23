@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:56:58 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/22 14:11:17 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/23 10:17:43 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	is_sorted_except_top(t_lst *a_stack)
 		a_stack = a_stack->next;
 		i++;
 	}
-	if (i > 4)
+	if (i > 3)
 		return (false);
 	while (a_stack->next != NULL)
 	{
@@ -56,12 +56,13 @@ int	push_min(t_lst **from, t_lst **to)
 
 void	print_all(t_lst **stack)
 {
-	t_lst	*tmp;
+	t_lst *tmp;
 	int		i;
 
 	i = 1;
+
 	tmp = *stack;
-	while (tmp != NULL)
+	while(tmp != NULL)
 	{
 		printf("stack No.%d, is %d\n", i, (tmp)->num);
 		tmp = tmp->next;
@@ -94,6 +95,28 @@ int	bubble_sort(int *stack, int size)
 	return (stack[size / 2]);
 }
 
+int	last_unsorted(t_lst *a_stack, int pb_count, int *flag)
+{
+	int	i;
+	int	size;
+	int	last;
+
+	size = ft_lstsize(a_stack);
+	if (pb_count == 0)
+	{
+		*flag = true;
+		return (ft_lstlast(a_stack)->num);
+	}
+	last = size - pb_count;
+	i = 0;
+	while (i < last)
+	{
+		a_stack = a_stack->next;
+		i++;
+	}
+	return (a_stack->num);
+}
+
 int	median(t_lst *a_stack)
 {
 	int		stack[ARG_MAX];
@@ -102,6 +125,30 @@ int	median(t_lst *a_stack)
 
 	i = 0;
 	size = ft_lstsize(a_stack);
+	while (i < size)
+	{
+		stack[i] = (a_stack)->num;
+		(a_stack) = (a_stack)->next;
+		i++;
+	}
+	return (bubble_sort(stack, size));
+}
+
+int	median_by_last_num(t_lst *a_stack, int last_num)
+{
+	int		stack[ARG_MAX];
+	int		size;
+	int		i;
+	t_lst	*tmp;
+
+	size = 1;
+	tmp = a_stack;
+	while (tmp->num != last_num)
+	{
+		tmp = tmp->next;
+		size++;
+	}
+	i = 0;
 	while (i < size)
 	{
 		stack[i] = (a_stack)->num;

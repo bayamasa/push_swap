@@ -18,7 +18,7 @@ CFLAGS = -Wall -Wextra -Werror
 all:	${NAME}
 
 $(NAME): ${OBJS}
-		${MAKE} bonus -C ./libft
+		${MAKE} -C ./libft
 		cp libft/libft.a ${NAME}
 		ar rcs ${NAME} ${OBJS}
 

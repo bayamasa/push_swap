@@ -6,11 +6,11 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2021/12/22 13:47:36 by mhirabay         ###   ########.fr        #
+#    Updated: 2021/12/23 10:10:36 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = a.out 
+NAME = push_swap 
 lst_NAME = lst.a
 
 LIB_NAME = libftprintf
