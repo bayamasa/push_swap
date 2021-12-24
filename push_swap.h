@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 14:00:43 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 20:28:32 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int		push_min(t_lst **from, t_lst **to);
 int		bubble_sort(int *stack, int size);
 int		median(t_lst *a_stack);
 int		median_by_last_num(t_lst *a_stack, int last_num);
-int		last_unsorted(t_lst *a_stack, int pb_count, int *flag);
+int		last_unsorted(t_lst *a_stack, int pb_count);
 int		min_num(t_lst *stack);
 
 int		process_algo(t_lst **stack);
@@ -73,7 +73,11 @@ int		a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first);
 int		b_to_a(t_lst **a_stack, t_lst **b_stack);
 int		is_sorted(t_lst *a_stack);
 int		is_sorted_except_top(t_lst *a_stack);
-int		sort_top(t_lst **a_stack, int left);
+int		sort_top(t_lst **a_stack, t_lst **b_stack ,int left);
 int		get_middle_by_bubble_sort(t_lst *b_stack);
+
+void	case_zero(t_lst **a_stack);
+void	case_one(t_lst **a_stack);
+void	case_two(t_lst **a_stack, t_lst **b_stack);
 
 #endif

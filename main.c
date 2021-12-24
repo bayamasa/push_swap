@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 13:22:30 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 20:12:57 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	abort_push_swap(void *heap)
 {
-	// 使用したstackを全て削除しなくてはならない。
 	if (heap != NULL)
 		free(heap);
 	ft_putstr_fd(ERROR, 2);
@@ -96,22 +95,15 @@ static t_lst	**args_to_stack(int argc , char const *argv[])
 	t_lst		**stack;
 	int			*value;
 
-	// 引数の数のチェック
 	if (argc <= 1)
 		abort_push_swap(NULL);
 	size = argc - 1;
-	// stack = NULL;
 	stack = (t_lst **)malloc(sizeof(t_lst *));
 	if (stack == NULL)
 		abort_push_swap(NULL);
-	// 数値が来ているかチェック
-	// intの範囲内にあるかチェック
 	value = check_num_validation(size, argv);
-	// 同じ数字があるかチェック
 	check_not_same_num(size, value);
-	// valueをstackに格納
 	store_all_values(stack, value, size);
-	// free_all(stack);
 	free(value);
 	return (stack);
 }
@@ -139,7 +131,7 @@ int main(int argc, char const *argv[])
 	t_lst **stack;
 	stack = args_to_stack(argc, argv);
 	process_algo(stack);
-	print_all(stack);
+	// print_all(stack);
 	free_all(stack);
 	// system("leaks push_swap");
 	return 0;

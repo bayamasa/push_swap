@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:56:58 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/23 21:06:18 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 20:16:22 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,7 @@ int	bubble_sort(int *stack, int size)
 	return (stack[(size / 2)]);
 }
 
-int	last_unsorted(t_lst *a_stack, int pb_count, int *flag)
+int	last_unsorted(t_lst *a_stack, int pb_count)
 {
 	int	i;
 	int	size;
@@ -112,10 +112,7 @@ int	last_unsorted(t_lst *a_stack, int pb_count, int *flag)
 
 	size = ft_lstsize(a_stack);
 	if (pb_count == 0)
-	{
-		*flag = true;
 		return (ft_lstlast(a_stack)->num);
-	}
 	last = size - pb_count;
 	i = 0;
 	while (i < last)

@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 13:57:09 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 20:18:34 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	get_middle_by_bubble_sort(t_lst *b_stack)
 		}
 		i++;
 	}
-	return (stack[(3)]);
+	return (stack[(2)]);
 }
 
 int	push_half_attr_to_a(t_lst **a_stack, t_lst **b_stack)
@@ -207,24 +207,30 @@ void	process_five_b(t_lst **a_stack, t_lst **b_stack)
 {
 	int		mid_num;
 	int		i;
+	int		pa_count;
 
 	i = 0;
+	pa_count = 0;
 	mid_num = get_middle_by_bubble_sort(*b_stack);
 	while (i < 5)
 	{
-		if (mid_num > (*b_stack)->num)
+		if (mid_num < (*b_stack)->num)
+		{
 			pa(a_stack, b_stack);
+			pa_count++;
+			if (pa_count == 2)
+				break ;
+		}
 		else
-			rb(a_stack);
+			rb(b_stack);
 		i++;
 	}
-	if ((*a_stack)->num < (*a_stack)->next->num)
+	if ((*a_stack)->num > (*a_stack)->next->num)
 		sa(a_stack);
 	process_three_b(a_stack, b_stack);
 	ra(a_stack);
 	ra(a_stack);
 }
-
 
 int	process_algo_b(t_lst **a_stack, t_lst **b_stack)
 {
@@ -244,10 +250,7 @@ int	process_algo_b(t_lst **a_stack, t_lst **b_stack)
 	else if (size == 4)
 		process_four_b(a_stack, b_stack);
 	else if (size == 5)
-	{
 		process_five_b(a_stack, b_stack);
-	}
-	
 	return (size);
 }
 
@@ -265,28 +268,49 @@ int	push_sorted_b(t_lst **a_stack, t_lst **b_stack)
 	return (true);
 }
 
+int	is_no_more_than_pivot_after(int pivot, t_lst *b_stack)
+{
+	while (b_stack != NULL)
+	{
+		if (pivot < b_stack->num)
+			return (false);
+		b_stack = b_stack->next;
+	}
+	return (true);
+}
+
+int	is_no_less_than_pivot_after(int pivot, t_lst *a_stack)
+{
+	while (a_stack != NULL)
+	{
+		if (pivot > a_stack->num)
+			return (false);
+		a_stack = a_stack->next;
+	}
+	return (true);
+}
+
 int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 {
 	int		a_size;
 	int		i;
 	int		pivot;
 	int		last_num;
-	int		flag;
 	int		ra_count;
 
 	i = 0;
-	flag = false;
 	a_size = ft_lstsize(*a_stack);
 	if (is_sorted(*a_stack))
 		return (true);
 	if (a_size - pb_count <= 3)
-		return (sort_top(a_stack, a_size - pb_count));
-	last_num = last_unsorted(*a_stack, pb_count, &flag);
+		return (sort_top(a_stack, b_stack, a_size - pb_count));
+	last_num = last_unsorted(*a_stack, pb_count);
 	pivot = median_by_last_num(*a_stack, last_num);
 	ra_count = 0;
-	// 全体からpb_countを引いたものをsortしていく
 	while ((*a_stack)->num != last_num)
 	{
+		if (is_no_less_than_pivot_after(pivot, *a_stack))
+			break ;
 		if (pivot > (*a_stack)->num)
 		{
 			pb(a_stack, b_stack);
@@ -311,15 +335,9 @@ int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 			ra_count++;
 		}	
 	}
-	if (!first)
-	{
-		while (i < ra_count)
-		{
+	else
+		while (i++ < ra_count)
 			rra(a_stack);
-			i++;
-		}
-	}
-	// ワンプッシュが終わる
 	b_to_a(a_stack, b_stack);
 	a_to_b(a_stack, b_stack, pb_count, false);
 	return (true);
@@ -347,7 +365,6 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 
 	pa_count = 0;
 	size = ft_lstsize(*b_stack);
-	printf("size = %d\n", size);
 	if (size <= 5)
 	{
 		// printf("b\n");
@@ -363,6 +380,10 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 	last_num = ft_lstlast(*b_stack)->num;
 	while ((*b_stack)->num != last_num)
 	{
+		if (is_no_more_than_pivot_after(pivot, *b_stack))
+		{
+			break ;
+		}
 		if (pivot < (*b_stack)->num)
 		{
 			pa(a_stack, b_stack);
