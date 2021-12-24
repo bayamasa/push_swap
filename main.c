@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/23 13:47:21 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 13:22:30 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,9 +139,8 @@ int main(int argc, char const *argv[])
 	t_lst **stack;
 	stack = args_to_stack(argc, argv);
 	process_algo(stack);
-	// print_all(stack);
+	print_all(stack);
 	free_all(stack);
 	// system("leaks push_swap");
 	return 0;
 }
-

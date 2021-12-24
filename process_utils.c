@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:56:58 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/23 19:12:22 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/23 21:06:18 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,13 +66,12 @@ int	push_min(t_lst **from, t_lst **to)
 
 void	print_all(t_lst **stack)
 {
-	t_lst *tmp;
+	t_lst	*tmp;
 	int		i;
 
 	i = 1;
-
 	tmp = *stack;
-	while(tmp != NULL)
+	while (tmp != NULL)
 	{
 		printf("stack No.%d, is %d\n", i, (tmp)->num);
 		tmp = tmp->next;
@@ -102,7 +101,7 @@ int	bubble_sort(int *stack, int size)
 		}
 		i++;
 	}
-	return (stack[size / 2]);
+	return (stack[(size / 2)]);
 }
 
 int	last_unsorted(t_lst *a_stack, int pb_count, int *flag)

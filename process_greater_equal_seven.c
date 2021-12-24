@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/23 16:18:54 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 13:57:09 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,38 @@
 
 // pivotを求める → 理想は中央値であるが、めんどいので今回は最初の値にする。
 // 
+int	get_middle_by_bubble_sort(t_lst *b_stack)
+{
+	int		i;
+	int		j;
+	int		tmp;
+	int		stack[ARG_MAX];
+
+	i = 0;
+	while (i < 5)
+	{
+		stack[i] = b_stack->num;
+		b_stack = b_stack->next;
+		i++;
+	}
+	i = 0;
+	while (i < 5)
+	{
+		j = 0;
+		while (j < 5 - 1)
+		{
+			if (stack[j] > stack[j + 1])
+			{
+				tmp = stack[j];
+				stack[j] = stack[j + 1];
+				stack[j + 1] = tmp;
+			}
+			j++;
+		}
+		i++;
+	}
+	return (stack[(3)]);
+}
 
 int	push_half_attr_to_a(t_lst **a_stack, t_lst **b_stack)
 {
@@ -35,66 +67,187 @@ int	push_half_attr_to_a(t_lst **a_stack, t_lst **b_stack)
 
 int	check_case_for_b(int f, int s, int t)
 {
+	// 3 2 1
 	if (f > s && s > t)
 		return (0);
+	// 2 1 3
 	else if (f > s && t > f && s < t)
 		return (1);
+	// 3 1 2
 	else if (f > s && f > t && s < t)
 		return (2);
+	// 1 3 2
 	else if (f < s && f < t && s > t)
 		return (3);
+	// 2 3 1
 	else if (f < s && f > t && s > t)
 		return (4);
+	// 1 2 3
 	else if (f < s && s < t)
 		return (5);
 	return (-1);
 }
 
-void	process_three_b(t_lst **b_stack)
+void	three_pa_ra(t_lst **a_stack, t_lst **b_stack)
+{
+	pa(a_stack, b_stack);
+	pa(a_stack, b_stack);
+	pa(a_stack, b_stack);
+	ra(a_stack);
+	ra(a_stack);
+	ra(a_stack);
+}
+
+void	process_three_b(t_lst **a_stack, t_lst **b_stack)
 {
 	int	caze;
 
 	caze = check_case_for_b((*b_stack)->num, (*b_stack)->next->num, \
 		(*b_stack)->next->next->num);
 	if (caze == 0)
-		;
+	{
+		three_pa_ra(a_stack, b_stack);
+	}
 	else if (caze == 1)
-		rrb(b_stack);
+	{
+		pa(a_stack, b_stack);
+		pa(a_stack, b_stack);
+		ra(a_stack);
+		ra(a_stack);
+		pa(a_stack, b_stack);
+		ra(a_stack);
+	}
 	else if (caze == 2)
 	{
-		sb(b_stack);
-		rb(b_stack);
+		pa(a_stack, b_stack);
+		pa(a_stack, b_stack);
+		ra(a_stack);
+		pa(a_stack, b_stack);
+		ra(a_stack);
+		ra(a_stack);
 	}
 	else if (caze == 3)
-		rb(b_stack);
+	{
+		pa(a_stack, b_stack);
+		ra(a_stack);
+		pa(a_stack, b_stack);
+		pa(a_stack, b_stack);
+		ra(a_stack);
+		ra(a_stack);
+	}
 	else if (caze == 4)
-		sb(b_stack);
+	{
+		rb(b_stack);
+		pa(a_stack, b_stack);
+		pa(a_stack, b_stack);
+		ra(a_stack);
+		pa(a_stack, b_stack);
+		ra(a_stack);
+		ra(a_stack);
+	}
 	else if (caze == 5)
 	{
-		sb(b_stack);
-		rrb(b_stack);
+		pa(a_stack, b_stack);
+		ra(a_stack);
+		pa(a_stack, b_stack);
+		ra(a_stack);
+		pa(a_stack, b_stack);
+		ra(a_stack);
 	}
 	else
 		abort_push_swap(b_stack);
 }
 
-void	process_two_b(t_lst **stack)
+void	process_two_b(t_lst **a_stack, t_lst **b_stack)
 {
-	if ((*stack)->num < (*stack)->next->num)
-		sb(stack);
+	if ((*b_stack)->num < (*b_stack)->next->num)
+		sb(b_stack);
+	pa(a_stack, b_stack);
+	pa(a_stack, b_stack);
+	ra(a_stack);
+	ra(a_stack);
 }
 
-int	process_algo_b(t_lst **stack)
+void	process_four_b(t_lst **a_stack, t_lst **b_stack)
+{
+	int		index_max;
+	int		i;
+	t_lst	*tmp;
+	int		max;
+
+	tmp = *b_stack;
+	index_max = 0;
+	i = 0;
+	max = tmp->num;
+	// 0 1 2 3
+	while (tmp != NULL)
+	{
+		if (max < tmp->num)
+		{
+			max = tmp->num;
+			index_max = i;
+		}
+		i++;
+		tmp = tmp->next;
+	}
+	tmp = *b_stack;
+	// 後半にある場合はrrbでつめる
+	if (index_max >= 2)
+		while ((*b_stack)->num != max)
+			rrb(b_stack);
+	else
+		while ((*b_stack)->num != max)
+			rb(b_stack);
+	pa(a_stack, b_stack);
+	process_three_b(a_stack, b_stack);
+	ra(a_stack);
+}
+
+void	process_five_b(t_lst **a_stack, t_lst **b_stack)
+{
+	int		mid_num;
+	int		i;
+
+	i = 0;
+	mid_num = get_middle_by_bubble_sort(*b_stack);
+	while (i < 5)
+	{
+		if (mid_num > (*b_stack)->num)
+			pa(a_stack, b_stack);
+		else
+			rb(a_stack);
+		i++;
+	}
+	if ((*a_stack)->num < (*a_stack)->next->num)
+		sa(a_stack);
+	process_three_b(a_stack, b_stack);
+	ra(a_stack);
+	ra(a_stack);
+}
+
+
+int	process_algo_b(t_lst **a_stack, t_lst **b_stack)
 {
 	int		size;
 
-	size = ft_lstsize(*stack);
+	size = ft_lstsize(*b_stack);
 	if (size == 1)
+	{
+		pa(a_stack, b_stack);
+		ra(a_stack);
 		return (1);
+	}
 	else if (size == 2)
-		process_two_b(stack);
+		process_two_b(a_stack, b_stack);
 	else if (size == 3)
-		process_three_b(stack);
+		process_three_b(a_stack, b_stack);
+	else if (size == 4)
+		process_four_b(a_stack, b_stack);
+	else if (size == 5)
+	{
+		process_five_b(a_stack, b_stack);
+	}
+	
 	return (size);
 }
 
@@ -105,20 +258,10 @@ int	push_sorted_b(t_lst **a_stack, t_lst **b_stack)
 
 	i = 0;
 	size = ft_lstsize(*b_stack);
-	process_algo_b(b_stack);
+	// printf("size = %d\n", size);
+	process_algo_b(a_stack, b_stack);
 	// paした後にrotateすると、逆になってしまう。
 	// 独自のswapの式を使用する必要がある。
-	while (i < size)
-	{
-		pa(a_stack, b_stack);
-		i++;
-	}
-	i = 0;
-	while (i < size)
-	{
-		ra(a_stack);
-		i++;
-	}
 	return (true);
 }
 
@@ -204,8 +347,11 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 
 	pa_count = 0;
 	size = ft_lstsize(*b_stack);
-	if (size <= 3)
+	printf("size = %d\n", size);
+	if (size <= 5)
 	{
+		// printf("b\n");
+		// print_all(b_stack);
 		push_sorted_b(a_stack, b_stack);
 		return (true);
 	}
@@ -233,6 +379,10 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 	else
 		rb(b_stack);
 	b_to_a(a_stack, b_stack);
+	// printf("a\n");
+	// print_all(a_stack);
+	// printf("b\n");
+	// print_all(b_stack);
 	push_back(a_stack, b_stack, pa_count);
 	return (true);
 }

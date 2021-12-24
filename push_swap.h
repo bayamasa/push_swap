@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/23 16:54:33 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 14:00:43 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ int		swap(t_lst **a);
 int		rotate(t_lst *tg);
 void	ra(t_lst **a);
 void	rb(t_lst **b);
+void	rr(t_lst **a, t_lst **b);
 int		reverse_rotate(t_lst **a);
 void	rra(t_lst **a);
 void	rrb(t_lst **b);
@@ -73,5 +74,6 @@ int		b_to_a(t_lst **a_stack, t_lst **b_stack);
 int		is_sorted(t_lst *a_stack);
 int		is_sorted_except_top(t_lst *a_stack);
 int		sort_top(t_lst **a_stack, int left);
+int		get_middle_by_bubble_sort(t_lst *b_stack);
 
 #endif
