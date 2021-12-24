@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 20:32:37 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 20:50:08 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,5 +81,19 @@ void	case_one(t_lst **a_stack);
 void	case_two(t_lst **a_stack, t_lst **b_stack);
 void	case_three(t_lst **a_stack, t_lst **b_stack);
 void	case_four(t_lst **a_stack);
+
+int		check_case_for_b(int f, int s, int t);
+void	process_two_b(t_lst **a_stack, t_lst **b_stack);
+void	process_three_b(t_lst **a_stack, t_lst **b_stack);
+
+int		push_sorted_b(t_lst **a_stack, t_lst **b_stack);
+int		process_algo_b(t_lst **a_stack, t_lst **b_stack);
+
+void	case_one_b(t_lst **a_stack, t_lst **b_stack);
+void	case_two_b(t_lst **a_stack, t_lst **b_stack);
+void	case_three_b(t_lst **a_stack, t_lst **b_stack);
+void	case_four_b(t_lst **a_stack, t_lst **b_stack);
+void	case_five_b(t_lst **a_stack, t_lst **b_stack);
+
 
 #endif
