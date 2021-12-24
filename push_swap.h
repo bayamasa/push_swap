@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 20:28:32 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 20:32:37 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,5 +79,7 @@ int		get_middle_by_bubble_sort(t_lst *b_stack);
 void	case_zero(t_lst **a_stack);
 void	case_one(t_lst **a_stack);
 void	case_two(t_lst **a_stack, t_lst **b_stack);
+void	case_three(t_lst **a_stack, t_lst **b_stack);
+void	case_four(t_lst **a_stack);
 
 #endif

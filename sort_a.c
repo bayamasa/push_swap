@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/22 10:38:19 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 20:28:14 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 20:33:48 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,16 @@
 
 int	check_case_a(int f, int s, int t)
 {
-	// 1 2 3
 	if (f < s && s < t)
 		return (0);
-	// 2 1 3
 	else if (f > s && t > f && s < t)
 		return (1);
-	// 3 2 1
 	else if (f > s && f > t && s > t)
 		return (2);
-	// 3 1 2
 	else if (f > s && f > t && s < t)
 		return (3);
-	// 1 3 2
 	else if (f < s && f < t && s > t)
 		return (4);
-	// 2 3 1
 	else if (f < s && f > t && s > t)
 		return (5);
 	return (-1);
@@ -63,20 +57,9 @@ void	process_three_a(t_lst **a_stack, t_lst **b_stack)
 	else if (caze == 2)
 		case_two(a_stack, b_stack);
 	else if (caze == 3)
-	{
-		pb(a_stack, b_stack);
-		ra(a_stack);
-		ra(a_stack);
-		pa(a_stack, b_stack);
-		ra(a_stack);
-	}
+		case_three(a_stack, b_stack);
 	else if (caze == 4)
-	{
-		ra(a_stack);
-		sa(a_stack);
-		ra(a_stack);
-		ra(a_stack);
-	}
+		case_four(a_stack);
 	else if (caze == 5)
 	{
 		pb(a_stack, b_stack);
@@ -93,16 +76,10 @@ void	process_three_a(t_lst **a_stack, t_lst **b_stack)
 int	sort_top(t_lst **a_stack, t_lst **b_stack, int left)
 {
 	if (left == 1)
-	{
 		process_one_a(a_stack);
-	}
 	else if (left == 2)
-	{
 		process_two_a(a_stack);
-	}
 	else if (left == 3)
-	{
 		process_three_a(a_stack, b_stack);
-	}
 	return (true);
 }
