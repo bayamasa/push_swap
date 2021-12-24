@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 20:39:30 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 21:33:17 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,24 +46,6 @@ int	get_middle_by_bubble_sort(t_lst *b_stack)
 	return (stack[(2)]);
 }
 
-int	push_half_attr_to_a(t_lst **a_stack, t_lst **b_stack)
-{
-	int		pivot;
-	int		last_num;
-
-	b_stack = NULL;
-	pivot = median(*b_stack);
-	last_num = ft_lstlast(*b_stack)->num;
-	while ((*b_stack)->num != last_num)
-	{
-		if (pivot > (*a_stack)->num)
-			pa(a_stack, b_stack);
-		else
-			ra(a_stack);
-	}
-	return (true);
-}
-
 void	three_pa_ra(t_lst **a_stack, t_lst **b_stack)
 {
 	pa(a_stack, b_stack);
@@ -85,7 +67,6 @@ void	process_four_b(t_lst **a_stack, t_lst **b_stack)
 	index_max = 0;
 	i = 0;
 	max = tmp->num;
-	// 0 1 2 3
 	while (tmp != NULL)
 	{
 		if (max < tmp->num)
@@ -97,7 +78,6 @@ void	process_four_b(t_lst **a_stack, t_lst **b_stack)
 		tmp = tmp->next;
 	}
 	tmp = *b_stack;
-	// 後半にある場合はrrbでつめる
 	if (index_max >= 2)
 		while ((*b_stack)->num != max)
 			rrb(b_stack);
@@ -136,28 +116,6 @@ void	process_five_b(t_lst **a_stack, t_lst **b_stack)
 	process_three_b(a_stack, b_stack);
 	ra(a_stack);
 	ra(a_stack);
-}
-
-int	is_no_more_than_pivot_after(int pivot, t_lst *b_stack)
-{
-	while (b_stack != NULL)
-	{
-		if (pivot < b_stack->num)
-			return (false);
-		b_stack = b_stack->next;
-	}
-	return (true);
-}
-
-int	is_no_less_than_pivot_after(int pivot, t_lst *a_stack)
-{
-	while (a_stack != NULL)
-	{
-		if (pivot > a_stack->num)
-			return (false);
-		a_stack = a_stack->next;
-	}
-	return (true);
 }
 
 int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)

@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 20:50:08 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 21:17:05 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,9 @@ void	case_four(t_lst **a_stack);
 int		check_case_for_b(int f, int s, int t);
 void	process_two_b(t_lst **a_stack, t_lst **b_stack);
 void	process_three_b(t_lst **a_stack, t_lst **b_stack);
+void	process_four_b(t_lst **a_stack, t_lst **b_stack);
+void	three_pa_ra(t_lst **a_stack, t_lst **b_stack);
+void	process_five_b(t_lst **a_stack, t_lst **b_stack);
 
 int		push_sorted_b(t_lst **a_stack, t_lst **b_stack);
 int		process_algo_b(t_lst **a_stack, t_lst **b_stack);
@@ -95,5 +98,9 @@ void	case_three_b(t_lst **a_stack, t_lst **b_stack);
 void	case_four_b(t_lst **a_stack, t_lst **b_stack);
 void	case_five_b(t_lst **a_stack, t_lst **b_stack);
 
+void	check_not_same_num(int size, int *value);
+int		*check_num_validation(int size, char const *argv[]);
+int		is_no_more_than_pivot_after(int pivot, t_lst *b_stack);
+int		is_no_less_than_pivot_after(int pivot, t_lst *a_stack);
 
 #endif

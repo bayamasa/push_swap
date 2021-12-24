@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:56:58 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 20:16:22 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 21:10:04 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,15 +51,11 @@ int	push_min(t_lst **from, t_lst **to)
 	if (ret == -1)
 		return (false);
 	if (size / 2 > i_min)
-	{
 		while ((*from)->num != ret)
 			ra(from);
-	}
 	else
-	{
 		while ((*from)->num != ret)
 			rra(from);
-	}
 	pb(from, to);
 	return (true);
 }
@@ -138,42 +134,4 @@ int	median(t_lst *a_stack)
 		i++;
 	}
 	return (bubble_sort(stack, size));
-}
-
-int	median_by_last_num(t_lst *a_stack, int last_num)
-{
-	int		stack[ARG_MAX];
-	int		size;
-	int		i;
-	t_lst	*tmp;
-
-	size = 1;
-	tmp = a_stack;
-	while (tmp->num != last_num)
-	{
-		tmp = tmp->next;
-		size++;
-	}
-	i = 0;
-	while (i < size)
-	{
-		stack[i] = (a_stack)->num;
-		(a_stack) = (a_stack)->next;
-		i++;
-	}
-	return (bubble_sort(stack, size));
-}
-
-int	is_sorted(t_lst *a_stack)
-{
-	t_lst	*tmp;
-
-	tmp = a_stack;
-	while (tmp->next != NULL)
-	{
-		if (tmp->num > tmp->next->num)
-			return (false);
-		tmp = tmp->next;
-	}
-	return (true);
 }
