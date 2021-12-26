@@ -6,7 +6,7 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2021/12/24 21:12:49 by mhirabay         ###   ########.fr        #
+#    Updated: 2021/12/24 22:17:31 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ SRCS = 	main.c \
 		rra.c \
 		rrb.c \
 		rrr.c \
+		case_zero.c \
 		process_one.c \
 		process_two.c \
 		process_three.c \

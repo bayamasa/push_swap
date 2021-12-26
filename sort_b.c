@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/24 20:35:40 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 20:50:57 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/24 23:24:10 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,38 +29,6 @@ int	check_case_for_b(int f, int s, int t)
 	return (-1);
 }
 
-void	process_three_b(t_lst **a_stack, t_lst **b_stack)
-{
-	int	caze;
-
-	caze = check_case_for_b((*b_stack)->num, (*b_stack)->next->num, \
-		(*b_stack)->next->next->num);
-	if (caze == 0)
-		three_pa_ra(a_stack, b_stack);
-	else if (caze == 1)
-		case_one_b(a_stack, b_stack);
-	else if (caze == 2)
-		case_two_b(a_stack, b_stack);
-	else if (caze == 3)
-		case_three_b(a_stack, b_stack);
-	else if (caze == 4)
-		case_four_b(a_stack, b_stack);
-	else if (caze == 5)
-		case_five_b(a_stack, b_stack);
-	else
-		abort_push_swap(b_stack);
-}
-
-void	process_two_b(t_lst **a_stack, t_lst **b_stack)
-{
-	if ((*b_stack)->num < (*b_stack)->next->num)
-		sb(b_stack);
-	pa(a_stack, b_stack);
-	pa(a_stack, b_stack);
-	ra(a_stack);
-	ra(a_stack);
-}
-
 int	push_sorted_b(t_lst **a_stack, t_lst **b_stack)
 {
 	int		i;
@@ -71,6 +39,28 @@ int	push_sorted_b(t_lst **a_stack, t_lst **b_stack)
 	process_algo_b(a_stack, b_stack);
 	return (true);
 }
+
+// void	process_three_b(t_lst **a_stack, t_lst **b_stack)
+// {
+// 	int	caze;
+
+// 	caze = check_case_for_b((*b_stack)->num, (*b_stack)->next->num, \
+// 		(*b_stack)->next->next->num);
+// 	if (caze == 0)
+// 		case_zero_b(a_stack, b_stack);
+// 	else if (caze == 1)
+// 		case_one_b(a_stack, b_stack);
+// 	else if (caze == 2)
+// 		case_two_b(a_stack, b_stack);
+// 	else if (caze == 3)
+// 		case_three_b(a_stack, b_stack);
+// 	else if (caze == 4)
+// 		case_four_b(a_stack, b_stack);
+// 	else if (caze == 5)
+// 		case_five_b(a_stack, b_stack);
+// 	else
+// 		abort_push_swap(b_stack);
+// }
 
 int	process_algo_b(t_lst **a_stack, t_lst **b_stack)
 {

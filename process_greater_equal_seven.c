@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 21:33:17 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/26 13:14:24 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,16 +44,6 @@ int	get_middle_by_bubble_sort(t_lst *b_stack)
 		i++;
 	}
 	return (stack[(2)]);
-}
-
-void	three_pa_ra(t_lst **a_stack, t_lst **b_stack)
-{
-	pa(a_stack, b_stack);
-	pa(a_stack, b_stack);
-	pa(a_stack, b_stack);
-	ra(a_stack);
-	ra(a_stack);
-	ra(a_stack);
 }
 
 void	process_four_b(t_lst **a_stack, t_lst **b_stack)
@@ -135,6 +125,11 @@ int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 	last_num = last_unsorted(*a_stack, pb_count);
 	pivot = median_by_last_num(*a_stack, last_num);
 	ra_count = 0;
+	printf("a_to_b\n");
+	printf("a\n");
+	print_all(a_stack);
+	printf("b\n");
+	print_all(b_stack);
 	while ((*a_stack)->num != last_num)
 	{
 		if (is_no_less_than_pivot_after(pivot, *a_stack))
@@ -195,15 +190,14 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 	size = ft_lstsize(*b_stack);
 	if (size <= 5)
 	{
-		// printf("b\n");
-		// print_all(b_stack);
 		push_sorted_b(a_stack, b_stack);
 		return (true);
 	}
-	// printf("a\n");
-	// print_all(a_stack);
-	// printf("b\n");
-	// print_all(b_stack);
+	printf("b_to_a\n");
+	printf("a\n");
+	print_all(a_stack);
+	printf("b\n");
+	print_all(b_stack);
 	pivot = median(*b_stack);
 	last_num = ft_lstlast(*b_stack)->num;
 	while ((*b_stack)->num != last_num)
