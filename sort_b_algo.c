@@ -6,11 +6,31 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/24 20:41:08 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 23:10:09 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/27 15:30:48 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+void	case_one_b(t_lst **a_stack, t_lst **b_stack)
+{
+	pa(a_stack, b_stack);
+	pa(a_stack, b_stack);
+	ra(a_stack);
+	ra(a_stack);
+	pa(a_stack, b_stack);
+	ra(a_stack);
+}
+
+void	case_two_b(t_lst **a_stack, t_lst **b_stack)
+{
+	pa(a_stack, b_stack);
+	pa(a_stack, b_stack);
+	ra(a_stack);
+	pa(a_stack, b_stack);
+	ra(a_stack);
+	ra(a_stack);
+}
 
 void	case_three_b(t_lst **a_stack, t_lst **b_stack)
 {

@@ -18,7 +18,6 @@ int	ft_lstdel_front(t_lst **lst)
 
 	if (lst == NULL)
 		return (false);
-	// lstに一つしか要素がない場合、つまりnextがnullの場合lstはnullになる
 	tmp = (*lst)->next;
 	free(*lst);
 	*lst = tmp;

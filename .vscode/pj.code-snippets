@@ -6,5 +6,15 @@
 			"#include \"push_swap.h\""
 		],
 		"description": "pj header"
+	}, 
+	"print_all": {
+		"prefix": "pall",
+		"body": [
+			"printf(\"a\\n\");",
+			"print_all(a_stack);",
+			"printf(\"b\\n\");",
+			"print_all(b_stack);",	
+		],
+		"description": "pj header"
 	}
 }

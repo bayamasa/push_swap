@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/26 13:14:24 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/27 21:41:51 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,28 +46,33 @@ int	get_middle_by_bubble_sort(t_lst *b_stack)
 	return (stack[(2)]);
 }
 
-void	process_four_b(t_lst **a_stack, t_lst **b_stack)
+int	ret_index_max(t_lst *b_stack, int *max)
 {
 	int		index_max;
 	int		i;
-	t_lst	*tmp;
-	int		max;
 
-	tmp = *b_stack;
-	index_max = 0;
 	i = 0;
-	max = tmp->num;
-	while (tmp != NULL)
+	*max = b_stack->num;
+	while (b_stack != NULL)
 	{
-		if (max < tmp->num)
+		if (*max < b_stack->num)
 		{
-			max = tmp->num;
+			*max = b_stack->num;
 			index_max = i;
 		}
 		i++;
-		tmp = tmp->next;
+		b_stack = b_stack->next;
 	}
-	tmp = *b_stack;
+	return (index_max);
+}
+
+void	process_four_b(t_lst **a_stack, t_lst **b_stack)
+{
+	int		index_max;
+	int		max;
+	int		caze;
+
+	index_max = ret_index_max(*b_stack, &max);
 	if (index_max >= 2)
 		while ((*b_stack)->num != max)
 			rrb(b_stack);
@@ -75,34 +80,74 @@ void	process_four_b(t_lst **a_stack, t_lst **b_stack)
 		while ((*b_stack)->num != max)
 			rb(b_stack);
 	pa(a_stack, b_stack);
-	process_three_b(a_stack, b_stack);
-	ra(a_stack);
+	caze = check_case_for_b((*b_stack)->num, (*b_stack)->next->num, \
+		(*b_stack)->next->next->num);
+	caze = 1;
+	if (caze == 4)
+	{
+		// printf("a\n");
+		// print_all(a_stack);
+		// printf("b\n");
+		// print_all(b_stack);
+		rr(a_stack, b_stack);
+		case_two_b(a_stack, b_stack);
+	}
+	else
+	{
+		process_three_b(a_stack, b_stack);
+		ra(a_stack);
+	}
 }
 
 void	process_five_b(t_lst **a_stack, t_lst **b_stack)
 {
 	int		mid_num;
-	int		i;
+	int		mid;
 	int		pa_count;
+	int		caze;
+	int		index_max;
+	int		max;
 
-	i = 0;
+	mid = 3;
 	pa_count = 0;
 	mid_num = get_middle_by_bubble_sort(*b_stack);
-	while (i < 5)
+	index_max = ret_index_max(*b_stack, &max);
+	while (5)
 	{
 		if (mid_num < (*b_stack)->num)
 		{
 			pa(a_stack, b_stack);
 			pa_count++;
+			mid = 2;
+			index_max = ret_index_max(*b_stack, &max);
 			if (pa_count == 2)
 				break ;
 		}
 		else
-			rb(b_stack);
-		i++;
+		{
+			if (index_max >= mid)
+				rrb(b_stack);
+			else
+				rb(b_stack);
+		}
 	}
 	if ((*a_stack)->num > (*a_stack)->next->num)
-		sa(a_stack);
+	{
+		caze = check_case_for_b((*b_stack)->num, (*b_stack)->next->num, \
+		(*b_stack)->next->next->num);
+		caze = 1;
+		if (caze == 4)
+		{
+			// printf("a\n");
+			// print_all(a_stack);
+			// printf("b\n");
+			// print_all(b_stack);
+			ss(a_stack, b_stack);
+			process_three_b(a_stack, b_stack);
+		}
+		else
+			sa(a_stack);
+	}
 	process_three_b(a_stack, b_stack);
 	ra(a_stack);
 	ra(a_stack);
@@ -118,18 +163,19 @@ int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 
 	i = 0;
 	a_size = ft_lstsize(*a_stack);
+	// printf("a_size - pb_count = %d\n", a_size - pb_count);
 	if (is_sorted(*a_stack))
 		return (true);
-	if (a_size - pb_count <= 3)
+	if (a_size - pb_count <= 5)
 		return (sort_top(a_stack, b_stack, a_size - pb_count));
 	last_num = last_unsorted(*a_stack, pb_count);
 	pivot = median_by_last_num(*a_stack, last_num);
 	ra_count = 0;
-	printf("a_to_b\n");
-	printf("a\n");
-	print_all(a_stack);
-	printf("b\n");
-	print_all(b_stack);
+	// printf("a_to_b\n");
+	// printf("a\n");
+	// print_all(a_stack);
+	// printf("b\n");
+	// print_all(b_stack);
 	while ((*a_stack)->num != last_num)
 	{
 		if (is_no_less_than_pivot_after(pivot, *a_stack))
@@ -193,11 +239,11 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 		push_sorted_b(a_stack, b_stack);
 		return (true);
 	}
-	printf("b_to_a\n");
-	printf("a\n");
-	print_all(a_stack);
-	printf("b\n");
-	print_all(b_stack);
+	// printf("b_to_a\n");
+	// printf("a\n");
+	// print_all(a_stack);
+	// printf("b\n");
+	// print_all(b_stack);
 	pivot = median(*b_stack);
 	last_num = ft_lstlast(*b_stack)->num;
 	while ((*b_stack)->num != last_num)
