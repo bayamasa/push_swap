@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/28 16:59:43 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/28 17:05:10 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,21 +48,21 @@ static t_lst	**args_to_stack(int argc, char const *argv[])
 	return (stack);
 }
 
-int	process_algo(t_lst **stack)
+int	sort_main(t_lst **stack)
 {
 	int		size;
 
 	size = ft_lstsize(*stack);
 	if (size == 1)
-		process_one();
+		return (size);
 	else if (size == 2)
-		process_two(stack);
+		sort_two(stack);
 	else if (size == 3)
-		process_three(stack);
+		sort_three(stack);
 	else if (size > 3 && size < 7)
-		process_less_than_seven(stack);
+		sort_less_than_seven(stack);
 	else
-		process_greater_equal_seven(stack);
+		sort_greater_equal_seven(stack);
 	return (size);
 }
 
@@ -71,7 +71,7 @@ int	main(int argc, char const *argv[])
 	t_lst	**stack;
 
 	stack = args_to_stack(argc, argv);
-	process_algo(stack);
+	sort_main(stack);
 	free_all(stack);
 	// system("leaks push_swap");
 	return 0;

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   process_greater_equal_seven.c                      :+:      :+:    :+:   */
+/*   sort_greater_equal_seven.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/27 21:41:51 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/28 17:12:52 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void	process_four_b(t_lst **a_stack, t_lst **b_stack)
 	}
 	else
 	{
-		process_three_b(a_stack, b_stack);
+		sort_three_b(a_stack, b_stack);
 		ra(a_stack);
 	}
 }
@@ -143,12 +143,12 @@ void	process_five_b(t_lst **a_stack, t_lst **b_stack)
 			// printf("b\n");
 			// print_all(b_stack);
 			ss(a_stack, b_stack);
-			process_three_b(a_stack, b_stack);
+			sort_three_b(a_stack, b_stack);
 		}
 		else
 			sa(a_stack);
 	}
-	process_three_b(a_stack, b_stack);
+	sort_three_b(a_stack, b_stack);
 	ra(a_stack);
 	ra(a_stack);
 }
@@ -167,7 +167,7 @@ int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 	if (is_sorted(*a_stack))
 		return (true);
 	if (a_size - pb_count <= 5)
-		return (sort_top(a_stack, b_stack, a_size - pb_count));
+		return (sort_last_a(a_stack, b_stack, a_size - pb_count));
 	last_num = last_unsorted(*a_stack, pb_count);
 	pivot = median_by_last_num(*a_stack, last_num);
 	ra_count = 0;
@@ -274,17 +274,4 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 	// print_all(b_stack);
 	push_back(a_stack, b_stack, pa_count);
 	return (true);
-}
-
-void	process_greater_equal_seven(t_lst **a_stack)
-{
-	t_lst	*b_stack;
-
-	b_stack = NULL;
-
-	a_to_b(a_stack, &b_stack, 0, true);
-	// printf("a\n");
-	// print_all(a_stack);
-	// printf("b\n");
-	// print_all(&b_stack);
 }

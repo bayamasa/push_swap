@@ -6,11 +6,18 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/24 20:22:28 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/27 15:32:00 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/28 17:25:58 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+void	case_zero_a(t_lst **a_stack)
+{
+	ra(a_stack);
+	ra(a_stack);
+	ra(a_stack);
+}
 
 void	case_one_a(t_lst **a_stack)
 {

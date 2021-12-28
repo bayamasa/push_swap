@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/22 10:38:19 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/28 16:54:19 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/28 17:11:59 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,12 @@ int	check_case_a(int f, int s, int t)
 	return (-1);
 }
 
-void	process_one_a(t_lst **a_stack)
+void	sort_one_a(t_lst **a_stack)
 {
 	ra(a_stack);
 }
 
-void	process_two_a(t_lst **a_stack)
+void	sort_two_a(t_lst **a_stack)
 {
 	if ((*a_stack)->num > (*a_stack)->next->num)
 	{
@@ -44,7 +44,7 @@ void	process_two_a(t_lst **a_stack)
 	ra(a_stack);
 }
 
-void	process_three_a(t_lst **a_stack, t_lst **b_stack)
+void	sort_three_a(t_lst **a_stack, t_lst **b_stack)
 {
 	int	caze;
 
@@ -73,42 +73,40 @@ void	process_three_a(t_lst **a_stack, t_lst **b_stack)
 		abort_push_swap(a_stack);
 }
 
-void	process_four_a(t_lst **a_stack, t_lst **b_stack)
+void	sort_four_a(t_lst **a_stack, t_lst **b_stack)
 {
 	pb(a_stack, b_stack);
 	pb(a_stack, b_stack);
 	pb(a_stack, b_stack);
 	pb(a_stack, b_stack);
-	process_four_b(a_stack, b_stack);
+	sort_four_b(a_stack, b_stack);
 }
 
-void	process_five_a(t_lst **a_stack, t_lst **b_stack)
+void	sort_five_a(t_lst **a_stack, t_lst **b_stack)
 {
 	pb(a_stack, b_stack);
 	pb(a_stack, b_stack);
 	pb(a_stack, b_stack);
 	pb(a_stack, b_stack);
 	pb(a_stack, b_stack);
-	process_five_b(a_stack, b_stack);
+	sort_five_b(a_stack, b_stack);
 }
 
-int	sort_top(t_lst **a_stack, t_lst **b_stack, int left)
+int	sort_last_a(t_lst **a_stack, t_lst **b_stack, int left)
 {
 	if (left == 1)
-		process_one_a(a_stack);
+		sort_one_a(a_stack);
 	else if (left == 2)
-		process_two_a(a_stack);
+		sort_two_a(a_stack);
 	else if (left == 3)
-		process_three_a(a_stack, b_stack);
+		sort_three_a(a_stack, b_stack);
 	else if (left == 4)
 	{
-		process_four_a(a_stack, b_stack);
+		sort_four_a(a_stack, b_stack);
 	}
 	else if (left == 5)
 	{
-		process_five_a(a_stack, b_stack);
+		sort_five_a(a_stack, b_stack);
 	}
-	
-	
 	return (true);
 }
