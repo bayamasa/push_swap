@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 23:37:56 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/28 16:37:36 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 # include <stdio.h>
 # include "ft_lst/ft_lst.h"
 # include "lib/ft_printf/ft_printf.h"
-#define MYDEBUG() printf("\x1b[46m%s[%d] %s\x1b[49m\n", __FILE__, __LINE__, __func__);
 # define ERROR "Error\n"
 # define SA "sa\n"
 # define SB "sb\n"
@@ -34,11 +33,11 @@
 # define RRB "rrb\n"
 # define RRR "rrr\n"
 
-void	process_one(void);
-void	process_two(t_lst **stack);
-void	process_three(t_lst **stack);
-void	process_less_than_seven(t_lst **a_stack);
-void	process_greater_equal_seven(t_lst **a_stack);
+void	sort_one(void);
+void	sort_two(t_lst **stack);
+void	sort_three(t_lst **stack);
+void	sort_less_than_seven(t_lst **a_stack);
+void	sort_greater_equal_seven(t_lst **a_stack);
 
 void	free_all(t_lst **stack);
 void	abort_push_swap(void *heap);
@@ -73,7 +72,7 @@ int		a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first);
 int		b_to_a(t_lst **a_stack, t_lst **b_stack);
 int		is_sorted(t_lst *a_stack);
 int		is_sorted_except_top(t_lst *a_stack);
-int		sort_top(t_lst **a_stack, t_lst **b_stack, int left);
+int		sort_last_a(t_lst **a_stack, t_lst **b_stack, int left);
 int		get_middle_by_bubble_sort(t_lst *b_stack);
 
 void	case_zero_a(t_lst **a_stack);
@@ -91,10 +90,10 @@ void	case_four_b(t_lst **a_stack, t_lst **b_stack);
 void	case_five_b(t_lst **a_stack, t_lst **b_stack);
 
 int		push_sorted_b(t_lst **a_stack, t_lst **b_stack);
-int		process_algo_b(t_lst **a_stack, t_lst **b_stack);
-void	process_three_b(t_lst **a_stack, t_lst **b_stack);
-void	process_four_b(t_lst **a_stack, t_lst **b_stack);
-void	process_five_b(t_lst **a_stack, t_lst **b_stack);
+int		sort_b(t_lst **a_stack, t_lst **b_stack);
+void	sort_three_b(t_lst **a_stack, t_lst **b_stack);
+void	sort_four_b(t_lst **a_stack, t_lst **b_stack);
+void	sort_five_b(t_lst **a_stack, t_lst **b_stack);
 
 void	case_one_b(t_lst **a_stack, t_lst **b_stack);
 void	case_two_b(t_lst **a_stack, t_lst **b_stack);
@@ -107,9 +106,12 @@ int		*check_num_validation(int size, char const *argv[]);
 int		is_no_more_than_pivot_after(int pivot, t_lst *b_stack);
 int		is_no_less_than_pivot_after(int pivot, t_lst *a_stack);
 
-void	process_one_a(t_lst **a_stack);
-void	process_two_a(t_lst **a_stack);
-void	process_three_a(t_lst **a_stack, t_lst **b_stack);
+void	sort_one_a(t_lst **a_stack);
+void	sort_two_a(t_lst **a_stack);
+void	sort_three_a(t_lst **a_stack, t_lst **b_stack);
+void	sort_four_a(t_lst **a_stack, t_lst **b_stack);
+void	sort_five_a(t_lst **a_stack, t_lst **b_stack);
 
-void	process_two_b(t_lst **a_stack, t_lst **b_stack);
+int		ret_index_max(t_lst *b_stack, int *max);
+
 #endif
