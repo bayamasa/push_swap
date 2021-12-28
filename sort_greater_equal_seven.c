@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/28 17:12:52 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/28 17:32:02 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,10 +85,6 @@ void	process_four_b(t_lst **a_stack, t_lst **b_stack)
 	caze = 1;
 	if (caze == 4)
 	{
-		// printf("a\n");
-		// print_all(a_stack);
-		// printf("b\n");
-		// print_all(b_stack);
 		rr(a_stack, b_stack);
 		case_two_b(a_stack, b_stack);
 	}
@@ -138,10 +134,6 @@ void	process_five_b(t_lst **a_stack, t_lst **b_stack)
 		caze = 1;
 		if (caze == 4)
 		{
-			// printf("a\n");
-			// print_all(a_stack);
-			// printf("b\n");
-			// print_all(b_stack);
 			ss(a_stack, b_stack);
 			sort_three_b(a_stack, b_stack);
 		}
@@ -163,7 +155,6 @@ int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 
 	i = 0;
 	a_size = ft_lstsize(*a_stack);
-	// printf("a_size - pb_count = %d\n", a_size - pb_count);
 	if (is_sorted(*a_stack))
 		return (true);
 	if (a_size - pb_count <= 5)
@@ -171,11 +162,6 @@ int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 	last_num = last_unsorted(*a_stack, pb_count);
 	pivot = median_by_last_num(*a_stack, last_num);
 	ra_count = 0;
-	// printf("a_to_b\n");
-	// printf("a\n");
-	// print_all(a_stack);
-	// printf("b\n");
-	// print_all(b_stack);
 	while ((*a_stack)->num != last_num)
 	{
 		if (is_no_less_than_pivot_after(pivot, *a_stack))
@@ -239,11 +225,6 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 		push_sorted_b(a_stack, b_stack);
 		return (true);
 	}
-	// printf("b_to_a\n");
-	// printf("a\n");
-	// print_all(a_stack);
-	// printf("b\n");
-	// print_all(b_stack);
 	pivot = median(*b_stack);
 	last_num = ft_lstlast(*b_stack)->num;
 	while ((*b_stack)->num != last_num)
@@ -268,10 +249,6 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 	else
 		rb(b_stack);
 	b_to_a(a_stack, b_stack);
-	// printf("a\n");
-	// print_all(a_stack);
-	// printf("b\n");
-	// print_all(b_stack);
 	push_back(a_stack, b_stack, pa_count);
 	return (true);
 }
