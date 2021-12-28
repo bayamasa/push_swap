@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/24 20:35:40 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/28 17:30:17 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/28 17:32:39 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,7 @@ void	sort_four_b(t_lst **a_stack, t_lst **b_stack)
 	int		i;
 	t_lst	*tmp;
 	int		max;
+
 	tmp = *b_stack;
 	index_max = 0;
 	i = 0;
@@ -120,6 +121,7 @@ void	sort_five_b(t_lst **a_stack, t_lst **b_stack)
 	int		mid_num;
 	int		i;
 	int		pa_count;
+
 	i = 0;
 	pa_count = 0;
 	mid_num = get_middle_by_bubble_sort(*b_stack);

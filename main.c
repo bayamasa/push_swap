@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/28 17:05:10 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/28 17:33:59 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,5 +74,5 @@ int	main(int argc, char const *argv[])
 	sort_main(stack);
 	free_all(stack);
 	// system("leaks push_swap");
-	return 0;
+	return (0);
 }

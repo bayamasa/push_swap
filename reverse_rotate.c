@@ -6,17 +6,12 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 18:05:16 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/13 17:19:30 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/28 17:36:07 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-// やること
-// firstを保存しておく
-// lastの一個手前のnextをnullにする →　循環にならないように
-// lastを保存しておく
-// add_frontに入れる
 int	reverse_rotate(t_lst **a)
 {
 	t_lst		*first;
