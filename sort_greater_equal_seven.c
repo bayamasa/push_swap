@@ -6,19 +6,18 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/28 17:32:02 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/28 17:50:56 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-// pivotを求める → 理想は中央値であるが、めんどいので今回は最初の値にする。
 int	get_middle_by_bubble_sort(t_lst *b_stack)
 {
 	int		i;
 	int		j;
-	int		tmp;
 	int		stack[ARG_MAX];
+	int		tmp;
 
 	i = 0;
 	while (i < 5)
@@ -100,7 +99,6 @@ void	process_five_b(t_lst **a_stack, t_lst **b_stack)
 	int		mid_num;
 	int		mid;
 	int		pa_count;
-	int		caze;
 	int		index_max;
 	int		max;
 
@@ -108,7 +106,7 @@ void	process_five_b(t_lst **a_stack, t_lst **b_stack)
 	pa_count = 0;
 	mid_num = get_middle_by_bubble_sort(*b_stack);
 	index_max = ret_index_max(*b_stack, &max);
-	while (5)
+	while (true)
 	{
 		if (mid_num < (*b_stack)->num)
 		{
@@ -128,18 +126,7 @@ void	process_five_b(t_lst **a_stack, t_lst **b_stack)
 		}
 	}
 	if ((*a_stack)->num > (*a_stack)->next->num)
-	{
-		caze = check_case_for_b((*b_stack)->num, (*b_stack)->next->num, \
-		(*b_stack)->next->next->num);
-		caze = 1;
-		if (caze == 4)
-		{
-			ss(a_stack, b_stack);
-			sort_three_b(a_stack, b_stack);
-		}
-		else
-			sa(a_stack);
-	}
+		sa(a_stack);
 	sort_three_b(a_stack, b_stack);
 	ra(a_stack);
 	ra(a_stack);

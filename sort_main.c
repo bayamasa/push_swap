@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/28 16:56:20 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/28 17:22:00 by mhirabay         ###   ########.fr       */
+/*   Updated: 2021/12/28 17:43:17 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,10 +97,5 @@ void	sort_greater_equal_seven(t_lst **a_stack)
 	t_lst	*b_stack;
 
 	b_stack = NULL;
-
 	a_to_b(a_stack, &b_stack, 0, true);
-	// printf("a\n");
-	// print_all(a_stack);
-	// printf("b\n");
-	// print_all(&b_stack);
 }
