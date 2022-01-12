@@ -6,7 +6,7 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2022/01/12 17:01:14 by mhirabay         ###   ########.fr        #
+#    Updated: 2022/01/12 17:05:08 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,6 @@ NAME = push_swap
 lst_NAME = lst.a
 
 LIB_NAME = libftprintf
-LIB_LST_NAME = lst
 
 SRCS = 	main.c \
 		push.c \
@@ -58,8 +57,6 @@ lst_SRCS = ft_lstadd_back.c \
 			ft_lstdel_front.c \
 			ft_lstaddone_front.c \
 
-			
-
 OBJS = ${SRCS:.c=.o}
 lst_OBJS = ${lst_SRCS:.c=.o}
 
@@ -82,10 +79,12 @@ lst : ${lst_OBJS}
 
 clean: 
 	make clean -C lib/ft_printf
+	make clean -C ft_lst
 	${RM} ${OBJS}
 
 fclean: clean
 	make fclean -C lib/ft_printf
+	make fclean -C ft_lst
 	${RM} ${NAME} ${lst_NAME} ${lst_OBJS}
 re:		fclean all
 
