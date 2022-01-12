@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:56:58 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 21:10:04 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 13:52:28 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,21 +117,4 @@ int	last_unsorted(t_lst *a_stack, int pb_count)
 		i++;
 	}
 	return (a_stack->num);
-}
-
-int	median(t_lst *a_stack)
-{
-	int		stack[ARG_MAX];
-	int		size;
-	int		i;
-
-	i = 0;
-	size = ft_lstsize(a_stack);
-	while (i < size)
-	{
-		stack[i] = (a_stack)->num;
-		(a_stack) = (a_stack)->next;
-		i++;
-	}
-	return (bubble_sort(stack, size));
 }

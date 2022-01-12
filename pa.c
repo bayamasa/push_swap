@@ -6,14 +6,15 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 15:55:42 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/13 17:07:24 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 14:21:28 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	pa(t_lst **a, t_lst **b)
+int	pa(t_lst **a, t_lst **b)
 {
 	push(a, b);
 	ft_putstr_fd(PA, 1);
+	return (1);
 }
