@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/12 15:52:13 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 18:05:15 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ static t_lst	**args_to_stack(int argc, char const *argv[])
 		abort_push_swap(NULL);
 	value = check_num_validation(size, argv);
 	check_not_same_num(size, value);
+	stack[0] = NULL;
 	store_all_values(stack, value, size);
 	free(value);
 	return (stack);
