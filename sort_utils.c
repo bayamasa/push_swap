@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelall.c                                     :+:      :+:    :+:   */
+/*   sort_utils.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/10 14:26:37 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/10 14:29:04 by mhirabay         ###   ########.fr       */
+/*   Created: 2022/01/12 15:32:00 by mhirabay          #+#    #+#             */
+/*   Updated: 2022/01/12 15:34:33 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_lst.h"
+#include "push_swap.h"
 
-int	ft_lstdelall(t_lst *lst)
+void	sort_ra(t_lst **a_stack, int times)
 {
-	if (lst == NULL)
-		return (false);
-	while (lst != NULL)
-	{
-		ft_lstdelone(lst);
-		
-	}
-	return (true);
-}
+	int	i;
 
+	i = 0;
+	while (i < times)
+	{
+		ra(a_stack);
+		i++;
+	}
+}

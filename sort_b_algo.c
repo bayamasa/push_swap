@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/24 20:41:08 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/28 17:25:31 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 15:49:23 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,15 +60,5 @@ void	case_four_b(t_lst **a_stack, t_lst **b_stack)
 	ra(a_stack);
 	pa(a_stack, b_stack);
 	ra(a_stack);
-	ra(a_stack);
-}
-
-void	case_five_b(t_lst **a_stack, t_lst **b_stack)
-{
-	pa(a_stack, b_stack);
-	ra(a_stack);
-	pa(a_stack, b_stack);
-	ra(a_stack);
-	pa(a_stack, b_stack);
 	ra(a_stack);
 }

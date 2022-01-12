@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/12 14:26:45 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 15:33:39 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ int		reverse_rotate(t_lst **a);
 void	rra(t_lst **a);
 void	rrb(t_lst **b);
 void	rrr(t_lst **a, t_lst **b);
+void	sort_ra(t_lst **a_stack, int times);
 
 int		push_min(t_lst **from, t_lst **to);
 void	print_all(t_lst **stack);
@@ -66,6 +67,7 @@ int		median(t_lst *a_stack);
 int		median_by_last_num(t_lst *a_stack, int last_num);
 int		last_unsorted(t_lst *a_stack, int pb_count);
 int		min_num(t_lst *stack);
+void	push_back(t_lst **a_stack, t_lst **b_stack, int pa_count);
 
 int		process_algo(t_lst **stack);
 int		a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first);
@@ -73,7 +75,8 @@ int		b_to_a(t_lst **a_stack, t_lst **b_stack);
 int		is_sorted(t_lst *a_stack);
 int		is_sorted_except_top(t_lst *a_stack);
 int		sort_last_a(t_lst **a_stack, t_lst **b_stack, int left);
-int		get_index_from_bubble_sort(t_lst *b_stack, int get_i, int size);
+int		get_index_from_bubble_sort(t_lst *b_stack, \
+		int *stack, int get_i, int size);
 
 void	case_zero_a(t_lst **a_stack);
 void	case_one_a(t_lst **a_stack);

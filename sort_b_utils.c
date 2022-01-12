@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 14:06:02 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/12 14:14:46 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 15:48:04 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,11 @@ void	sort_five_b(t_lst **a_stack, t_lst **b_stack)
 	int		mid_num;
 	int		i;
 	int		pa_count;
+	int		stack[ARG_MAX];
 
 	i = 0;
 	pa_count = 0;
-	mid_num = get_index_from_bubble_sort(*b_stack, 2, 5);
+	mid_num = get_index_from_bubble_sort(*b_stack, stack, 2, 5);
 	while (i < 5)
 	{
 		if (mid_num < (*b_stack)->num)
@@ -37,8 +38,7 @@ void	sort_five_b(t_lst **a_stack, t_lst **b_stack)
 	if ((*a_stack)->num > (*a_stack)->next->num)
 		sa(a_stack);
 	sort_three_b(a_stack, b_stack);
-	ra(a_stack);
-	ra(a_stack);
+	sort_ra(a_stack, 2);
 }
 
 int	get_max_index(t_lst *b_stack, int *max)
@@ -76,5 +76,15 @@ void	sort_four_b(t_lst **a_stack, t_lst **b_stack)
 			rb(b_stack);
 	pa(a_stack, b_stack);
 	sort_three_b(a_stack, b_stack);
+	ra(a_stack);
+}
+
+void	case_five_b(t_lst **a_stack, t_lst **b_stack)
+{
+	pa(a_stack, b_stack);
+	ra(a_stack);
+	pa(a_stack, b_stack);
+	ra(a_stack);
+	pa(a_stack, b_stack);
 	ra(a_stack);
 }

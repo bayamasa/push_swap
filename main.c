@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/12 13:51:41 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 15:52:13 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,6 @@ static t_lst	**args_to_stack(int argc, char const *argv[])
 	t_lst		**stack;
 	int			*value;
 
-	if (argc <= 1)
-		abort_push_swap(NULL);
 	size = argc - 1;
 	stack = (t_lst **)malloc(sizeof(t_lst *));
 	if (stack == NULL)
@@ -70,6 +68,8 @@ int	main(int argc, char const *argv[])
 {
 	t_lst	**stack;
 
+	if (argc == 1)
+		return (0);
 	stack = args_to_stack(argc, argv);
 	sort_main(stack);
 	free_all(stack);

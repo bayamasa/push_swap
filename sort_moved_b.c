@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 10:38:42 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/12 10:40:47 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 15:48:43 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,11 @@ void	sort_six_b(t_lst **a_stack, t_lst **b_stack)
 	int		mid_num;
 	int		i;
 	int		pa_count;
+	int		stack[ARG_MAX];
 
 	i = 0;
 	pa_count = 0;
-	mid_num = get_index_from_bubble_sort(*b_stack, 2, 6);
+	mid_num = get_index_from_bubble_sort(*b_stack, stack, 2, 6);
 	while (i < 6)
 	{
 		if (mid_num < (*b_stack)->num)
@@ -58,7 +59,5 @@ void	sort_six_b(t_lst **a_stack, t_lst **b_stack)
 	}
 	sort_three_moved(a_stack, b_stack);
 	sort_three_b(a_stack, b_stack);
-	ra(a_stack);
-	ra(a_stack);
-	ra(a_stack);
+	sort_ra(a_stack, 3);
 }

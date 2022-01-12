@@ -6,28 +6,25 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/12 14:40:45 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 16:15:26 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	get_index_from_bubble_sort(t_lst *b_stack, int get_i, int size)
+int	get_index_from_bubble_sort(t_lst *b_stack, int *stack, int get_i, int size)
 {
 	int		i;
 	int		j;
-	int		stack[ARG_MAX];
 	int		tmp;
 
 	i = 0;
 	while (i < size)
 	{
-		stack[i] = b_stack->num;
+		stack[i++] = b_stack->num;
 		b_stack = b_stack->next;
-		i++;
 	}
-	i = 0;
-	while (i < size)
+	while (i-- != 0)
 	{
 		j = 0;
 		while (j < size - 1)
@@ -40,26 +37,31 @@ int	get_index_from_bubble_sort(t_lst *b_stack, int get_i, int size)
 			}
 			j++;
 		}
-		i++;
 	}
 	return (stack[get_i]);
 }
 
-int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
+int	a_to_b_unfirst(t_lst **a_stack, int pb_count, int ra_count)
 {
-	int		i;
-	int		pivot;
-	int		last_num;
-	int		ra_count;
+	int	i;
 
 	i = 0;
-	if (is_sorted(*a_stack))
-		return (true);
-	if (ft_lstsize(*a_stack) - pb_count <= 6)
-		return (sort_last_a(a_stack, b_stack, ft_lstsize(*a_stack) - pb_count));
+	while (i++ < ra_count)
+		rra(a_stack);
+	return (pb_count);
+}
+
+int	a_to_b_utils(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
+{
+	int	last_num;
+	int	pivot;
+	int	ra_count;
+	int	i;
+
+	i = 0;
+	ra_count = 0;
 	last_num = last_unsorted(*a_stack, pb_count);
 	pivot = median_by_last_num(*a_stack, last_num);
-	ra_count = 0;
 	while ((*a_stack)->num != last_num)
 	{
 		if (is_no_less_than_pivot_after(pivot, *a_stack))
@@ -69,32 +71,25 @@ int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 		else
 			ra_count += ra(a_stack);
 	}
-	if (first)
-	{
-		if (pivot > (*a_stack)->num)
-			pb_count += pb(a_stack, b_stack);
-		else
-			ra_count += ra(a_stack);
-	}
+	if (!first)
+		return (a_to_b_unfirst(a_stack, pb_count, ra_count));
+	if (pivot > (*a_stack)->num)
+		pb_count += pb(a_stack, b_stack);
 	else
-		while (i++ < ra_count)
-			rra(a_stack);
+		ra(a_stack);
+	return (pb_count);
+}
+
+int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
+{
+	if (is_sorted(*a_stack))
+		return (true);
+	if (ft_lstsize(*a_stack) - pb_count <= 6)
+		return (sort_last_a(a_stack, b_stack, ft_lstsize(*a_stack) - pb_count));
+	pb_count = a_to_b_utils(a_stack, b_stack, pb_count, first);
 	b_to_a(a_stack, b_stack);
 	a_to_b(a_stack, b_stack, pb_count, false);
 	return (true);
-}
-
-void	push_back(t_lst **a_stack, t_lst **b_stack, int pa_count)
-{
-	int	i;
-
-	i = 0;
-	while (i < pa_count)
-	{
-		pb(a_stack, b_stack);
-		i++;
-	}
-	b_to_a(a_stack, b_stack);
 }
 
 int	b_to_a(t_lst **a_stack, t_lst **b_stack)
