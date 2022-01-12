@@ -6,7 +6,7 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2021/12/28 17:23:14 by mhirabay         ###   ########.fr        #
+#    Updated: 2022/01/12 10:42:22 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,8 @@ SRCS = 	main.c \
 		error_handling.c \
 		process_utils_2.c \
 		sort_a_utils.c \
+		sort_moved_b.c \
+		sort_moved_b_utils.c \
 		# sort_three_each_case_b.c \
 		# process_quick_sort.c \
 		# ft_lstadd_back.c \

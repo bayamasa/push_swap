@@ -2,66 +2,6 @@ ra
 ra
 ra
 pb
-ra
-pb
-pb
-pb
-ra
-pb
-ra
-ra
-pb
-ra
-pb
-pb
-ra
-ra
-ra
-ra
-pb
-pb
-ra
-ra
-pb
-ra
-pb
-ra
-ra
-ra
-ra
-ra
-pb
-pb
-pb
-pb
-ra
-pb
-ra
-ra
-ra
-ra
-pb
-ra
-ra
-ra
-ra
-pb
-ra
-ra
-ra
-pb
-ra
-pb
-ra
-ra
-pb
-pb
-pb
-ra
-ra
-ra
-pb
-pb
 pb
 pb
 pb
@@ -69,22 +9,13 @@ ra
 pb
 pb
 pb
-pb
-pb
 ra
-pb
 pb
 ra
 ra
 pb
 pb
-pb
-pb
 ra
-ra
-ra
-pb
-pb
 pb
 ra
 pb
@@ -97,16 +28,79 @@ ra
 pb
 ra
 pb
+ra
+ra
 pb
-pa
-pa
-rb
+ra
+ra
+pb
+pb
+ra
+pb
+ra
+ra
+pb
+pb
+ra
+ra
+pb
+ra
+ra
+ra
+ra
+ra
+pb
+pb
+pb
+ra
+pb
+pb
+ra
+ra
+pb
+ra
+ra
+ra
+pb
+pb
+pb
+pb
+pb
+pb
+ra
+ra
+pb
+pb
+pb
+pb
+ra
+ra
+ra
+ra
+ra
+pb
+pb
+ra
+ra
+ra
+pb
+ra
+pb
+pb
+pb
+ra
+ra
+ra
+pb
+ra
+ra
+ra
+pb
+pb
+pb
 rb
 pa
 pa
-rb
-pa
-rb
 pa
 rb
 rb
@@ -114,266 +108,8 @@ rb
 rb
 pa
 rb
-rb
-pa
-rb
-rb
 pa
 pa
-pa
-rb
-rb
-pa
-pa
-rb
-pa
-rb
-pa
-rb
-rb
-pa
-pa
-pa
-rb
-pa
-pa
-rb
-pa
-pa
-rb
-rb
-rb
-rb
-pa
-pa
-rb
-a_to_b
-a
-stack No.1, is 87
-stack No.2, is 59
-stack No.3, is 94
-stack No.4, is 17
-stack No.5, is 74
-stack No.6, is 20
-stack No.7, is 50
-stack No.8, is 35
-stack No.9, is 99
-stack No.10, is 21
-stack No.11, is 79
-stack No.12, is 66
-stack No.13, is 22
-stack No.14, is 96
-stack No.15, is 16
-stack No.16, is 2
-stack No.17, is 86
-stack No.18, is 95
-stack No.19, is 70
-stack No.20, is 58
-stack No.21, is 45
-stack No.22, is 28
-stack No.23, is 68
-stack No.24, is 60
-stack No.25, is 1
-stack No.26, is 73
-stack No.27, is 32
-stack No.28, is 88
-stack No.29, is 69
-stack No.30, is 55
-stack No.31, is 67
-stack No.32, is 80
-stack No.33, is 41
-stack No.34, is 14
-stack No.35, is 30
-stack No.36, is 43
-stack No.37, is 57
-stack No.38, is 49
-stack No.39, is 65
-stack No.40, is 100
-stack No.41, is 85
-stack No.42, is 75
-stack No.43, is 19
-stack No.44, is 82
-stack No.45, is 90
-stack No.46, is 81
-stack No.47, is 71
-stack No.48, is 18
-stack No.49, is 83
-stack No.50, is 78
-stack No.51, is 52
-stack No.52, is 27
-stack No.53, is 98
-stack No.54, is 26
-stack No.55, is 84
-stack No.56, is 63
-stack No.57, is 39
-stack No.58, is 11
-stack No.59, is 31
-stack No.60, is 93
-stack No.61, is 54
-stack No.62, is 97
-stack No.63, is 38
-stack No.64, is 5
-stack No.65, is 6
-stack No.66, is 42
-stack No.67, is 46
-stack No.68, is 72
-stack No.69, is 37
-stack No.70, is 24
-stack No.71, is 13
-stack No.72, is 47
-stack No.73, is 8
-stack No.74, is 77
-stack No.75, is 15
-stack No.76, is 33
-stack No.77, is 56
-stack No.78, is 51
-stack No.79, is 4
-stack No.80, is 25
-stack No.81, is 9
-stack No.82, is 10
-stack No.83, is 62
-stack No.84, is 76
-stack No.85, is 64
-stack No.86, is 29
-stack No.87, is 12
-stack No.88, is 44
-stack No.89, is 92
-stack No.90, is 23
-stack No.91, is 53
-stack No.92, is 48
-stack No.93, is 36
-stack No.94, is 3
-stack No.95, is 89
-stack No.96, is 91
-stack No.97, is 7
-stack No.98, is 61
-stack No.99, is 34
-stack No.100, is 40
-b
-b_to_a
-a
-stack No.1, is 87
-stack No.2, is 59
-stack No.3, is 94
-stack No.4, is 74
-stack No.5, is 99
-stack No.6, is 79
-stack No.7, is 66
-stack No.8, is 96
-stack No.9, is 86
-stack No.10, is 95
-stack No.11, is 70
-stack No.12, is 58
-stack No.13, is 68
-stack No.14, is 60
-stack No.15, is 73
-stack No.16, is 88
-stack No.17, is 69
-stack No.18, is 55
-stack No.19, is 67
-stack No.20, is 80
-stack No.21, is 57
-stack No.22, is 65
-stack No.23, is 100
-stack No.24, is 85
-stack No.25, is 75
-stack No.26, is 82
-stack No.27, is 90
-stack No.28, is 81
-stack No.29, is 71
-stack No.30, is 83
-stack No.31, is 78
-stack No.32, is 52
-stack No.33, is 98
-stack No.34, is 84
-stack No.35, is 63
-stack No.36, is 93
-stack No.37, is 54
-stack No.38, is 97
-stack No.39, is 72
-stack No.40, is 77
-stack No.41, is 56
-stack No.42, is 51
-stack No.43, is 62
-stack No.44, is 76
-stack No.45, is 64
-stack No.46, is 92
-stack No.47, is 53
-stack No.48, is 89
-stack No.49, is 91
-stack No.50, is 61
-b
-stack No.1, is 40
-stack No.2, is 34
-stack No.3, is 7
-stack No.4, is 3
-stack No.5, is 36
-stack No.6, is 48
-stack No.7, is 23
-stack No.8, is 44
-stack No.9, is 12
-stack No.10, is 29
-stack No.11, is 10
-stack No.12, is 9
-stack No.13, is 25
-stack No.14, is 4
-stack No.15, is 33
-stack No.16, is 15
-stack No.17, is 8
-stack No.18, is 47
-stack No.19, is 13
-stack No.20, is 24
-stack No.21, is 37
-stack No.22, is 46
-stack No.23, is 42
-stack No.24, is 6
-stack No.25, is 5
-stack No.26, is 38
-stack No.27, is 31
-stack No.28, is 11
-stack No.29, is 39
-stack No.30, is 26
-stack No.31, is 27
-stack No.32, is 18
-stack No.33, is 19
-stack No.34, is 49
-stack No.35, is 43
-stack No.36, is 30
-stack No.37, is 14
-stack No.38, is 41
-stack No.39, is 32
-stack No.40, is 1
-stack No.41, is 28
-stack No.42, is 45
-stack No.43, is 2
-stack No.44, is 16
-stack No.45, is 22
-stack No.46, is 21
-stack No.47, is 35
-stack No.48, is 50
-stack No.49, is 20
-stack No.50, is 17
-b_to_a
-a
-stack No.1, is 50
-stack No.2, is 35
-stack No.3, is 45
-stack No.4, is 28
-stack No.5, is 32
-stack No.6, is 41
-stack No.7, is 30
-stack No.8, is 43
-stack No.9, is 49
-stack No.10, is 27
-stack No.11, is 39
-stack No.12, is 31
-stack No.13, is 38
-stack No.14, is 42
-stack No.15, is 46
-stack No.16, is 37
-stack No.17,pa
-rb
-rb
 pa
 rb
 rb
@@ -381,6 +117,50 @@ rb
 pa
 rb
 pa
+rb
+pa
+pa
+pa
+rb
+rb
+rb
+pa
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+pa
+rb
+pa
+rb
+pa
+pa
+pa
+pa
+pa
+rb
+rb
+rb
+rb
+pa
+pa
+pa
+pa
+rb
+rb
+rb
+pa
+pa
+rb
+pa
+rb
+pa
+rb
+rb
 rb
 rb
 pa
@@ -392,265 +172,42 @@ pa
 pa
 rb
 rb
-rb
 pa
 pa
-pa
-pa
-rb
-rb
 pa
 pa
 pa
 rb
 rb
+rb
+pa
+rb
 pa
 rb
 rb
-pa
-pa
-rb
- is 47
-stack No.18, is 33
-stack No.19, is 29
-stack No.20, is 44
-stack No.21, is 48
-stack No.22, is 36
-stack No.23, is 34
-stack No.24, is 40
-stack No.25, is 87
-stack No.26, is 59
-stack No.27, is 94
-stack No.28, is 74
-stack No.29, is 99
-stack No.30, is 79
-stack No.31, is 66
-stack No.32, is 96
-stack No.33, is 86
-stack No.34, is 95
-stack No.35, is 70
-stack No.36, is 58
-stack No.37, is 68
-stack No.38, is 60
-stack No.39, is 73
-stack No.40, is 88
-stack No.41, is 69
-stack No.42, is 55
-stack No.43, is 67
-stack No.44, is 80
-stack No.45, is 57
-stack No.46, is 65
-stack No.47, is 100
-stack No.48, is 85
-stack No.49, is 75
-stack No.50, is 82
-stack No.51, is 90
-stack No.52, is 81
-stack No.53, is 71
-stack No.54, is 83
-stack No.55, is 78
-stack No.56, is 52
-stack No.57, is 98
-stack No.58, is 84
-stack No.59, is 63
-stack No.60, is 93
-stack No.61, is 54
-stack No.62, is 97
-stack No.63, is 72
-stack No.64, is 77
-stack No.65, is 56
-stack No.66, is 51
-stack No.67, is 62
-stack No.68, is 76
-stack No.69, is 64
-stack No.70, is 92
-stack No.71, is 53
-stack No.72, is 89
-stack No.73, is 91
-stack No.74, is 61
-b
-stack No.1, is 17
-stack No.2, is 7
-stack No.3, is 3
-stack No.4, is 23
-stack No.5, is 12
-stack No.6, is 10
-stack No.7, is 9
-stack No.8, is 25
-stack No.9, is 4
-stack No.10, is 15
-stack No.11, is 8
-stack No.12, is 13
-stack No.13, is 24
-stack No.14, is 6
-stack No.15, is 5
-stack No.16, is 11
-stack No.17, is 26
-stack No.18, is 18
-stack No.19, is 19
-stack No.20, is 14
-stack No.21, is 1
-stack No.22, is 2
-stack No.23, is 16
-stack No.24, is 22
-stack No.25, is 21
-stack No.26, is 20
-b_to_a
-a
-stack No.1, is 20
-stack No.2, is 21
-stack No.3, is 22
-stack No.4, is 16
-stack No.5, is 19
-stack No.6, is 18
-stack No.7, is 26
-stack No.8, is 24
-stack No.9, is 15
-stack No.10, is 25
-stack No.11, is 23
-stack No.12, is 17
-stack No.13, is 50
-stack No.14, is 35
-stack No.15, is 45
-stack No.16, is 28
-stack No.17, is 32
-stack No.18, is 41
-stack No.19, is 30
-stack No.20, is 43
-stack No.21, is 49
-stack No.22, is 27
-stack No.23, is 39
-stack No.24, is 31
-stack No.25, is 38
-stack No.26, is 42
-stack No.27, is 46
-stack No.28, is 37
-stack No.29, is 47
-stack No.30, is 33
-stack No.31, is 29
-stack No.32, is 44
-stack No.33, is 48
-stack No.34, is 36
-stack No.35, is 34
-stack No.36, is 40
-stack No.37, is 87
-stack No.38, is 59
-stack No.39, is 94
-stack No.40, is 74
-stack No.41, is 99
-stack No.42, is 79
-stack No.43, is 66
-stack No.44, is 96
-stack No.45, is 86
-stack No.46, is 95
-stack No.47, is 70
-stack No.48, is 58
-stack No.49, is 68
-stack No.50, is 60
-stack No.51, is 73
-stack No.52, is 88
-stack No.53, is 69
-stack No.54, is 55
-stack No.55, is 67
-stack No.56, is 80
-stack No.57, is 57
-stack No.58, is 65
-stack No.59, is 100
-stack No.60, is 85
-stack No.61, is 75
-stack No.62, is 82
-stack No.63, is 90
-stack No.64, is 81
-stack No.65, is 71
-stack No.66, is 83
-stack No.67, is 78
-stack No.68, is 52
-stack No.69, is 98
-stack No.70, is 84
-stack No.71, is 63
-stack No.72, is 93
-stack No.73, is 54
-stack No.74, is 97
-stack No.75, is 72
-stack No.76, is 77
-stack No.77, is 56
-stack No.78, is 51
-stack No.79, is 62
-stack No.80, is 76
-stack No.81, is 64
-stack No.82, is 92
-stack No.83, is 53
-stack No.84, is 89
-stack No.85, is 91
-stack No.86, is 61
-b
-stack No.1, is 7
-stack No.2, is 3
-stack No.3, is 12
-stack No.4, is 10
-stack No.5, is 9
-stack No.6, is 4
-stack No.7, is 8
-stack No.8, is 13
-stack No.9, is 6
-stack No.10, is 5
-stack No.11, is 11
-stack No.12, is 14
-stack No.13, is 1
-stack No.14, is 2
-b_to_a
-a
-stack No.1, is 14
-stack No.2, is 11
-stack No.3, is 13
-stack No.4, is 9
-stack No.5, is 10
-stack No.6, is 12
-stack No.7, is 20
-stack No.8, is 21
-stack No.9, is 22
-stack No.10, is 16
-stack No.11, is 19
-stack No.12, is 18
-stack No.13, is 26
-stack No.14, is 24
-stack No.15, is 15
-stack No.16, is 25
-stack No.17, is 23
-stack No.18, is 17
-stack No.19, is 50
-stack No.20, is 35
-stack No.21, is 45
-stack No.22, is 28
-stack No.23, is 32
-stack No.24, is 41
-stack No.25, is 30
-stack No.26, is 43
-stack No.27, is 49
-stack No.28, is 27
-stack No.29, is 39
-stack No.30, is 31
-stack No.31, is 38
-stack No.32, is 42
-stack No.33, is 46
-stack No.34, is rb
-pa
-rb
 rb
 pa
+rb
 pa
 rb
 rb
 rb
 rb
 pa
+pa
+rb
+rb
+pa
+rb
+rb
 pa
 sa
+rb
+pa
 pa
 ra
 pa
 ra
-pa
 ra
 ra
 ra
@@ -670,12 +227,162 @@ pb
 pb
 pb
 pb
+pa
+rb
+pa
+pa
+pb
+ra
+ra
+pa
+rra
+rra
+pa
+ra
+pa
+pa
+ra
+ra
+ra
+ra
+ra
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+rb
+pa
+rb
+pa
+rb
+rb
+rb
+rb
+pa
+pa
+rb
+pa
+pa
+pa
 rb
 rb
 rb
 pa
 rb
+rrb
 pa
+rb
+pa
+pa
+ra
+pa
+ra
+ra
+ra
+pb
+pb
+pb
+pa
+ra
+pa
+ra
+pa
+ra
+pb
+pb
+pb
+pb
+pb
+rb
+pa
+rb
+pa
+rb
+pa
+pa
+ra
+pa
+ra
+ra
+ra
+ra
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+rb
+rb
+pa
+rb
+rb
+rb
+pa
+rb
+rb
+rb
+pa
+pa
+rb
+rb
+pa
+pa
+pa
+rb
+pa
+rb
+pa
+rb
+pa
+pa
+pa
+rb
+rb
+rb
+rb
+pa
+rb
+pa
+rb
+rb
+pa
+pa
+pa
+pa
+rb
+rb
+pa
+rb
+rb
+pa
+rrb
 pa
 pa
 pa
@@ -686,179 +393,108 @@ ra
 ra
 pb
 pb
-sb
+pb
+pa
 pa
 pa
 ra
 ra
+ra
 pb
 pb
 pb
 pb
 pb
 pb
-pb
-pb
-pb
-pb
-pb
-pb
-37
-stack No.35, is 47
-stack No.36, is 33
-stack No.37, is 29
-stack No.38, is 44
-stack No.39, is 48
-stack No.40, is 36
-stack No.41, is 34
-stack No.42, is 40
-stack No.43, is 87
-stack No.44, is 59
-stack No.45, is 94
-stack No.46, is 74
-stack No.47, is 99
-stack No.48, is 79
-stack No.49, is 66
-stack No.50, is 96
-stack No.51, is 86
-stack No.52, is 95
-stack No.53, is 70
-stack No.54, is 58
-stack No.55, is 68
-stack No.56, is 60
-stack No.57, is 73
-stack No.58, is 88
-stack No.59, is 69
-stack No.60, is 55
-stack No.61, is 67
-stack No.62, is 80
-stack No.63, is 57
-stack No.64, is 65
-stack No.65, is 100
-stack No.66, is 85
-stack No.67, is 75
-stack No.68, is 82
-stack No.69, is 90
-stack No.70, is 81
-stack No.71, is 71
-stack No.72, is 83
-stack No.73, is 78
-stack No.74, is 52
-stack No.75, is 98
-stack No.76, is 84
-stack No.77, is 63
-stack No.78, is 93
-stack No.79, is 54
-stack No.80, is 97
-stack No.81, is 72
-stack No.82, is 77
-stack No.83, is 56
-stack No.84, is 51
-stack No.85, is 62
-stack No.86, is 76
-stack No.87, is 64
-stack No.88, is 92
-stack No.89, is 53
-stack No.90, is 89
-stack No.91, is 91
-stack No.92, is 61
-b
-stack No.1, is 2
-stack No.2, is 7
-stack No.3, is 3
-stack No.4, is 4
-stack No.5, is 8
-stack No.6, is 6
-stack No.7, is 5
-stack No.8, is 1
-b_to_a
+mid_num = 11
+before push
 a
-stack No.1, is 20
-stack No.2, is 21
-stack No.3, is 22
-stack No.4, is 16
-stack No.5, is 19
-stack No.6, is 18
-stack No.7, is 26
-stack No.8, is 24
-stack No.9, is 15
-stack No.10, is 25
-stack No.11, is 23
-stack No.12, is 17
+stack No.1, is 23
+stack No.2, is 18
+stack No.3, is 25
+stack No.4, is 22
+stack No.5, is 21
+stack No.6, is 15
+stack No.7, is 17
+stack No.8, is 16
+stack No.9, is 26
+stack No.10, is 20
+stack No.11, is 24
+stack No.12, is 19
 stack No.13, is 50
-stack No.14, is 35
-stack No.15, is 45
-stack No.16, is 28
-stack No.17, is 32
+stack No.14, is 45
+stack No.15, is 34
+stack No.16, is 46
+stack No.17, is 35
 stack No.18, is 41
-stack No.19, is 30
-stack No.20, is 43
-stack No.21, is 49
-stack No.22, is 27
-stack No.23, is 39
-stack No.24, is 31
-stack No.25, is 38
+stack No.19, is 38
+stack No.20, is 47
+stack No.21, is 48
+stack No.22, is 40
+stack No.23, is 31
+stack No.24, is 30
+stack No.25, is 44
 stack No.26, is 42
-stack No.27, is 46
-stack No.28, is 37
-stack No.29, is 47
-stack No.30, is 33
-stack No.31, is 29
-stack No.32, is 44
-stack No.33, is 48
-stack No.34, is 36
-stack No.35, is 34
-stack No.36, is 40
-stack No.37, is 87
-stack No.38, is 59
-stack No.39, is 94
-stack No.40, is 74
-stack No.41, is 99
-stack No.42, is 79
-stack No.43, is 66
-stack No.44, is 96
-stack No.45, is 86
-stack No.46, is 95
-stack No.47, is 70
-stack No.48, is 58
-stack No.49, is 68
-stack No.50, is 60
-stack No.51, is 73
-stack No.52, is 88
-stack No.53, is 69
-stack No.54, is 55
-stack No.55, is 67
-stack No.56, is 80
-stack No.57, is 57
-stack No.58, is 65
-stack No.59, is 100
-stack No.60, is 85
-stack No.61, is 75
-stack No.62, is 82
-stack No.63, is 90
-stack No.64, is 81
-stack No.65, is 71
-stack No.66, is 83
-stack No.67, is 78
-stack No.68, is 52
-stack No.69, is 98
-stack No.70, is 84
-stack No.71, is 63
-stack No.72, is 93
-stack No.73, is 54
-stack No.74, is 97
-stack No.75, is 72
-stack No.76, is 77
-stack No.77, is 56
-stack No.78, is 51
-stack No.79, is 62
-stack No.80, is 76
-stack No.81, is 64
-stack No.82, is 92
-stack No.83, is 53
-stack No.84, is 89
-stack No.85, is 91
-stack No.86, is 61
+stack No.27, is 37
+stack No.28, is 29
+stack No.29, is 39
+stack No.30, is 49
+stack No.31, is 32
+stack No.32, is 27
+stack No.33, is 28
+stack No.34, is 43
+stack No.35, is 33
+stack No.36, is 36
+stack No.37, is 88
+stack No.38, is 82
+stack No.39, is 85
+stack No.40, is 89
+stack No.41, is 57
+stack No.42, is 59
+stack No.43, is 64
+stack No.44, is 95
+stack No.45, is 71
+stack No.46, is 52
+stack No.47, is 91
+stack No.48, is 79
+stack No.49, is 74
+stack No.50, is 55
+stack No.51, is 54
+stack No.52, is 63
+stack No.53, is 61
+stack No.54, is 100
+stack No.55, is 69
+stack No.56, is 58
+stack No.57, is 67
+stack No.58, is 75
+stack No.59, is 62
+stack No.60, is 66
+stack No.61, is 97
+stack No.62, is 70
+stack No.63, is 77
+stack No.64, is 87
+stack No.65, is 80
+stack No.66, is 65
+stack No.67, is 94
+stack No.68, is 96
+stack No.69, is 93
+stack No.70, is 60
+stack No.71, is 83
+stack No.72, is 56
+stack No.73, is 51
+stack No.74, is 53
+stack No.75, is 98
+stack No.76, is 68
+stack No.77, is 78
+stack No.78, is 81
+stack No.79, is 72
+stack No.80, is 92
+stack No.81, is 86
+stack No.82, is 76
+stack No.83, is 99
+stack No.84, is 73
+stack No.85, is 90
+stack No.86, is 84
 stack No.87, is 1
 stack No.88, is 2
 stack No.89, is 3
@@ -868,120 +504,148 @@ stack No.92, is 6
 stack No.93, is 7
 stack No.94, is 8
 b
-stack No.1, is 12
+stack No.1, is 13
 stack No.2, is 10
-stack No.3, is 9
-stack No.4, is 13
-stack No.5, is 11
-stack No.6, is 14
-b_to_a
+stack No.3, is 12
+stack No.4, is 14
+stack No.5, is 9
+stack No.6, is 11
+moved
+a
+stack No.1, is 14
+stack No.2, is 12
+stack No.3, is 13
+stack No.4, is 23
+stack No.5, is 18
+stack No.6, is 25
+stack No.7, is 22
+stack No.8, is 21
+stack No.9, is 15
+stack No.10, is 17
+stack No.11, is 16
+stack No.12, is 26
+stack No.13, is 20
+stack No.14, is 24
+stack No.15, is 19
+stack No.16, is 50
+stack No.17, is 45
+stack No.18, is 34
+stack No.19, is 46
+stack No.20, is 35
+stack No.21, is 41
+stack No.22, is 38
+stack No.23, is 47
+stack No.24, is 48
+stack No.25, is 40
+stack No.26, is 31
+stack No.27, is 30
+stack No.28, is 44
+stack No.29, is 42
+stack No.30, is 37
+stack No.31, is 29
+stack No.32, is 39
+stack No.33, is 49
+stack No.34, is 32
+stack No.35, is 27
+stack No.36, is 28
+stack No.37, is 43
+stack No.38, is 33
+stack No.39, is 36
+stack No.40, is 88
+stack No.41, is 82
+stack No.42, is 85
+stack No.43, is 89
+stack No.44, is 57
+stack No.45, is 59
+stack No.46, is 64
+stack No.47, is 95
+stack No.48, is 71
+stack No.49, is 52
+stack No.50, is 91
+stack No.51, is 79
+stack No.52, is 74
+stack No.53, is 55
+stack No.54, is 54
+stack No.55, is 63
+stack No.56, is 61
+stack No.57, is 100
+stack No.58, is 69
+stack No.59, is 58
+stack No.60, is 67
+stack No.61, is 75
+stack No.62, is 62
+stack No.63, is 66
+stack No.64, is 97
+stack No.65, is 70
+stack No.66, is 77
+stack No.67, is 87
+stack No.68, is 80
+stack No.69, is 65
+stack No.70, is 94
+stack No.71, is 96
+stack No.72, is 93
+stack No.73, is 60
+stack No.74, is 83
+stack No.75, is 56
+stack No.76, is 51
+stack No.77, is 53
+stack No.78, is 98
+stack No.79, is 68
+stack No.80, is 78
+stack No.81, is 81
+stack No.82, is 72
+stack No.83, is 92
+stack No.84, is 86
+stack No.85, is 76
+stack No.86, is 99
+stack No.87, is 73
+stack No.88, is 90
+stack No.89, is 84
+stack No.90, is 1
+stack No.91, is 2
+stack No.92, is 3
+stack No.93, is 4
+stack No.94, is 5
+stack No.95, is 6
+stack No.96, is 7
+stack No.97, is 8
+b
+stack No.1, is 9
+stack No.2, is 11
+stack No.3, is 10
+mid_num = 36
+before push
 a
 stack No.1, is 50
-stack No.2, is 35
-stack No.3, is 45
-stack No.4, is 28
-stack No.5, is 32
-stack No.6, is 41
-stack No.7, is 30
-stack No.8, is 43
-stack No.9, is 49
-stack No.10, is 27
-stack No.11, is 39
-stack No.12, is 31
-stack No.13, is 38
-stack No.14, is 42
-stack No.15, is 46
-stack No.16, is 37
-stack No.17, is 47
-stack No.18, is 33
-stack No.19, is 29
-stack No.20, is 44
-stack No.21, is 48
-stack No.22, is 36
-stack No.23, is 34
-stack No.24, is 40
-stack No.25, is 87
-stack No.26, is 59
-stack No.27, is 94
-stack No.28, is 74
-stack No.29, is 99
-stack No.30, is 79
-stack No.31, is 66
-stack No.32, is 96
-stack No.33, is 86
-stack No.34, is 95
-stack No.35, is 70
-stack No.36, is 58
-stack No.37, is 68
-stack No.38, is 60
-stack No.39, is 73
-stack No.40, is 88
-stack No.41, is 69
-stack No.42, is 55
-stack No.43, is 67
-stack No.44, is 80
-stack No.45, is 57
-stack No.46, is 65
-stack No.47, is 100
-stack No.48, is 85
-stack No.49, is 75
-stack No.50, is 82
-stack No.51, rb
-pa
-pa
-rb
-pa
-pa
-rb
-rb
-rb
-pa
-rb
-pa
-rb
-rb
-rb
-pa
-rb
-pa
-rrb
-rrb
-pa
-rb
+stack No.2, is 45
+stack No.3, is 46
+stack No.4, is 41
+stack No.5, is 47
+stack No.6, is 48
+stack No.7, is 40
+stack No.8, is 44
+stack No.9, is 42
+stack No.10, is 49
+stack No.11, is 43
+stack No.12, is 88
+stack No.13, is 82
+stack No.14, is 85
+stack No.15, is pa
 pa
 pa
 ra
-pa
-ra
-ra
-ra
-pb
-pb
-pb
-pa
-pa
-ra
-ra
-pa
-ra
-pb
-pb
-pb
-pb
-pb
-rb
-pa
-rb
-pa
+sa
+rra
 sa
 pa
-ra
 pa
-ra
 pa
 ra
 ra
 ra
+ra
+ra
+ra
 pb
 pb
 pb
@@ -993,255 +657,8 @@ pb
 pb
 pb
 pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-is 90
-stack No.52, is 81
-stack No.53, is 71
-stack No.54, is 83
-stack No.55, is 78
-stack No.56, is 52
-stack No.57, is 98
-stack No.58, is 84
-stack No.59, is 63
-stack No.60, is 93
-stack No.61, is 54
-stack No.62, is 97
-stack No.63, is 72
-stack No.64, is 77
-stack No.65, is 56
-stack No.66, is 51
-stack No.67, is 62
-stack No.68, is 76
-stack No.69, is 64
-stack No.70, is 92
-stack No.71, is 53
-stack No.72, is 89
-stack No.73, is 91
-stack No.74, is 61
-stack No.75, is 1
-stack No.76, is 2
-stack No.77, is 3
-stack No.78, is 4
-stack No.79, is 5
-stack No.80, is 6
-stack No.81, is 7
-stack No.82, is 8
-stack No.83, is 9
-stack No.84, is 10
-stack No.85, is 11
-stack No.86, is 12
-stack No.87, is 13
-stack No.88, is 14
-b
-stack No.1, is 17
-stack No.2, is 23
-stack No.3, is 25
-stack No.4, is 15
-stack No.5, is 24
-stack No.6, is 26
-stack No.7, is 18
-stack No.8, is 19
-stack No.9, is 16
-stack No.10, is 22
-stack No.11, is 21
-stack No.12, is 20
-b_to_a
-a
-stack No.1, is 22
-stack No.2, is 26
-stack No.3, is 24
-stack No.4, is 25
-stack No.5, is 23
-stack No.6, is 50
-stack No.7, is 35
-stack No.8, is 45
-stack No.9, is 28
-stack No.10, is 32
-stack No.11, is 41
-stack No.12, is 30
-stack No.13, is 43
-stack No.14, is 49
-stack No.15, is 27
-stack No.16, is 39
-stack No.17, is 31
-stack No.18, is 38
-stack No.19, is 42
-stack No.20, is 46
-stack No.21, is 37
-stack No.22, is 47
-stack No.23, is 33
-stack No.24, is 29
-stack No.25, is 44
-stack No.26, is 48
-stack No.27, is 36
-stack No.28, is 34
-stack No.29, is 40
-stack No.30, is 87
-stack No.31, is 59
-stack No.32, is 94
-stack No.33, is 74
-stack No.34, is 99
-stack No.35, is 79
-stack No.36, is 66
-stack No.37, is 96
-stack No.38, is 86
-stack No.39, is 95
-stack No.40, is 70
-stack No.41, is 58
-stack No.42, is 68
-stack No.43, is 60
-stack No.44, is 73
-stack No.45, is 88
-stack No.46, is 69
-stack No.47, is 55
-stack No.48, is 67
-stack No.49, is 80
-stack No.50, is 57
-stack No.51, is 65
-stack No.52, is 100
-stack No.53, is 85
-stack No.54, is 75
-stack No.55, is 82
-stack No.56, is 90
-stack No.57, is 81
-stack No.58, is 71
-stack No.59, is 83
-stack No.60, is 78
-stack No.61, is 52
-stack No.62, is 98
-stack No.63, is 84
-stack No.64, is 63
-stack No.65, is 93
-stack No.66, is 54
-stack No.67, is 97
-stack No.68, is 72
-stack No.69, is 77
-stack No.70, is 56
-stack No.71, is 51
-stack No.72, is 62
-stack No.73, is 76
-stack No.74, is 64
-stack No.75, is 92
-stack No.76, is 53
-stack No.77, is 89
-stack No.78, is 91
-stack No.79, is 61
-stack No.80, is 1
-stack No.81, is 2
-stack No.82, is 3
-stack No.83, is 4
-stack No.84, is 5
-stack No.85, is 6
-stack No.86, is 7
-stack No.87, is 8
-stack No.88, is 9
-stack No.89, is 10
-stack No.90, is 11
-stack No.91, is 12
-stack No.92, is 13
-stack No.93, is 14
-b
-stack No.1, is 20
-stack No.2, is 17
-stack No.3, is 15
-stack No.4, is 18
-stack No.5, is 19
-stack No.6, is 16
-stack No.7, is 21
-b_to_a
-a
-stack No.1, is 87
-stack No.2, is 59
-stack No.3, is 94
-stack No.4, is 74
-stack No.5, is 99
-stack No.6, is 79
-stack No.7, is 66
-stack No.8, is 96
-stack No.9, is 86
-stack No.10, is 95
-stack No.11, is 70
-stack No.12, is 58
-stack No.13, is 68
-stack No.14, is 60
-stack No.15, is 73
-stack No.16, is 88
-stack No.17, is 69
-stack No.18, is 55
-stack No.19, is 67
-stack No.20, is 80
-stack No.21, is 57
-stack No.22, is 65
-stack No.23, is 100
-stack No.24, is 85
-stack No.25, is 75
-stack No.26, is 82
-stack No.27, is 90
-stack No.28, is 81
-stack No.29, is 71
-stack No.30, is 83
-stack No.31, is 78
-stack No.32, is 52
-stack No.33, is 98
-stack No.34, is 84
-stack No.35, is 63
-stack No.36, is 93
-stack No.37, is 54
-stack No.38, is 97
-stack No.39, is 72
-stack No.40, is 77
-stack No.41, is 56
-stack No.42, is 51
-stack No.43, is 62
-stack No.44, is 76
-stack No.45, is 64
-stack No.46, is 92
-stack No.47, is 53
-stack No.48, is 89
-stack No.49, is 91
-stack No.50, is 61
-stack No.51, is 1
-stack No.52, is 2
-stack No.53, is 3
-stack No.54, is 4
-stack No.55, is 5
-stack No.56, is 6
-stack No.57, is 7
-stack No.58, is 8
-stack No.59, is 9
-stack No.60, is 10
-stack No.61, is 11
-stack No.62, is 12
-stack No.63, is 13
-stack No.64, is 14
-stack No.65, is 15
-stack No.66, is 16
-stack No.67, is 17
-stack No.68, is 18
-stacpa
-rb
 rb
 pa
-pa
-rb
-rb
-pa
-rb
-pa
-pa
-rb
 rb
 rb
 rb
@@ -1250,403 +667,54 @@ pa
 rb
 pa
 rb
-rb
 pa
-rb
-pa
-pa
-pa
-rb
-rb
-pa
-pa
-rb
-pa
-rb
-rb
-rb
-rb
-pa
-k No.69, is 19
-stack No.70, is 20
-stack No.71, is 21
-stack No.72, is 22
-stack No.73, is 23
-stack No.74, is 24
-stack No.75, is 25
-stack No.76, is 26
-b
-stack No.1, is 40
-stack No.2, is 34
-stack No.3, is 36
-stack No.4, is 48
-stack No.5, is 44
-stack No.6, is 29
-stack No.7, is 33
-stack No.8, is 47
-stack No.9, is 37
-stack No.10, is 46
-stack No.11, is 42
-stack No.12, is 38
-stack No.13, is 31
-stack No.14, is 39
-stack No.15, is 27
-stack No.16, is 49
-stack No.17, is 43
-stack No.18, is 30
-stack No.19, is 41
-stack No.20, is 32
-stack No.21, is 28
-stack No.22, is 45
-stack No.23, is 35
-stack No.24, is 50
-b_to_a
-a
-stack No.1, is 50
-stack No.2, is 45
-stack No.3, is 41
-stack No.4, is 43
-stack No.5, is 49
-stack No.6, is 42
-stack No.7, is 46
-stack No.8, is 47
-stack No.9, is 44
-stack No.10, is 48
-stack No.11, is 40
-stack No.12, is 87
-stack No.13, is 59
-stack No.14, is 94
-stack No.15, is 74
-stack No.16, is 99
-stack No.17, is 79
-stack No.18, is 66
-stack No.19, is 96
-stack No.20, is 86
-stack No.21, is 95
-stack No.22, is 70
-stack No.23, is 58
-stack No.24, is 68
-stack No.25, is 60
-stack No.26, is 73
-stack No.27, is 88
-stack No.28, is 69
-stack No.29, is 55
-stack No.30, is 67
-stack No.31, is 80
-stack No.32, is 57
-stack No.33, is 65
-stack No.34, is 100
-stack No.35, is 85
-stack No.36, is 75
-stack No.37, is 82
-stack No.38, is 90
-stack No.39, is 81
-stack No.40, is 71
-stack No.41, is 83
-stack No.42, is 78
-stack No.43, is 52
-stack No.44, is 98
-stack No.45, is 84
-stack No.46, is 63
-stack No.47, is 93
-stack No.48, is 54
-stack No.49, is 97
-stack No.50, is 72
-stack No.51, is 77
-stack No.52, is 56
-stack No.53, is 51
-stack No.54, is 62
-stack No.55, is 76
-stack No.56, is 64
-stack No.57, is 92
-stack No.58, is 53
-stack No.59, is 89
-stack No.60, is 91
-stack No.61, is 61
-stack No.62, is 1
-stack No.63, is 2
-stack No.64, is 3
-stack No.65, is 4
-stack No.66, is 5
-stack No.67, is 6
-stack No.68, is 7
-stack No.69, is 8
-stack No.70, is 9
-stack No.71, is 10
-stack No.72, is 11
-stack No.73, is 12
-stack No.74, is 13
-stack No.75, is 14
-stack No.76, is 15
-stack No.77, is 16
-stack No.78, is 17
-stack No.79, is 18
-stack No.80, is 19
-stack No.81, is 20
-stack No.82, is 21
-stack No.83, is 22
-stack No.84, is 23
-stack No.85, is 24
-stack No.86, is 25
-stack No.87, is 26
-b
-stack No.1, is 34
-stack No.2, is 36
-stack No.3, is 29
-stack No.4, is 33
-stack No.5, is 37
-stack No.6, is 38
-stack No.7, is 31
-stack No.8, is 39
-stack No.9, is 27
-stack No.10, is 30
-stack No.11, is 32
-stack No.12, is 28
-stack No.13, is 35
-b_to_a
-a
-stack No.1, is 35
-stack No.2, is 39
-stack No.3, is 38
-stack No.4, is 37
-stack No.5, is 36
-stack No.6, is 34
-stack No.7, is 50
-stack No.8, is 45
-stack No.9, is 41
-stack No.10, is 43
-stack No.11, is 49
-stack No.12, is 42
-stack No.13, is 46
-stack No.14, is 47
-stack No.15, is 44
-stack No.16, is 48
-stack No.17, is 40
-stack No.18, is 87
-stack No.19, is 59
-stack No.20, is 94
-stack No.21, is 74
-stack No.22, is 99
+89
+stack No.16, is 57
+stack No.17, is 59
+stack No.18, is 64
+stack No.19, is 95
+stack No.20, is 71
+stack No.21, is 52
+stack No.22, is 91
 stack No.23, is 79
-stack No.24, is 66
-stack No.25, is 96
-stack No.26, is 86
-stack No.27, is 95
-stack No.28, is 70
-stack No.29, is 58
-stack No.30, is 68
-stack No.31, is 60
-stack No.32, is 73
-stack No.33, is 88
-stack No.34, is 69
-stack No.35, is 55
-stack No.36, is 67
-stack No.37, is 80
-stack No.38, is 57
-stack No.39, is 65
-stack No.40, is 100
-stack No.41, is 85
-stack No.42, is 75
-stack No.43, is 82
-stack No.44, is 90
-stack No.45, is 81
-stack No.46, is 71
-stack No.47, is 83
-stack No.48, is 78
-stack No.49, is 52
+stack No.24, is 74
+stack No.25, is 55
+stack No.26, is 54
+stack No.27, is 63
+stack No.28, is 61
+stack No.29, is 100
+stack No.30, is 69
+stack No.31, is 58
+stack No.32, is 67
+stack No.33, is 75
+stack No.34, is 62
+stack No.35, is 66
+stack No.36, is 97
+stack No.37, is 70
+stack No.38, is 77
+stack No.39, is 87
+stack No.40, is 80
+stack No.41, is 65
+stack No.42, is 94
+stack No.43, is 96
+stack No.44, is 93
+stack No.45, is 60
+stack No.46, is 83
+stack No.47, is 56
+stack No.48, is 51
+stack No.49, is 53
 stack No.50, is 98
-stack No.51, is 84
-stack No.52, is 63
-stack No.53, is 93
-stack No.54, is 54
-stack No.55, is 97
-stack No.56, is 72
-stack No.57, is 77
-stack No.58, is 56
-stack No.59, is 51
-stack No.60, is 62
-stack No.61, is 76
-stack No.62, is 64
-stack No.63, is 92
-stack No.64, is 53
-stack No.65, is 89
-stack No.66, is 91
-stack No.67, is 61
-stack No.68, is 1
-stack No.69, is 2
-stack No.70, is 3
-stack No.71, is 4
-stack No.72, is 5
-stack No.73, is 6
-stack No.74, is 7
-stack No.75, is 8
-stack No.76, is 9
-stack No.77, is 10
-stack No.78, is 11
-stack No.79, is 12
-stack No.80, is 13
-stack No.81, is 14
-stack No.82, is 15
-stack No.83, is 16
-stack No.84, is 17
-stack No.85, is 18
-stack Nrb
-pa
-pa
-rb
-rb
-pa
-rb
-rrb
-rrb
-pa
-rb
-pa
-pa
-ra
-pa
-ra
-ra
-ra
-pb
-pb
-pb
-pa
-pa
-ra
-pa
-ra
-ra
-pb
-pb
-pb
-pb
-pb
-pb
-rb
-rb
-rb
-pa
-pa
-rb
-rrb
-rrb
-pa
-pa
-pa
-ra
-ra
-pa
-ra
-ra
-pb
-pb
-sb
-pa
-pa
-ra
-ra
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-rb
-pa
-rb
-pa
-pa
-rb
-pa
-rb
-rb
-rb
-pa
-o.86, is 19
-stack No.87, is 20
-stack No.88, is 21
-stack No.89, is 22
-stack No.90, is 23
-stack No.91, is 24
-stack No.92, is 25
-stack No.93, is 26
-b
-stack No.1, is 29
-stack No.2, is 33
-stack No.3, is 31
-stack No.4, is 27
-stack No.5, is 30
-stack No.6, is 32
-stack No.7, is 28
-b_to_a
-a
-stack No.1, is 50
-stack No.2, is 45
-stack No.3, is 41
-stack No.4, is 43
-stack No.5, is 49
-stack No.6, is 42
-stack No.7, is 46
-stack No.8, is 47
-stack No.9, is 44
-stack No.10, is 48
-stack No.11, is 40
-stack No.12, is 87
-stack No.13, is 59
-stack No.14, is 94
-stack No.15, is 74
-stack No.16, is 99
-stack No.17, is 79
-stack No.18, is 66
-stack No.19, is 96
-stack No.20, is 86
-stack No.21, is 95
-stack No.22, is 70
-stack No.23, is 58
-stack No.24, is 68
-stack No.25, is 60
-stack No.26, is 73
-stack No.27, is 88
-stack No.28, is 69
-stack No.29, is 55
-stack No.30, is 67
-stack No.31, is 80
-stack No.32, is 57
-stack No.33, is 65
-stack No.34, is 100
-stack No.35, is 85
-stack No.36, is 75
-stack No.37, is 82
-stack No.38, is 90
-stack No.39, is 81
-stack No.40, is 71
-stack No.41, is 83
-stack No.42, is 78
-stack No.43, is 52
-stack No.44, is 98
-stack No.45, is 84
-stack No.46, is 63
-stack No.47, is 93
-stack No.48, is 54
-stack No.49, is 97
-stack No.50, is 72
-stack No.51, is 77
-stack No.52, is 56
-stack No.53, is 51
-stack No.54, is 62
-stack No.55, is 76
-stack No.56, is 64
-stack No.57, is 92
-stack No.58, is 53
-stack No.59, is 89
-stack No.60, is 91
-stack No.61, is 61
+stack No.51, is 68
+stack No.52, is 78
+stack No.53, is 81
+stack No.54, is 72
+stack No.55, is 92
+stack No.56, is 86
+stack No.57, is 76
+stack No.58, is 99
+stack No.59, is 73
+stack No.60, is 90
+stack No.61, is 84
 stack No.62, is 1
 stack No.63, is 2
 stack No.64, is 3
@@ -1681,151 +749,175 @@ stack No.92, is 31
 stack No.93, is 32
 stack No.94, is 33
 b
-stack No.1, is 34
-stack No.2, is 36
+stack No.1, is 36
+stack No.2, is 39
 stack No.3, is 37
 stack No.4, is 38
-stack No.5, is 39
-stack No.6, is 35
-b_to_a
+stack No.5, is 35
+stack No.6, is 34
+moved
 a
-stack No.1, is 87
-stack No.2, is 59
-stack No.3, is 94
-stack No.4, is 74
-stack No.5, is 99
-stack No.6, is 79
-stack No.7, is 66
-stack No.8, is 96
-stack No.9, is 86
-stack No.10, is 95
-stack No.11, is 70
-stack No.12, is 58
-stack No.13, is 68
-stack No.14, is 60
-stack No.15, is 73
-stack No.16, is 88
-stack No.17, is 69
-stack No.18, is 55
-stack No.19, is 67
-stack No.20, is 80
-stack No.21, is 57
-stack No.22, is 65
-stack No.23, is 100
-stack No.24, is 85
-stack No.25, is 75
-stack No.26, is 82
-stack No.27, is 90
-stack No.28, is 81
-stack No.29, is 71
-stack No.30, is 83
-stack No.31, is 78
-stack No.32, is 52
-stack No.33, is 98
-stack No.34, is 84
-stack No.35, is 63
-stack No.36, is 93
-stack No.37, is 54
-stack No.38, is 97
-stack No.39, is 72
-stack No.40, is 77
-stack No.41, is 56
-stack No.42, is 51
-stack No.43, is 62
-stack No.44, is 76
-stack No.45, is 64
-stack No.46, is 92
-stack No.47, is 53
-stack No.48, is 89
-stack No.49, is 91
-stack No.50, is 61
-stack No.51, is 1
-stack No.52, is 2
-stack No.53, is 3
-stack No.54, is 4
-stack No.55, is 5
-stack No.56, is 6
-stack No.57, is 7
-stack No.58, is 8
-stack No.59, is 9
-stack No.60, is 10
-stack No.61, is 11
-stack No.62, is 12
-stack No.63, is 13
-stack No.64, is 14
-stack No.65, is 15
-stack No.66, is 16
-stack No.67, is 17
-stack No.68, is 18
-stack No.69, is 19
-stack No.70, is 20
-stack No.71, is 21
-stack No.72, is 22
-stack No.73, is 23
-stack No.74, is 24
-stack No.75, is 25
-stack No.76, is 26
-stack No.77, is 27
-stack No.78, is 28
-stack No.79, is 29
-stack No.80, is 30
-stack No.81, is 31
-stack No.82, is 32
-stack No.83, is 33
-stack No.84, is 34
-stack No.85, is 35
-stack No.86, is 36
-stack No.87, is 37
-stack No.88, is 38
-stack No.89, is 39
+stack No.1, is 37
+stack No.2, is 39
+stack No.3, is 36
+stack No.4, is 50
+stack No.5, is 45
+stack No.6, is 46
+stack No.7, is 41
+stack No.8, is 47
+stack No.9, is 48
+stack No.10, is 40
+stack No.11, is 44
+stack No.12, is 42
+stack No.13, is 49
+stack No.14, is 43
+stack No.15, is 88
+stack No.16, is 82
+stack No.17, is 85
+stack No.18, is 89
+stack No.19, is 57
+stack No.20, is 59
+stack No.21, is 64
+stack No.22, is 95
+stack No.23, is 71
+stack No.24, is 52
+stack No.25, is 91
+stack No.26, is 79
+stack No.27, is 74
+stack No.28, is 55
+stack No.29, is 54
+stack No.30, is 63
+stack No.31, is 61
+stack No.32, is 100
+stack No.33, is 69
+stack No.34, is 58
+stack No.35, is 67
+stack No.36, is 75
+stack No.37, is 62
+stack No.38, is 66
+stack No.39, is 97
+stack No.40, is 70
+stack No.41, is 77
+stack No.42, is 87
+stack No.43, is 80
+stack No.44, is 65
+stack No.45, is 94
+stack No.46, is 96
+stack No.47, is 93
+stack No.48, is 60
+stack No.49, is 83
+stack No.50, is 56
+stack No.51, is 51
+stack No.52, is 53
+stack No.53, is 98
+stack No.54, is 68
+stack No.55, is 78
+stack No.56, is 81
+stack No.57, is 72
+stack No.58, is 92
+stack No.59, is 86
+stack No.60, is 76
+stack No.61, is 99
+stack No.62, is 73
+stack No.63, is 90
+stack No.64, is 84
+stack No.65, is 1
+stack No.66, is 2
+stack No.67, is 3
+stack No.68, is 4
+stack No.69, is 5
+stack No.70, is 6
+stack No.71, is 7
+stack No.72, is 8
+stack No.73, is 9
+stack No.74, is 10
+stack No.75, is 11
+stack No.76, is 12
+stack No.77, is 13
+stack No.78, is 14
+stack No.79, is 15
+stack No.80, is 16
+stack No.81, is 17
+stack No.82, is 18
+stack No.83, is 19
+stack No.84, is 20
+stack No.85, is 21
+stack No.86, is 22
+stack No.87, is 23
+stack No.88, is 24
+stack No.89, is 25
+stack No.90, is 26
+stack No.91, is 27
+stack No.92, is 28
+stack No.93, is 29
+stack No.94, is 30
+stack No.95, is 31
+stack No.96, is 32
+stack No.97, is 33
 b
-stack No.1, is 40
-stack No.2, is 48
-stack No.3, is 44
-stack No.4, is 47
-stack No.5, is 46
-stack No.6, is 42
-stack No.7, is 49
-stack No.8, is 43
-stack No.9, is 41
-stack No.10, is 45
-stack No.11, is 50
-b_to_a
+stack No.1, is 38
+stack No.2, is 35
+stack No.3, is 34
+mid_num = 42
+before push
 a
 stack No.1, is 50
-stack No.2, is 49
-stackrb
+stack No.2, is 46
+stack No.3, is 47
+stack No.4, is 48
+stack No.5, is 49
+stack No.6, is 88
+stack No.7, is 82
+stack No.8, is 85
+stack No.9, is 89
+stack No.10, is 57
+stack No.11, is 59
+stack No.12, is 64
+stack No.13, is 95
+stack No.14, is 71
+stack No.15, is 52
+stack No.16, is 91
+stack No.17, is 79
+stack No.18, is 74
+stack No.19, is 55
+stack No.20, is 54
+stack No.21, is 63
+stack No.22, is 61
+stack No.23, is 100
+stack No.24, is 69
+stack No.25, is 58
+stack No.26, is 67
+stack No.27, is 75
+stack No.28, is 62
+stack No.29, is 66
+stack No.30, is 97
+stack No.31pa
+pa
+pa
+pb
+ra
+ra
+pa
+rra
+rra
+pa
+ra
+pa
+ra
+pa
+ra
+ra
+ra
+ra
+pb
+pb
+pb
+pb
+pb
 pa
 rb
 rb
 rb
-pa
-rrb
-rrb
-pa
-pa
-pa
-ra
-ra
-pa
-ra
-ra
-pb
-pb
-sb
-pa
-pa
-ra
-ra
-pb
-pb
-pb
-pb
-pb
-rb
-rb
-rb
-pa
 pa
 sa
 pa
@@ -1837,20 +929,8 @@ ra
 ra
 ra
 ra
-pb
-ra
-pb
 ra
 ra
-pb
-ra
-ra
-ra
-pb
-pb
-pb
-pb
-pb
 ra
 pb
 pb
@@ -1860,20 +940,10 @@ pb
 pb
 ra
 ra
-ra
-ra
-ra
-ra
 pb
-ra
-ra
 pb
-ra
-ra
 pb
-ra
 pb
-ra
 pb
 ra
 pb
@@ -1881,11 +951,33 @@ pb
 pb
 ra
 pb
+pb
+ra
+pb
+ra
+ra
+ra
+pb
+ra
+ra
+ra
+pb
+ra
+pb
+pb
+pb
 ra
 pb
 ra
 ra
 pb
+ra
+ra
+ra
+ra
+pb
+ra
+ra
 rra
 rra
 rra
@@ -1912,59 +1004,100 @@ rra
 rra
 rra
 rra
- No.3, is 46
-stack No.4, is 47
-stack No.5, is 48
-stack No.6, is 87
-stack No.7, is 59
-stack No.8, is 94
-stack No.9, is 74
-stack No.10, is 99
-stack No.11, is 79
-stack No.12, is 66
-stack No.13, is 96
-stack No.14, is 86
-stack No.15, is 95
-stack No.16, is 70
-stack No.17, is 58
-stack No.18, is 68
-stack No.19, is 60
-stack No.20, is 73
-stack No.21, is 88
-stack No.22, is 69
-stack No.23, is 55
-stack No.24, is 67
-stack No.25, is 80
-stack No.26, is 57
-stack No.27, is 65
-stack No.28, is 100
-stack No.29, is 85
-stack No.30, is 75
-stack No.31, is 82
-stack No.32, is 90
-stack No.33, is 81
-stack No.34, is 71
-stack No.35, is 83
-stack No.36, is 78
-stack No.37, is 52
-stack No.38, is 98
-stack No.39, is 84
-stack No.40, is 63
-stack No.41, is 93
-stack No.42, is 54
-stack No.43, is 97
-stack No.44, is 72
-stack No.45, is 77
-stack No.46, is 56
-stack No.47, is 51
-stack No.48, is 62
-stack No.49, is 76
-stack No.50, is 64
-stack No.51, is 92
-stack No.52, is 53
-stack No.53, is 89
-stack No.54, is 91
-stack No.55, is 61
+pa
+pa
+pa
+rb
+rb
+rb
+rb
+pa
+pa
+pa
+rb
+pa
+rb
+pa
+rb
+rb
+rb
+rb
+pa
+rb
+pa
+pa
+rb
+rb
+rb
+rb
+rb
+pa
+pa
+pa
+pa
+pa
+rb
+rb
+rb
+pa
+pa
+rb
+rb
+pa
+rb
+pa
+rb
+rrb
+rrb
+pa
+rb
+pa
+pa
+ra
+pa
+ra
+ra
+ra
+pb
+pb
+pb
+pa
+pa
+pa
+ra
+ra
+ra
+pb
+pb
+pb
+pb
+pb
+pb
+, is 70
+stack No.32, is 77
+stack No.33, is 87
+stack No.34, is 80
+stack No.35, is 65
+stack No.36, is 94
+stack No.37, is 96
+stack No.38, is 93
+stack No.39, is 60
+stack No.40, is 83
+stack No.41, is 56
+stack No.42, is 51
+stack No.43, is 53
+stack No.44, is 98
+stack No.45, is 68
+stack No.46, is 78
+stack No.47, is 81
+stack No.48, is 72
+stack No.49, is 92
+stack No.50, is 86
+stack No.51, is 76
+stack No.52, is 99
+stack No.53, is 73
+stack No.54, is 90
+stack No.55, is 84
 stack No.56, is 1
 stack No.57, is 2
 stack No.58, is 3
@@ -2000,299 +1133,160 @@ stack No.87, is 32
 stack No.88, is 33
 stack No.89, is 34
 stack No.90, is 35
-stack No.91, is 36
-stack No.92, is 37
-stack No.93, is 38
+stack No.91, is 38
+stack No.92, is 36
+stack No.93, is 37
 stack No.94, is 39
 b
-stack No.1, is 40
-stack No.2, is 44
-stack No.3, is 42
-stack No.4, is 43
+stack No.1, is 43
+stack No.2, is 42
+stack No.3, is 44
+stack No.4, is 40
 stack No.5, is 41
 stack No.6, is 45
-a_to_b
+moved
 a
-stack No.1, is 87
-stack No.2, is 59
-stack No.3, is 94
-stack No.4, is 74
-stack No.5, is 99
-stack No.6, is 79
-stack No.7, is 66
-stack No.8, is 96
-stack No.9, is 86
-stack No.10, is 95
-stack No.11, is 70
-stack No.12, is 58
-stack No.13, is 68
-stack No.14, is 60
-stack No.15, is 73
-stack No.16, is 88
-stack No.17, is 69
-stack No.18, is 55
-stack No.19, is 67
-stack No.20, is 80
-stack No.21, is 57
-stack No.22, is 65
-stack No.23, is 100
-stack No.24, is 85
-stack No.25, is 75
-stack No.26, is 82
-stack No.27, is 90
-stack No.28, is 81
-stack No.29, is 71
-stack No.30, is 83
-stack No.31, is 78
-stack No.32, is 52
-stack No.33, is 98
-stack No.34, is 84
-stack No.35, is 63
-stack No.36, is 93
-stack No.37, is 54
-stack No.38, is 97
-stack No.39, is 72
-stack No.40, is 77
-stack No.41, is 56
-stack No.42, is 51
-stack No.43, is 62
-stack No.44, is 76
-stack No.45, is 64
-stack No.46, is 92
-stack No.47, is 53
-stack No.48, is 89
-stack No.49, is 91
-stack No.50, is 61
-stack No.51, is 1
-stack No.52, is 2
-stack No.53, is 3
-stack No.54, is 4
-stack No.55, is 5
-stack No.56, is 6
-stack No.57, is 7
-stack No.58, is 8
-stack No.59, is 9
-stack No.60, is 10
-stack No.61, is 11
-stack No.62, is 12
-stack No.63, is 13
-stack No.64, is 14
-stack No.65, is 15
-stack No.66, is 16
-stack No.67, is 17
-stack No.68, is 18
-stack No.69, is 19
-stack No.70, is 20
-stack No.71, is 21
-stack No.72, is 22
-stack No.73, is 23
-stack No.74, is 24
-stack No.75, is 25
-stack No.76, is 26
-stack No.77, is 27
-stack No.78, is 28
-stack No.79, is 29
-stack No.80, is 30
-stack No.81, is 31
-stack No.82, is 32
-stack No.83, is 33
-stack No.84, is 34
-stack No.85, is 35
-stack No.86, is 36
-stack No.87, is 37
-stack No.88, is 38
-stack No.89, is 39
-stack No.90, is 40
-stack No.91, is 41
-stack No.92, is 42
-stack No.93, is 43
-stack No.94, is 44
-stack No.95, is 45
-stack No.96, is 46
-stack No.97, is 47
-stack No.98, is 48
-stack No.99, is 49
-stack No.100, is 50
-b
-b_to_a
-a
-stack No.1, is 87
-stack No.2, is 94
-stack No.3, is 99
-stack No.4, is 79
-stack No.5, is 96
-stack No.6, is 86
-stack No.7, is 95
-stack No.8, is 88
-stack No.9, is 80
-stack No.10, is 100
+stack No.1, is 44
+stack No.2, is 42
+stack No.3, is 43
+stack No.4, is 50
+stack No.5, is 46
+stack No.6, is 47
+stack No.7, is 48
+stack No.8, is 49
+stack No.9, is 88
+stack No.10, is 82
 stack No.11, is 85
-stack No.12, is 75
+stack No.12, is 89
+stack No.13, is 57
+stack No.14, is 59
+stack No.15, is 64
+stack No.16, is 95
+stack No.17, is 71
+stack No.18, is 52
+stack No.19, is 91
+stack No.20, is 79
+stack No.21, is 74
+stack No.22, is 55
+stack No.23, is 54
+stack No.24, is 63
+stack No.25, is 61
+stack No.26, is 100
+stack No.27, is 69
+stack No.28, is 58
+stack No.29, is 67
+stack No.30, is 75
+stack No.31, is 62
+stack No.32, is 66
+stack No.33, is 97
+stack No.34, is 70
+stack No.35, is 77
+stack No.36, is 87
+stack No.37, is 80
+stack No.38, is 65
+stack No.39, is 94
+stack No.40, is 96
+stack No.41, is 93
+stack No.42, is 60
+stack No.43, is 83
+stack No.44, is 56
+stack No.45, is 51
+stack No.46, is 53
+stack No.47, is 98
+stack No.48, is 68
+stack No.49, is 78
+stack No.50, is 81
+stack No.51, is 72
+stack No.52, is 92
+stack No.53, is 86
+stack No.54, is 76
+stack No.55, is 99
+stack No.56, is 73
+stack No.57, is 90
+stack No.58, is 84
+stack No.59, is 1
+stack No.60, is 2
+stack No.61, is 3
+stack No.62, is 4
+stack No.63, is 5
+stack No.64, is 6
+stack No.65, is 7
+stack No.66, is 8
+stack No.67, is 9
+stack No.68, is 10
+stack No.69, is 11
+stack No.70, is 12
+stack No.71, is 13
+stack No.72, is 14
+stack No.73, is 15
+stack No.74, is 16
+stack No.75, is 17
+stack No.76, is 18
+stack No.77, is 19
+stack No.78, is 20
+stack No.79, is 21
+stack No.80, is 22
+stack No.81, is 23
+stack No.82, is 24
+stack No.83, is 25
+stack No.84, is 26
+stack No.85, is 27
+stack No.86, is 28
+stack No.87, is 29
+stack No.88, is 30
+stack No.89, is 31
+stack No.90, is 32
+stack No.91, is 33
+stack No.92, is 34
+stack No.93, is 35
+stack No.94, is 38
+stack No.95, is 36
+stack No.96, is 37
+stack No.97, is 39
+b
+stack No.1, is 40
+stack No.2, is 41
+stack No.3, is 45
+mid_num = 60
+before push
+a
+stack No.1, is 64
+stack No.2, is 71
+stack No.3, is 74
+stack No.4, is 69
+stack No.5, is 67
+stack No.6, is 66
+stack No.7, is 70
+stack No.8, is 65
+stack No.9, is 68
+stack No.10, is 72
+stack No.11, is 73
+stack No.12, is 88
 stack No.13, is 82
-stack No.14, is 90
-stack No.15, is 81
-stack No.16, is 83
-stack No.17, is 78
-stack No.18, is 98
-stack No.19, is 84
-srb
-rb
-pa
-rb
-rb
-rb
-pa
-rb
-rb
-rb
-pa
-pa
-rb
-pa
-rb
-pa
-pa
-rb
-pa
-rb
-pa
-pa
-pa
-rb
-pa
-rb
-pa
-rb
-rb
-rb
-pa
-rb
-rb
-rb
-pa
-pa
-pa
-tack No.20, is 93
+stack No.14, is 85
+stack No.15, is 89
+stack No.16, is 95
+stack No.17, is 91
+stack No.18, is 79
+stack No.19, is 100
+stack No.20, is 75
 stack No.21, is 97
 stack No.22, is 77
-stack No.23, is 76
-stack No.24, is 92
-stack No.25, is 89
-stack No.26, is 91
-stack No.27, is 1
-stack No.28, is 2
-stack No.29, is 3
-stack No.30, is 4
-stack No.31, is 5
-stack No.32, is 6
-stack No.33, is 7
-stack No.34, is 8
-stack No.35, is 9
-stack No.36, is 10
-stack No.37, is 11
-stack No.38, is 12
-stack No.39, is 13
-stack No.40, is 14
-stack No.41, is 15
-stack No.42, is 16
-stack No.43, is 17
-stack No.44, is 18
-stack No.45, is 19
-stack No.46, is 20
-stack No.47, is 21
-stack No.48, is 22
-stack No.49, is 23
-stack No.50, is 24
-stack No.51, is 25
-stack No.52, is 26
-stack No.53, is 27
-stack No.54, is 28
-stack No.55, is 29
-stack No.56, is 30
-stack No.57, is 31
-stack No.58, is 32
-stack No.59, is 33
-stack No.60, is 34
-stack No.61, is 35
-stack No.62, is 36
-stack No.63, is 37
-stack No.64, is 38
-stack No.65, is 39
-stack No.66, is 40
-stack No.67, is 41
-stack No.68, is 42
-stack No.69, is 43
-stack No.70, is 44
-stack No.71, is 45
-stack No.72, is 46
-stack No.73, is 47
-stack No.74, is 48
-stack No.75, is 49
-stack No.76, is 50
-b
-stack No.1, is 61
-stack No.2, is 53
-stack No.3, is 64
-stack No.4, is 62
-stack No.5, is 51
-stack No.6, is 56
-stack No.7, is 72
-stack No.8, is 54
-stack No.9, is 63
-stack No.10, is 52
-stack No.11, is 71
-stack No.12, is 65
-stack No.13, is 57
-stack No.14, is 67
-stack No.15, is 55
-stack No.16, is 69
-stack No.17, is 73
-stack No.18, is 60
-stack No.19, is 68
-stack No.20, is 58
-stack No.21, is 70
-stack No.22, is 66
-stack No.23, is 74
-stack No.24, is 59
-b_to_a
-a
-stack No.1, is 74
-stack No.2, is 66
-stack No.3, is 70
-stack No.4, is 68
-stack No.5, is 73
-stack No.6, is 69
-stack No.7, is 67
-stack No.8, is 65
-stack No.9, is 71
-stack No.10, is 72
-stack No.11, is 64
-stack No.12, is 87
-stack No.13, is 94
-stack No.14, is 99
-stack No.15, is 79
-stack No.16, is 96
-stack No.17, is 86
-stack No.18, is 95
-stack No.19, is 88
-stack No.20, is 80
-stack No.21, is 100
-stack No.22, is 85
-stack No.23, is 75
-stack No.24, is 82
-stack No.25, is 90
-stack No.26, is 81
-stack No.27, is 83
-stack No.28, is 78
+stack No.23, is 87
+stack No.24, is 80
+stack No.25, is 94
+stack No.26, is 96
+stack No.27, is 93
+stack No.28, is 83
 stack No.29, is 98
-stack No.30, is 84
-stack No.31, is 93
-stack No.32, is 97
-stack No.33, is 77
+stack No.30, is 78
+stack No.31, is 81
+stack No.32, is 92
+stack No.33, is 86
 stack No.34, is 76
-stack No.35, is 92
-stack No.36, is 89
-stack No.37, is 91
+stack No.35, is 99
+stack No.36, is 90
+stack No.37, is 84
 stack No.38, is 1
 stack No.39, is 2
 stack No.40, is 3
@@ -2302,7 +1296,46 @@ stack No.43, is 6
 stack No.44, is 7
 stack No.45, is 8
 stack No.46, is 9
-stack No.47, is 10
+stack No.47, is pa
+pa
+rb
+pa
+ra
+sa
+rra
+sa
+pa
+pa
+pa
+ra
+ra
+ra
+ra
+ra
+ra
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+pa
+pa
+rb
+rb
+pa
+rb
+rb
+rb
+pa
+pa
+rb
+10
 stack No.48, is 11
 stack No.49, is 12
 stack No.50, is 13
@@ -2328,288 +1361,16 @@ stack No.69, is 32
 stack No.70, is 33
 stack No.71, is 34
 stack No.72, is 35
-stack No.73, is 36
-stack No.74, is 37
-stack No.75, is 38
+stack No.73, is 38
+stack No.74, is 36
+stack No.75, is 37
 stack No.76, is 39
 stack No.77, is 40
 stack No.78, is 41
-stack No.79, is 42
-stack No.80, is 43
-stack No.81, is 44
-stack No.82, is 45
-stack No.83, is 46
-stack No.84, is 47
-stack No.85, is 48
-stack No.86, is 49
-stack No.87, is 50
-b
-stack No.1, is 61
-stack No.2, is 53
-stack No.3, is 62
-stack No.4, is 51
-stack No.5, is 56
-stack No.6, is 54
-stack No.7, is 63
-stack No.8, is 52
-stack No.9, is 57
-stack No.10, is 55
-stack No.11, is 60
-stack No.12, is 58
-stack No.13, is 59
-b_to_a
-a
-stack No.1, is 59
-stack No.2, is 58
-stack No.3, is 60
-stack No.4, is 63
-stack No.5, is 62
-stack No.6, is 61
-stack No.7, is 74
-stack No.8, is 66
-stack No.9, is 70
-stack No.10, is 68
-stack No.11, is 73
-stack No.12, is 69
-stack No.13, is 67
-stack No.14, is 65
-stack No.15, is 71
-stack No.16, is 72
-stack No.17, is 64
-stack No.18, is 87
-stack No.19, is 94
-stack No.20, is 99
-stack No.21, is 79
-stack No.22, is 96
-stack No.23, is 86
-stack No.24, is 95
-stack No.25, is 88
-stack No.26, is 80
-stack No.27, is 100
-stack No.28, is 85
-stack No.29, is 75
-stack No.30, is 82
-stack No.31, is 90
-stack No.32, is 81
-stack No.33, is 83
-stack No.34, is 78
-stack No.35, is 98
-stack No.36, is 84
-stacrb
-rb
-pa
-rb
-rb
-pa
-pa
-rrb
-rrb
-pa
-rb
-pa
-pa
-ra
-pa
-ra
-ra
-ra
-pb
-pb
-pb
-rb
-pa
-pa
-ra
-pa
-ra
-ra
-pb
-pb
-pb
-pb
-pb
-pb
-rb
-pa
-pa
-rb
-rrb
-rrb
-pa
-pa
-pa
-ra
-pa
-ra
-ra
-ra
-pb
-pb
-sb
-pa
-pa
-ra
-ra
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-k No.37, is 93
-stack No.38, is 97
-stack No.39, is 77
-stack No.40, is 76
-stack No.41, is 92
-stack No.42, is 89
-stack No.43, is 91
-stack No.44, is 1
-stack No.45, is 2
-stack No.46, is 3
-stack No.47, is 4
-stack No.48, is 5
-stack No.49, is 6
-stack No.50, is 7
-stack No.51, is 8
-stack No.52, is 9
-stack No.53, is 10
-stack No.54, is 11
-stack No.55, is 12
-stack No.56, is 13
-stack No.57, is 14
-stack No.58, is 15
-stack No.59, is 16
-stack No.60, is 17
-stack No.61, is 18
-stack No.62, is 19
-stack No.63, is 20
-stack No.64, is 21
-stack No.65, is 22
-stack No.66, is 23
-stack No.67, is 24
-stack No.68, is 25
-stack No.69, is 26
-stack No.70, is 27
-stack No.71, is 28
-stack No.72, is 29
-stack No.73, is 30
-stack No.74, is 31
-stack No.75, is 32
-stack No.76, is 33
-stack No.77, is 34
-stack No.78, is 35
-stack No.79, is 36
-stack No.80, is 37
-stack No.81, is 38
-stack No.82, is 39
-stack No.83, is 40
-stack No.84, is 41
-stack No.85, is 42
-stack No.86, is 43
-stack No.87, is 44
-stack No.88, is 45
-stack No.89, is 46
-stack No.90, is 47
-stack No.91, is 48
-stack No.92, is 49
-stack No.93, is 50
-b
-stack No.1, is 53
-stack No.2, is 51
-stack No.3, is 56
-stack No.4, is 54
-stack No.5, is 52
-stack No.6, is 57
-stack No.7, is 55
-b_to_a
-a
-stack No.1, is 74
-stack No.2, is 66
-stack No.3, is 70
-stack No.4, is 68
-stack No.5, is 73
-stack No.6, is 69
-stack No.7, is 67
-stack No.8, is 65
-stack No.9, is 71
-stack No.10, is 72
-stack No.11, is 64
-stack No.12, is 87
-stack No.13, is 94
-stack No.14, is 99
-stack No.15, is 79
-stack No.16, is 96
-stack No.17, is 86
-stack No.18, is 95
-stack No.19, is 88
-stack No.20, is 80
-stack No.21, is 100
-stack No.22, is 85
-stack No.23, is 75
-stack No.24, is 82
-stack No.25, is 90
-stack No.26, is 81
-stack No.27, is 83
-stack No.28, is 78
-stack No.29, is 98
-stack No.30, is 84
-stack No.31, is 93
-stack No.32, is 97
-stack No.33, is 77
-stack No.34, is 76
-stack No.35, is 92
-stack No.36, is 89
-stack No.37, is 91
-stack No.38, is 1
-stack No.39, is 2
-stack No.40, is 3
-stack No.41, is 4
-stack No.42, is 5
-stack No.43, is 6
-stack No.44, is 7
-stack No.45, is 8
-stack No.46, is 9
-stack No.47, is 10
-stack No.48, is 11
-stack No.49, is 12
-stack No.50, is 13
-stack No.51, is 14
-stack No.52, is 15
-stack No.53, is 16
-stack No.54, is 17
-stack No.55, is 18
-stack No.56, is 19
-stack No.57, is 20
-stack No.58, is 21
-stack No.59, is 22
-stack No.60, is 23
-stack No.61, is 24
-stack No.62, is 25
-stack No.63, is 26
-stack No.64, is 27
-stack No.65, is 28
-stack No.66, is 29
-stack No.67, is 30
-stack No.68, is 31
-stack No.69, is 32
-stack No.70, is 33
-stack No.71, is 34
-stack No.72, is 35
-stack No.73, is 36
-stack No.74, is 37
-stack No.75, is 38
-stack No.76, is 39
-stack No.77, is 40
-stack No.78, is 41
-stack No.79, is 42
-stack No.80, is 43
-stack No.81, is 44
-stack No.82, is 45
+stack No.79, is 45
+stack No.80, is 42
+stack No.81, is 43
+stack No.82, is 44
 stack No.83, is 46
 stack No.84, is 47
 stack No.85, is 48
@@ -2623,200 +1384,149 @@ stack No.92, is 55
 stack No.93, is 56
 stack No.94, is 57
 b
+stack No.1, is 60
+stack No.2, is 62
+stack No.3, is 58
+stack No.4, is 61
+stack No.5, is 63
+stack No.6, is 59
+moved
+a
 stack No.1, is 61
 stack No.2, is 62
-stack No.3, is 63
-stack No.4, is 60
-stack No.5, is 58
-stack No.6, is 59
-b_to_a
-a
-stack No.1, is 87
-stack No.2, is 94
-stack No.3, is 99
-stack No.4, is 79
-stack No.5, is 96
-stack No.6, is 86
-stack No.7, is 95
-stack No.8, is 88
-stack No.9, is 80
-stack No.10, is 100
-stack No.11, is 85
-stack No.12, is 75
-stack No.13, is 82
-stack No.14, is 90
-stack No.15, is 81
-stack No.16, is 83
-stack No.17, is 78
-stack No.18, is 98
-stack No.19, is 84
-stack No.20, is 93
-stack No.21, is 97
-stack No.22, is 77
-stack No.23, is 76
-stack No.24, is 92
-stack No.25, is 89
-stack No.26, is 91
-stack No.27, is 1
-stack No.28, is 2
-stack No.29, is 3
-stack No.30, is 4
-stack No.31, is 5
-stack No.32, is 6
-stack No.33, is 7
-stack No.34, is 8
-stack No.35, is 9
-stack No.36, is 10
-stack No.37, is 11
-stack No.38, is 12
-stack No.39, is 13
-stack No.40, is 14
-stack No.41, is 15
-stack No.42, is 16
-stack No.43, is 17
-stack No.44, is 18
-stack No.45, is 19
-stack No.46, is 20
-stack No.47, is 21
-stack No.48, is 22
-stack No.49, is 23
-stack No.50, is 24
-stack No.51, is 25
-stack No.52, is 26
-stack No.53, is 27
-stack No.54rb
-pa
-pa
-rb
-rb
-rb
-pa
-rb
-pa
-rb
-pa
-rb
-rb
-rb
-pa
-pa
-rb
-rrb
-rrb
-pa
-pa
-pa
-ra
-pa
-ra
-ra
-ra
-pb
-pb
-pa
-pa
-ra
-ra
-pb
-pb
-pb
-pb
-pb
-rb
-rb
-pa
-rb
-pa
-sa
-pa
-pa
-pa
-ra
-ra
-ra
-ra
-ra
-, is 28
-stack No.55, is 29
-stack No.56, is 30
-stack No.57, is 31
-stack No.58, is 32
-stack No.59, is 33
-stack No.60, is 34
-stack No.61, is 35
-stack No.62, is 36
-stack No.63, is 37
-stack No.64, is 38
-stack No.65, is 39
-stack No.66, is 40
-stack No.67, is 41
-stack No.68, is 42
-stack No.69, is 43
-stack No.70, is 44
-stack No.71, is 45
-stack No.72, is 46
-stack No.73, is 47
-stack No.74, is 48
-stack No.75, is 49
-stack No.76, is 50
-stack No.77, is 51
-stack No.78, is 52
-stack No.79, is 53
-stack No.80, is 54
-stack No.81, is 55
-stack No.82, is 56
-stack No.83, is 57
-stack No.84, is 58
-stack No.85, is 59
-stack No.86, is 60
-stack No.87, is 61
-stack No.88, is 62
-stack No.89, is 63
+stack No.3, is 60
+stack No.4, is 64
+stack No.5, is 71
+stack No.6, is 74
+stack No.7, is 69
+stack No.8, is 67
+stack No.9, is 66
+stack No.10, is 70
+stack No.11, is 65
+stack No.12, is 68
+stack No.13, is 72
+stack No.14, is 73
+stack No.15, is 88
+stack No.16, is 82
+stack No.17, is 85
+stack No.18, is 89
+stack No.19, is 95
+stack No.20, is 91
+stack No.21, is 79
+stack No.22, is 100
+stack No.23, is 75
+stack No.24, is 97
+stack No.25, is 77
+stack No.26, is 87
+stack No.27, is 80
+stack No.28, is 94
+stack No.29, is 96
+stack No.30, is 93
+stack No.31, is 83
+stack No.32, is 98
+stack No.33, is 78
+stack No.34, is 81
+stack No.35, is 92
+stack No.36, is 86
+stack No.37, is 76
+stack No.38, is 99
+stack No.39, is 90
+stack No.40, is 84
+stack No.41, is 1
+stack No.42, is 2
+stack No.43, is 3
+stack No.44, is 4
+stack No.45, is 5
+stack No.46, is 6
+stack No.47, is 7
+stack No.48, is 8
+stack No.49, is 9
+stack No.50, is 10
+stack No.51, is 11
+stack No.52, is 12
+stack No.53, is 13
+stack No.54, is 14
+stack No.55, is 15
+stack No.56, is 16
+stack No.57, is 17
+stack No.58, is 18
+stack No.59, is 19
+stack No.60, is 20
+stack No.61, is 21
+stack No.62, is 22
+stack No.63, is 23
+stack No.64, is 24
+stack No.65, is 25
+stack No.66, is 26
+stack No.67, is 27
+stack No.68, is 28
+stack No.69, is 29
+stack No.70, is 30
+stack No.71, is 31
+stack No.72, is 32
+stack No.73, is 33
+stack No.74, is 34
+stack No.75, is 35
+stack No.76, is 38
+stack No.77, is 36
+stack No.78, is 37
+stack No.79, is 39
+stack No.80, is 40
+stack No.81, is 41
+stack No.82, is 45
+stack No.83, is 42
+stack No.84, is 43
+stack No.85, is 44
+stack No.86, is 46
+stack No.87, is 47
+stack No.88, is 48
+stack No.89, is 49
+stack No.90, is 50
+stack No.91, is 51
+stack No.92, is 52
+stack No.93, is 53
+stack No.94, is 54
+stack No.95, is 55
+stack No.96, is 56
+stack No.97, is 57
 b
-stack No.1, is 64
-stack No.2, is 72
-stack No.3, is 71
-stack No.4, is 65
-stack No.5, is 67
-stack No.6, is 69
-stack No.7, is 73
-stack No.8, is 68
-stack No.9, is 70
-stack No.10, is 66
-stack No.11, is 74
-b_to_a
+stack No.1, is 63
+stack No.2, is 59
+stack No.3, is 58
+mid_num = 66
+before push
 a
-stack No.1, is 74
-stack No.2, is 70
-stack No.3, is 73
-stack No.4, is 71
-stack No.5, is 72
-stack No.6, is 87
-stack No.7, is 94
-stack No.8, is 99
-stack No.9, is 79
-stack No.10, is 96
-stack No.11, is 86
-stack No.12, is 95
-stack No.13, is 88
-stack No.14, is 80
-stack No.15, is 100
-stack No.16, is 85
-stack No.17, is 75
-stack No.18, is 82
-stack No.19, is 90
-stack No.20, is 81
-stack No.21, is 83
-stack No.22, is 78
+stack No.1, is 71
+stack No.2, is 74
+stack No.3, is 70
+stack No.4, is 72
+stack No.5, is 73
+stack No.6, is 88
+stack No.7, is 82
+stack No.8, is 85
+stack No.9, is 89
+stack No.10, is 95
+stack No.11, is 91
+stack No.12, is 79
+stack No.13, is 100
+stack No.14, is 75
+stack No.15, is 97
+stack No.16, is 77
+stack No.17, is 87
+stack No.18, is 80
+stack No.19, is 94
+stack No.20, is 96
+stack No.21, is 93
+stack No.22, is 83
 stack No.23, is 98
-stack No.24, is 84
-stack No.25, is 93
-stack No.26, is 97
-stack No.27, is 77
+stack No.24, is 78
+stack No.25, is 81
+stack No.26, is 92
+stack No.27, is 86
 stack No.28, is 76
-stack No.29, is 92
-stack No.30, is 89
-stack No.31, is 91
+stack No.29, is 99
+stack No.30, is 90
+stack No.31, is 84
 stack No.32, is 1
 stack No.33, is 2
 stack No.34, is 3
@@ -2848,20 +1558,169 @@ stack No.59, is 28
 stack No.60, is 29
 stack No.61, is 30
 stack No.62, is 31
-stack No.63, is 32
+stack No.63,pa
+rb
+pa
+pa
+sa
+pa
+pa
+ra
+pa
+ra
+ra
+ra
+ra
+ra
+pb
+pb
+pb
+pb
+pb
+pa
+rb
+rb
+pa
+sa
+rb
+pa
+pa
+ra
+pa
+ra
+ra
+ra
+ra
+ra
+pb
+pb
+ra
+ra
+ra
+pb
+ra
+pb
+ra
+pb
+ra
+pb
+ra
+ra
+ra
+pb
+ra
+pb
+pb
+ra
+pb
+pb
+ra
+ra
+pb
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+pa
+rb
+pa
+rb
+rb
+pa
+rb
+rb
+rb
+rb
+pa
+pa
+rb
+pa
+rb
+pa
+rb
+rb
+pa
+rb
+pa
+pa
+pa
+ra
+pa
+ra
+ra
+ra
+pb
+pb
+pb
+pa
+pa
+pa
+ra
+ra
+ra
+pb
+pb
+pb
+pb
+pb
+rb
+pa
+rb
+pa
+pa
+ra
+pa
+pa
+ra
+ra
+ra
+ra
+pb
+pb
+ra
+pb
+ra
+ra
+pb
+ra
+ra
+ra
+ra
+pb
+ra
+pb
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+ is 32
 stack No.64, is 33
 stack No.65, is 34
 stack No.66, is 35
-stack No.67, is 36
-stack No.68, is 37
-stack No.69, is 38
+stack No.67, is 38
+stack No.68, is 36
+stack No.69, is 37
 stack No.70, is 39
 stack No.71, is 40
 stack No.72, is 41
-stack No.73, is 42
-stack No.74, is 43
-stack No.75, is 44
-stack No.76, is 45
+stack No.73, is 45
+stack No.74, is 42
+stack No.75, is 43
+stack No.76, is 44
 stack No.77, is 46
 stack No.78, is 47
 stack No.79, is 48
@@ -2876,400 +1735,208 @@ stack No.87, is 56
 stack No.88, is 57
 stack No.89, is 58
 stack No.90, is 59
-stack No.91, is 60
-stack No.92, is 61
-stack No.93, is 62
-stack No.94, is 63
+stack No.91, is 63
+stack No.92, is 60
+stack No.93, is 61
+stack No.94, is 62
 b
-stack No.1, is 64
+stack No.1, is 68
 stack No.2, is 65
-stack No.3, is 67
-stack No.4, is 69
-stack No.5, is 68
-stack No.6, is 66
-a_to_b
+stack No.3, is 66
+stack No.4, is 67
+stack No.5, is 69
+stack No.6, is 64
+moved
 a
-stack No.1, is 87
-stack No.2, is 94
-stack No.3, is 99
-stack No.4, is 79
-stack No.5, is 96
-stack No.6, is 86
-stack No.7, is 95
-stack No.8, is 88
-stack No.9, is 80
-stack No.10, is 100
+stack No.1, is 67
+stack No.2, is 66
+stack No.3, is 68
+stack No.4, is 71
+stack No.5, is 74
+stack No.6, is 70
+stack No.7, is 72
+stack No.8, is 73
+stack No.9, is 88
+stack No.10, is 82
 stack No.11, is 85
-stack No.12, is 75
-stack No.13, is 82
-stack No.14, is 90
-stack No.15, is 81
-stack No.16, is 83
-stack No.17, is 78
-stack No.18, is 98
-stack No.19, is 84
-stack No.20, is 93
-stack No.21, is 97
-stack No.22, is 77
-stack No.23, is 76
-stack No.24, is 92
-stack No.25, is 89
-stack No.26, is 91
-stack No.27, is 1
-stack No.28, is 2
-stack No.29, is 3
-stack No.30, is 4
-stack No.31, is 5
-stack No.32, is 6
-stack No.33, is 7
-stack No.34, is 8
-stack No.35, is 9
-stack No.36, is 10
-stack No.37, is 11
-stack No.38, is 12
-stack No.39, is 13
-stack No.40, is 14
-stack No.41, is 15
-stack No.42, is 16
-stack No.43, is 17
-stack No.44, is 18
-stack No.45, is 19
-stack No.46, is 20
-stack No.47, is 21
-stack No.48, is 22
-stack No.49, is 23
-stack No.50, is 24
-stack No.51, is 25
-stack No.52, is 26
-stack No.53, is 27
-stack No.54, is 28
-stack No.55, is 29
-stack No.56, is 30
-stack No.57, is 31
-stack No.58, is 32
-stack No.59, is 33
-stack No.60, is 34
-stack No.61, is 35
-stack No.62, is 36
-stack No.63, is 37
-stack No.64, is 38
-stack No.65, is 39
-stack No.66, is 40
-stack No.67, is 41
-stack No.68, is 42
-stack No.69, is 43
-stack No.70, is 44
-stack No.71ra
-ra
-ra
-pb
-ra
-pb
-ra
-ra
-pb
-ra
-pb
-pb
-pb
-ra
-pb
-pb
-pb
-ra
-pb
-ra
-ra
-pb
-pb
-ra
-ra
-ra
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-rb
-rb
-pa
-rb
-pa
-rb
-pa
-rb
-pa
-rb
-pa
-rb
-, is 45
-stack No.72, is 46
-stack No.73, is 47
-stack No.74, is 48
-stack No.75, is 49
-stack No.76, is 50
-stack No.77, is 51
-stack No.78, is 52
-stack No.79, is 53
-stack No.80, is 54
-stack No.81, is 55
-stack No.82, is 56
-stack No.83, is 57
-stack No.84, is 58
-stack No.85, is 59
-stack No.86, is 60
-stack No.87, is 61
-stack No.88, is 62
-stack No.89, is 63
-stack No.90, is 64
-stack No.91, is 65
-stack No.92, is 66
-stack No.93, is 67
-stack No.94, is 68
-stack No.95, is 69
-stack No.96, is 70
-stack No.97, is 71
-stack No.98, is 72
-stack No.99, is 73
-stack No.100, is 74
-b
-b_to_a
-a
-stack No.1, is 87
-stack No.2, is 94
-stack No.3, is 99
-stack No.4, is 96
-stack No.5, is 95
-stack No.6, is 88
-stack No.7, is 100
-stack No.8, is 90
-stack No.9, is 98
-stack No.10, is 93
-stack No.11, is 97
-stack No.12, is 92
-stack No.13, is 89
+stack No.12, is 89
+stack No.13, is 95
 stack No.14, is 91
-stack No.15, is 1
-stack No.16, is 2
-stack No.17, is 3
-stack No.18, is 4
-stack No.19, is 5
-stack No.20, is 6
-stack No.21, is 7
-stack No.22, is 8
-stack No.23, is 9
-stack No.24, is 10
-stack No.25, is 11
-stack No.26, is 12
-stack No.27, is 13
-stack No.28, is 14
-stack No.29, is 15
-stack No.30, is 16
-stack No.31, is 17
-stack No.32, is 18
-stack No.33, is 19
-stack No.34, is 20
-stack No.35, is 21
-stack No.36, is 22
-stack No.37, is 23
-stack No.38, is 24
-stack No.39, is 25
-stack No.40, is 26
-stack No.41, is 27
-stack No.42, is 28
-stack No.43, is 29
-stack No.44, is 30
-stack No.45, is 31
-stack No.46, is 32
-stack No.47, is 33
-stack No.48, is 34
-stack No.49, is 35
-stack No.50, is 36
-stack No.51, is 37
-stack No.52, is 38
-stack No.53, is 39
-stack No.54, is 40
-stack No.55, is 41
-stack No.56, is 42
-stack No.57, is 43
-stack No.58, is 44
-stack No.59, is 45
-stack No.60, is 46
-stack No.61, is 47
-stack No.62, is 48
-stack No.63, is 49
-stack No.64, is 50
-stack No.65, is 51
-stack No.66, is 52
-stack No.67, is 53
-stack No.68, is 54
-stack No.69, is 55
-stack No.70, is 56
-stack No.71, is 57
-stack No.72, is 58
-stack No.73, is 59
-stack No.74, is 60
-stack No.75, is 61
-stack No.76, is 62
-stack No.77, is 63
-stack No.78, is 64
-stack No.79, is 65
-stack No.80, is 66
-stack No.81, is 67
-stack No.82, is 68
-stack No.83, is 69
-stack No.84, is 70
-stack No.85, is 71
-stack No.86, is 72
-stack No.87, is 73
-stack No.88, is 74
+stack No.15, is 79
+stack No.16, is 100
+stack No.17, is 75
+stack No.18, is 97
+stack No.19, is 77
+stack No.20, is 87
+stack No.21, is 80
+stack No.22, is 94
+stack No.23, is 96
+stack No.24, is 93
+stack No.25, is 83
+stack No.26, is 98
+stack No.27, is 78
+stack No.28, is 81
+stack No.29, is 92
+stack No.30, is 86
+stack No.31, is 76
+stack No.32, is 99
+stack No.33, is 90
+stack No.34, is 84
+stack No.35, is 1
+stack No.36, is 2
+stack No.37, is 3
+stack No.38, is 4
+stack No.39, is 5
+stack No.40, is 6
+stack No.41, is 7
+stack No.42, is 8
+stack No.43, is 9
+stack No.44, is 10
+stack No.45, is 11
+stack No.46, is 12
+stack No.47, is 13
+stack No.48, is 14
+stack No.49, is 15
+stack No.50, is 16
+stack No.51, is 17
+stack No.52, is 18
+stack No.53, is 19
+stack No.54, is 20
+stack No.55, is 21
+stack No.56, is 22
+stack No.57, is 23
+stack No.58, is 24
+stack No.59, is 25
+stack No.60, is 26
+stack No.61, is 27
+stack No.62, is 28
+stack No.63, is 29
+stack No.64, is 30
+stack No.65, is 31
+stack No.66, is 32
+stack No.67, is 33
+stack No.68, is 34
+stack No.69, is 35
+stack No.70, is 38
+stack No.71, is 36
+stack No.72, is 37
+stack No.73, is 39
+stack No.74, is 40
+stack No.75, is 41
+stack No.76, is 45
+stack No.77, is 42
+stack No.78, is 43
+stack No.79, is 44
+stack No.80, is 46
+stack No.81, is 47
+stack No.82, is 48
+stack No.83, is 49
+stack No.84, is 50
+stack No.85, is 51
+stack No.86, is 52
+stack No.87, is 53
+stack No.88, is 54
+stack No.89, is 55
+stack No.90, is 56
+stack No.91, is 57
+stack No.92, is 58
+stack No.93, is 59
+stack No.94, is 63
+stack No.95, is 60
+stack No.96, is 61
+stack No.97, is 62
 b
-stack No.1, is 76
-stack No.2, is 77
-stack No.3, is 84
-stack No.4, is 78
-stack No.5, is 83
-stack No.6, is 81
-stack No.7, is 82
-stack No.8, is 75
-stack No.9, is 85
-stack No.10, is 80
-stack No.11, is 86
-stack No.12, is 79
-b_to_a
+stack No.1, is 69
+stack No.2, is 64
+stack No.3, is 65
+mid_num = 89
+before push
 a
-stack No.1, is 86
-stack No.2, is 85
-stack No.3, is 82
-stack No.4, is 83
-stack No.5, is 84
-stack No.6, is 87
-stack No.7, is 94
+stack No.1, is 95
+stack No.2, is 100
+stack No.3, is 97
+stack No.4, is 94
+stack No.5, is 96
+stack No.6, is 93
+stack No.7, is 98
 stack No.8, is 99
-stack No.9, is 96
-stack No.10, is 95
-stack No.11, is 88
-stack No.12, is 100
-stack No.13, is 90
-stack No.14, is 98
-stack No.15, is 93
-stack No.16, is 97
-stack No.17, is 92
-stack No.18, is 89
-stack No.19, is 91
-stack No.20, is 1
-stack No.21, is 2
-stack No.22, is 3
-stack No.23, is 4
-stack No.24, is 5
-stack No.25, is 6
-stack No.26, is 7
-stack No.27, is 8
-stack No.28, is 9
-stack No.29, is 10
-stack No.30, is 11
-stack No.31, is 12
-stack No.32, is 13
-stack No.33, is 14
-stack No.34, is 15
-stack No.35, is 16
-stack No.36, is 17
-stack No.37, is 18
-stack No.38, is 19
-stack No.39, is 20
-stack No.40, is 21
-stack No.41, is 22
-stack No.42, is 23
-stack No.43, is 24
-stack No.44, is 25
-stack No.45, is 26
-stack No.46, is 27
-stack No.47, is 28
-stack No.48, is 29
-stack No.49, is 30
-stack No.50, is 31
-stack No.51, is 32
-stack No.52, is 33
-stack No.53, is 34
-stack No.54, is 35
-stack No.55, is 36
-stack No.56, is 37
-stack No.57, is 38
-stack No.58, is 39
-stack No.59, is 40
-stack No.60, is 41
-stack No.61, is 42
-stack No.62, is 43
-stack No.63, is 44
-stack No.64, is 45
-stack No.65, is 46
-stack No.66, is 47
-stack No.67, is 48
-stack No.68, is 49
-stack No.69, is 50
-stack No.70, is 51
-stack No.71, is 52
-stack No.72, is 53
-stack No.73, is 54
-stack No.74, is 55
-stack No.75, is 56
-stack No.76, is 57
-stack No.77, is 58
-stack No.78, is 59
-stack No.79, is 60
-stack No.80, is 61
-stack No.81, is 62
-stack No.82, is 63
-stack No.83, is 64
-stack No.84, is 65
-stack No.85, is 66
-stack No.86, is 67
-stack No.87, is 68
-stacrb
-rb
-rb
+stack No.9, is 1
+stack No.10, is 2
+stack No.11, is 3
+stack No.12, is 4
+stack No.13, is 5
+stack No.14, is 6
+stack No.15, is 7
+stack No.16, is 8
+stack No.17, is 9
+stack No.18, is 10
+stack No.19, is 11
+stack No.20, is 12
+stack No.21, is 13
+stack No.22, is 14
+stack No.23, is 15
+stack No.24, is 16
+stack No.25, is 17
+stack No.26, is 18
+stack No.27, is 19
+stack No.28, is 20
+stack No.29, is 21
+stack No.30, is 22
+stack No.31, is 23
+stack No.32, is 24
+stack No.33, is 25
+stack No.34, is 26
+stack No.35, is 27
+stack No.36, is 28
+stack No.37, is 29
+stack No.38, is 30
+stack No.39, is 31
+stack No.40, is 32
+stack No.41, is 33
+stack No.42, is 34
+stack No.43, is 35
+stack No.44, is 38
+stack No.45, is 36
+stack No.46, is 37
+stack No.47, is 39
+stack No.48, is 40
+stack No.49, is 41
+stack No.50, is 45
+stack No.51, is 42
+stack No.52, is 43
+stack No.53, is 44
+stack No.54, is 46
+stack No.55, is 47
+stack No.56, is 48
+stack No.57, is 49
+stack No.58, is 50
+stack No.59, is 51
+stack No.60, is 52
+stack No.61, is 53
+stack No.62, is 54
+stack No.63, is 55
+stack No.64, is 56
+stack No.65, is 57
+stack No.66, is 58
+stack No.67, is 59
+stack No.68, is 63
+stack No.69, is 60
+stack No.70, is 61
+stack No.71, is 62
+stack No.72, is 64
+stack No.73, is 65
+stack No.74, is 69
+stack No.75, is 66
+stack No.76, is 67
+stack No.77, is 68
+stack No.78, is 70
+stack Nopa
 pa
 rb
 pa
-pa
-rrb
-rrb
-pa
-pa
 ra
-pa
-ra
-pa
-ra
-ra
-pb
-pb
-pb
-pa
-pa
-pa
-ra
-ra
-ra
-pb
-pb
-pb
-pb
-pb
-rb
-rb
-rb
-pa
-pa
+sa
+rra
 sa
 pa
 pa
@@ -3279,508 +1946,168 @@ ra
 ra
 ra
 ra
-pb
-ra
-ra
-ra
-ra
-pb
 ra
 pb
 ra
 ra
+pb
+ra
+pb
+ra
+ra
+rra
+rra
+rra
+rra
+rra
+pa
+ra
+pa
+ra
+pa
 ra
 pb
 pb
 pb
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-rra
+pb
+pb
 pa
 rb
-pa
 rb
-rrb
+rb
 pa
-pa
-pa
-ra
-ra
-pa
-ra
-ra
-pb
-pb
-sb
+sa
 pa
 pa
 ra
+pa
 ra
-k No.88, is 69
-stack No.89, is 70
-stack No.90, is 71
-stack No.91, is 72
-stack No.92, is 73
-stack No.93, is 74
+ra
+ra
+ra
+.79, is 71
+stack No.80, is 72
+stack No.81, is 73
+stack No.82, is 74
+stack No.83, is 75
+stack No.84, is 76
+stack No.85, is 77
+stack No.86, is 78
+stack No.87, is 79
+stack No.88, is 80
+stack No.89, is 81
+stack No.90, is 82
+stack No.91, is 83
+stack No.92, is 84
+stack No.93, is 85
+stack No.94, is 86
 b
-stack No.1, is 76
-stack No.2, is 77
-stack No.3, is 78
-stack No.4, is 81
-stack No.5, is 75
-stack No.6, is 80
-stack No.7, is 79
-a_to_b
-a
-stack No.1, is 87
-stack No.2, is 94
-stack No.3, is 99
-stack No.4, is 96
-stack No.5, is 95
+stack No.1, is 90
+stack No.2, is 92
+stack No.3, is 87
+stack No.4, is 91
+stack No.5, is 89
 stack No.6, is 88
-stack No.7, is 100
-stack No.8, is 90
-stack No.9, is 98
-stack No.10, is 93
-stack No.11, is 97
-stack No.12, is 92
-stack No.13, is 89
-stack No.14, is 91
-stack No.15, is 1
-stack No.16, is 2
-stack No.17, is 3
-stack No.18, is 4
-stack No.19, is 5
-stack No.20, is 6
-stack No.21, is 7
-stack No.22, is 8
-stack No.23, is 9
-stack No.24, is 10
-stack No.25, is 11
-stack No.26, is 12
-stack No.27, is 13
-stack No.28, is 14
-stack No.29, is 15
-stack No.30, is 16
-stack No.31, is 17
-stack No.32, is 18
-stack No.33, is 19
-stack No.34, is 20
-stack No.35, is 21
-stack No.36, is 22
-stack No.37, is 23
-stack No.38, is 24
-stack No.39, is 25
-stack No.40, is 26
-stack No.41, is 27
-stack No.42, is 28
-stack No.43, is 29
-stack No.44, is 30
-stack No.45, is 31
-stack No.46, is 32
-stack No.47, is 33
-stack No.48, is 34
-stack No.49, is 35
-stack No.50, is 36
-stack No.51, is 37
-stack No.52, is 38
-stack No.53, is 39
-stack No.54, is 40
-stack No.55, is 41
-stack No.56, is 42
-stack No.57, is 43
-stack No.58, is 44
-stack No.59, is 45
-stack No.60, is 46
-stack No.61, is 47
-stack No.62, is 48
-stack No.63, is 49
-stack No.64, is 50
-stack No.65, is 51
-stack No.66, is 52
-stack No.67, is 53
-stack No.68, is 54
-stack No.69, is 55
-stack No.70, is 56
-stack No.71, is 57
-stack No.72, is 58
-stack No.73, is 59
-stack No.74, is 60
-stack No.75, is 61
-stack No.76, is 62
-stack No.77, is 63
-stack No.78, is 64
-stack No.79, is 65
-stack No.80, is 66
-stack No.81, is 67
-stack No.82, is 68
-stack No.83, is 69
-stack No.84, is 70
-stack No.85, is 71
-stack No.86, is 72
-stack No.87, is 73
-stack No.88, is 74
-stack No.89, is 75
-stack No.90, is 76
-stack No.91, is 77
-stack No.92, is 78
-stack No.93, is 79
-stack No.94, is 80
-stack No.95, is 81
-stack No.96, is 82
-stack No.97, is 83
-stack No.98, is 84
-stack No.99, is 85
-stack No.100, is 86
-b
-b_to_a
+moved
 a
-stack No.1, is 94
-stack No.2, is 99
-stack No.3, is 96
+stack No.1, is 91
+stack No.2, is 92
+stack No.3, is 90
 stack No.4, is 95
 stack No.5, is 100
-stack No.6, is 98
-stack No.7, is 93
-stack No.8, is 97
-stack No.9, is 1
-stack No.10, is 2
-stack No.11, is 3
-stack No.12, is 4
-stack No.13, is 5
-stack No.14, is 6
-stack No.15, is 7
-stack No.16, is 8
-stack No.17, is 9
-stack No.18, is 10
-stack No.19, is 11
-stack No.20, is 12
-stack No.21, is 13
-stack No.22, is 14
-stack No.23, is 15
-stack No.24, is 16
-stack No.25, is 17
-stack No.26, is 18
-stack No.27, is 19
-stack No.28, is 20
-stack No.29, is 21
-stack No.30, is 22
-stack No.31, is 23
-stack No.32, is 24
-stack No.33, is 25
-stack No.34, is 26
-stack No.35, is 27
-stack No.36, is 28
-stack No.37, is 29
-stack No.38, is 30
-stack No.39, is 31
-stack No.40, is 32
-stack No.41, is 33
-stack No.42, is 34
-stack No.43, is 35
-stack No.44, is 36
-stack No.45, is 37
-stack No.46, is 38
-stack No.47, is 39
-stack No.48, is 40
-stack No.49, is 41
-stack No.50, is 42
-stack No.51, is 43
-stack No.52, is 44
+stack No.6, is 97
+stack No.7, is 94
+stack No.8, is 96
+stack No.9, is 93
+stack No.10, is 98
+stack No.11, is 99
+stack No.12, is 1
+stack No.13, is 2
+stack No.14, is 3
+stack No.15, is 4
+stack No.16, is 5
+stack No.17, is 6
+stack No.18, is 7
+stack No.19, is 8
+stack No.20, is 9
+stack No.21, is 10
+stack No.22, is 11
+stack No.23, is 12
+stack No.24, is 13
+stack No.25, is 14
+stack No.26, is 15
+stack No.27, is 16
+stack No.28, is 17
+stack No.29, is 18
+stack No.30, is 19
+stack No.31, is 20
+stack No.32, is 21
+stack No.33, is 22
+stack No.34, is 23
+stack No.35, is 24
+stack No.36, is 25
+stack No.37, is 26
+stack No.38, is 27
+stack No.39, is 28
+stack No.40, is 29
+stack No.41, is 30
+stack No.42, is 31
+stack No.43, is 32
+stack No.44, is 33
+stack No.45, is 34
+stack No.46, is 35
+stack No.47, is 38
+stack No.48, is 36
+stack No.49, is 37
+stack No.50, is 39
+stack No.51, is 40
+stack No.52, is 41
 stack No.53, is 45
-stack No.54, is 46
-stack No.55, is 47
-stack No.56, is 48
-stack No.57, is 49
-stack No.58, is 50
-stack No.59, is 51
-stack No.60, is 52
-stack No.61, is 53
-stack No.62, is 54
-stack No.63, is 55
-stack No.64, is 56
-stack No.65, is 57
-stack No.66, is 58
-stack No.67, is 59
-stack No.68, is 60
-stack No.69, is 61
-stack No.70, is 62
+stack No.54, is 42
+stack No.55, is 43
+stack No.56, is 44
+stack No.57, is 46
+stack No.58, is 47
+stack No.59, is 48
+stack No.60, is 49
+stack No.61, is 50
+stack No.62, is 51
+stack No.63, is 52
+stack No.64, is 53
+stack No.65, is 54
+stack No.66, is 55
+stack No.67, is 56
+stack No.68, is 57
+stack No.69, is 58
+stack No.70, is 59
 stack No.71, is 63
-stack No.72, is 64
-stack No.73, is 65
-stack No.74, is 66
-stack No.75, is 67
-stack No.76, is 68
+stack No.72, is 60
+stack No.73, is 61
+stack No.74, is 62
+stack No.75, is 64
+stack No.76, is 65
 stack No.77, is 69
-stack No.78, is 70
-stack No.79, is 71
-stack No.80, is 72
-stack No.81, is 73
-stack No.82, is 74
-stack No.83, is 75
-stack No.84, is 76
-stack No.85, is 77
-stack No.86, is 78
-stack No.87, is 79
-stack No.88, is 80
-stack No.89, is 81
-stack No.90, is 82
-stack No.91, is 83
-stack No.92, is 84
-stack No.93, is 85
-stack No.94, is 86
+stack No.78, is 66
+stack No.79, is 67
+stack No.80, is 68
+stack No.81, is 70
+stack No.82, is 71
+stack No.83, is 72
+stack No.84, is 73
+stack No.85, is 74
+stack No.86, is 75
+stack No.87, is 76
+stack No.88, is 77
+stack No.89, is 78
+stack No.90, is 79
+stack No.91, is 80
+stack No.92, is 81
+stack No.93, is 82
+stack No.94, is 83
+stack No.95, is 84
+stack No.96, is 85
+stack No.97, is 86
 b
-stack No.1, is 91
-stack No.2, is 89
-stack No.3, is 92
-stack No.4, is 90
-stack No.5, is 88
-stack No.6, is 87
-a_to_b
-a
-stack No.1, is 94
-stack No.2, is 99
-stack No.3, is 96
-stack No.4, pb
-ra
-ra
-pb
-ra
-ra
-pb
-ra
-rra
-rra
-rra
-rra
-rra
-pa
-ra
-pa
-pa
-ra
-ra
-ra
-pb
-ra
-ra
-pb
-rra
-rra
-rra
-pa
-pa
-ra
-ra
-pb
-sa
-ra
-pa
-ra
-ra
-is 95
-stack No.5, is 100
-stack No.6, is 98
-stack No.7, is 93
-stack No.8, is 97
-stack No.9, is 1
-stack No.10, is 2
-stack No.11, is 3
-stack No.12, is 4
-stack No.13, is 5
-stack No.14, is 6
-stack No.15, is 7
-stack No.16, is 8
-stack No.17, is 9
-stack No.18, is 10
-stack No.19, is 11
-stack No.20, is 12
-stack No.21, is 13
-stack No.22, is 14
-stack No.23, is 15
-stack No.24, is 16
-stack No.25, is 17
-stack No.26, is 18
-stack No.27, is 19
-stack No.28, is 20
-stack No.29, is 21
-stack No.30, is 22
-stack No.31, is 23
-stack No.32, is 24
-stack No.33, is 25
-stack No.34, is 26
-stack No.35, is 27
-stack No.36, is 28
-stack No.37, is 29
-stack No.38, is 30
-stack No.39, is 31
-stack No.40, is 32
-stack No.41, is 33
-stack No.42, is 34
-stack No.43, is 35
-stack No.44, is 36
-stack No.45, is 37
-stack No.46, is 38
-stack No.47, is 39
-stack No.48, is 40
-stack No.49, is 41
-stack No.50, is 42
-stack No.51, is 43
-stack No.52, is 44
-stack No.53, is 45
-stack No.54, is 46
-stack No.55, is 47
-stack No.56, is 48
-stack No.57, is 49
-stack No.58, is 50
-stack No.59, is 51
-stack No.60, is 52
-stack No.61, is 53
-stack No.62, is 54
-stack No.63, is 55
-stack No.64, is 56
-stack No.65, is 57
-stack No.66, is 58
-stack No.67, is 59
-stack No.68, is 60
-stack No.69, is 61
-stack No.70, is 62
-stack No.71, is 63
-stack No.72, is 64
-stack No.73, is 65
-stack No.74, is 66
-stack No.75, is 67
-stack No.76, is 68
-stack No.77, is 69
-stack No.78, is 70
-stack No.79, is 71
-stack No.80, is 72
-stack No.81, is 73
-stack No.82, is 74
-stack No.83, is 75
-stack No.84, is 76
-stack No.85, is 77
-stack No.86, is 78
-stack No.87, is 79
-stack No.88, is 80
-stack No.89, is 81
-stack No.90, is 82
-stack No.91, is 83
-stack No.92, is 84
-stack No.93, is 85
-stack No.94, is 86
-stack No.95, is 87
-stack No.96, is 88
-stack No.97, is 89
-stack No.98, is 90
-stack No.99, is 91
-stack No.100, is 92
-b
-a_to_b
-a
-stack No.1, is 99
-stack No.2, is 96
-stack No.3, is 100
-stack No.4, is 98
-stack No.5, is 97
-stack No.6, is 1
-stack No.7, is 2
-stack No.8, is 3
-stack No.9, is 4
-stack No.10, is 5
-stack No.11, is 6
-stack No.12, is 7
-stack No.13, is 8
-stack No.14, is 9
-stack No.15, is 10
-stack No.16, is 11
-stack No.17, is 12
-stack No.18, is 13
-stack No.19, is 14
-stack No.20, is 15
-stack No.21, is 16
-stack No.22, is 17
-stack No.23, is 18
-stack No.24, is 19
-stack No.25, is 20
-stack No.26, is 21
-stack No.27, is 22
-stack No.28, is 23
-stack No.29, is 24
-stack No.30, is 25
-stack No.31, is 26
-stack No.32, is 27
-stack No.33, is 28
-stack No.34, is 29
-stack No.35, is 30
-stack No.36, is 31
-stack No.37, is 32
-stack No.38, is 33
-stack No.39, is 34
-stack No.40, is 35
-stack No.41, is 36
-stack No.42, is 37
-stack No.43, is 38
-stack No.44, is 39
-stack No.45, is 40
-stack No.46, is 41
-stack No.47, is 42
-stack No.48, is 43
-stack No.49, is 44
-stack No.50, is 45
-stack No.51, is 46
-stack No.52, is 47
-stack No.53, is 48
-stack No.54, is 49
-stack No.55, is 50
-stack No.56, is 51
-stack No.57, is 52
-stack No.58, is 53
-stack No.59, is 54
-stack No.60, is 55
-stack No.61, is 56
-stack No.62, is 57
-stack No.63, is 58
-stack No.64, is 59
-stack No.65, is 60
-stack No.66, is 61
-stack No.67, is 62
-stack No.68, is 63
-stack No.69, is 64
-stack No.70, is 65
-stack No.71, is 66
-stack No.72, is 67
-stack No.73, is 68
-stack No.74, is 69
-stack No.75, is 70
-stack No.76, is 71
-stack No.77, is 72
-stack No.78, is 73
-stack No.79, is 74
-stack No.80, is 75
-stack No.81, is 76
-stack No.82, is 77
-stack No.83, is 78
-stack No.84, is 79
-stack No.85, is 80
-stack No.86, is 81
-stack No.87, is 82
-stack No.88, is 83
-stack No.89, is 84
-stack No.90, is 85
-stack No.91, is 86
-stack No.92, is 87
-stack No.93, is 88
-stack No.94, is 89
-stack No.95, is 90
-stack No.96, is 91
-stack No.97, is 92
-stack No.98, is 93
-stack No.99, is 94
-stack No.100, is 95
-b
+stack No.1, is 89
+stack No.2, is 88
+stack No.3, is 87

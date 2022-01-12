@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/24 20:35:40 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/28 17:32:39 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 10:38:59 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,8 @@ int	push_sorted_b(t_lst **a_stack, t_lst **b_stack)
 		sort_four_b(a_stack, b_stack);
 	else if (size == 5)
 		sort_five_b(a_stack, b_stack);
+	else if (size == 6)
+		sort_six_b(a_stack, b_stack);
 	return (size);
 }
 
@@ -124,7 +126,7 @@ void	sort_five_b(t_lst **a_stack, t_lst **b_stack)
 
 	i = 0;
 	pa_count = 0;
-	mid_num = get_middle_by_bubble_sort(*b_stack);
+	mid_num = get_index_from_bubble_sort(*b_stack, 2, 5);
 	while (i < 5)
 	{
 		if (mid_num < (*b_stack)->num)
@@ -144,3 +146,5 @@ void	sort_five_b(t_lst **a_stack, t_lst **b_stack)
 	ra(a_stack);
 	ra(a_stack);
 }
+
+

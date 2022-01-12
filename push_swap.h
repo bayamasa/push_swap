@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/28 16:37:36 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 10:41:44 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ int		b_to_a(t_lst **a_stack, t_lst **b_stack);
 int		is_sorted(t_lst *a_stack);
 int		is_sorted_except_top(t_lst *a_stack);
 int		sort_last_a(t_lst **a_stack, t_lst **b_stack, int left);
-int		get_middle_by_bubble_sort(t_lst *b_stack);
+int		get_index_from_bubble_sort(t_lst *b_stack, int get_i, int size);
 
 void	case_zero_a(t_lst **a_stack);
 void	case_one_a(t_lst **a_stack);
@@ -94,12 +94,19 @@ int		sort_b(t_lst **a_stack, t_lst **b_stack);
 void	sort_three_b(t_lst **a_stack, t_lst **b_stack);
 void	sort_four_b(t_lst **a_stack, t_lst **b_stack);
 void	sort_five_b(t_lst **a_stack, t_lst **b_stack);
+void	sort_six_b(t_lst **a_stack, t_lst **b_stack);
 
 void	case_one_b(t_lst **a_stack, t_lst **b_stack);
 void	case_two_b(t_lst **a_stack, t_lst **b_stack);
 void	case_three_b(t_lst **a_stack, t_lst **b_stack);
 void	case_four_b(t_lst **a_stack, t_lst **b_stack);
 void	case_five_b(t_lst **a_stack, t_lst **b_stack);
+
+void	case_one_moved(t_lst **a_stack);
+void	case_two_moved(t_lst **a_stack, t_lst **b_stack);
+void	case_three_moved(t_lst **a_stack, t_lst **b_stack);
+void	case_four_moved(t_lst **a_stack);
+void	case_five_moved(t_lst **a_stack);
 
 void	check_not_same_num(int size, int *value);
 int		*check_num_validation(int size, char const *argv[]);

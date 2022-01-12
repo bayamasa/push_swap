@@ -6,13 +6,13 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/28 17:50:56 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 10:20:33 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	get_middle_by_bubble_sort(t_lst *b_stack)
+int	get_index_from_bubble_sort(t_lst *b_stack, int get_i, int size)
 {
 	int		i;
 	int		j;
@@ -20,17 +20,17 @@ int	get_middle_by_bubble_sort(t_lst *b_stack)
 	int		tmp;
 
 	i = 0;
-	while (i < 5)
+	while (i < size)
 	{
 		stack[i] = b_stack->num;
 		b_stack = b_stack->next;
 		i++;
 	}
 	i = 0;
-	while (i < 5)
+	while (i < size)
 	{
 		j = 0;
-		while (j < 5 - 1)
+		while (j < size - 1)
 		{
 			if (stack[j] > stack[j + 1])
 			{
@@ -42,7 +42,7 @@ int	get_middle_by_bubble_sort(t_lst *b_stack)
 		}
 		i++;
 	}
-	return (stack[(2)]);
+	return (stack[get_i]);
 }
 
 int	ret_index_max(t_lst *b_stack, int *max)
@@ -94,43 +94,6 @@ void	process_four_b(t_lst **a_stack, t_lst **b_stack)
 	}
 }
 
-void	process_five_b(t_lst **a_stack, t_lst **b_stack)
-{
-	int		mid_num;
-	int		mid;
-	int		pa_count;
-	int		index_max;
-	int		max;
-
-	mid = 3;
-	pa_count = 0;
-	mid_num = get_middle_by_bubble_sort(*b_stack);
-	index_max = ret_index_max(*b_stack, &max);
-	while (true)
-	{
-		if (mid_num < (*b_stack)->num)
-		{
-			pa(a_stack, b_stack);
-			pa_count++;
-			mid = 2;
-			index_max = ret_index_max(*b_stack, &max);
-			if (pa_count == 2)
-				break ;
-		}
-		else
-		{
-			if (index_max >= mid)
-				rrb(b_stack);
-			else
-				rb(b_stack);
-		}
-	}
-	if ((*a_stack)->num > (*a_stack)->next->num)
-		sa(a_stack);
-	sort_three_b(a_stack, b_stack);
-	ra(a_stack);
-	ra(a_stack);
-}
 
 int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 {
@@ -144,7 +107,7 @@ int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 	a_size = ft_lstsize(*a_stack);
 	if (is_sorted(*a_stack))
 		return (true);
-	if (a_size - pb_count <= 5)
+	if (a_size - pb_count <= 6)
 		return (sort_last_a(a_stack, b_stack, a_size - pb_count));
 	last_num = last_unsorted(*a_stack, pb_count);
 	pivot = median_by_last_num(*a_stack, last_num);
@@ -207,11 +170,12 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 
 	pa_count = 0;
 	size = ft_lstsize(*b_stack);
-	if (size <= 5)
+	if (size <= 6)
 	{
 		push_sorted_b(a_stack, b_stack);
 		return (true);
 	}
+	// printf("size = %d\n", size);
 	pivot = median(*b_stack);
 	last_num = ft_lstlast(*b_stack)->num;
 	while ((*b_stack)->num != last_num)
