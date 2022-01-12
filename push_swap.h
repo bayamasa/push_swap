@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/12 15:33:39 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 16:39:49 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,7 @@ void	sort_three_b(t_lst **a_stack, t_lst **b_stack);
 void	sort_four_b(t_lst **a_stack, t_lst **b_stack);
 void	sort_five_b(t_lst **a_stack, t_lst **b_stack);
 void	sort_six_b(t_lst **a_stack, t_lst **b_stack);
+void	sort_seven_b(t_lst **a_stack, t_lst **b_stack);
 
 void	case_one_b(t_lst **a_stack, t_lst **b_stack);
 void	case_two_b(t_lst **a_stack, t_lst **b_stack);

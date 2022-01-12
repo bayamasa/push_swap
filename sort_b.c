@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/24 20:35:40 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/12 15:04:28 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 16:46:23 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,8 @@ int	push_sorted_b(t_lst **a_stack, t_lst **b_stack)
 		sort_five_b(a_stack, b_stack);
 	else if (size == 6)
 		sort_six_b(a_stack, b_stack);
+	else if (size == 7)
+		sort_seven_b(a_stack, b_stack);
 	return (size);
 }
 

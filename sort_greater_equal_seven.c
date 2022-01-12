@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:08:01 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/12 16:15:26 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/12 16:41:29 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,10 +82,13 @@ int	a_to_b_utils(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 
 int	a_to_b(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 {
+	int	size;
+
+	size = ft_lstsize(*a_stack) - pb_count;
 	if (is_sorted(*a_stack))
 		return (true);
-	if (ft_lstsize(*a_stack) - pb_count <= 6)
-		return (sort_last_a(a_stack, b_stack, ft_lstsize(*a_stack) - pb_count));
+	if (size <= 5)
+		return (sort_last_a(a_stack, b_stack, size));
 	pb_count = a_to_b_utils(a_stack, b_stack, pb_count, first);
 	b_to_a(a_stack, b_stack);
 	a_to_b(a_stack, b_stack, pb_count, false);
@@ -100,7 +103,7 @@ int	b_to_a(t_lst **a_stack, t_lst **b_stack)
 
 	pa_count = 0;
 	size = ft_lstsize(*b_stack);
-	if (size <= 6)
+	if (size <= 7)
 		return (push_sorted_b(a_stack, b_stack));
 	pivot = median(*b_stack);
 	while ((*b_stack)->num != ft_lstlast(*b_stack)->num)
