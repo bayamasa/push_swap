@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 16:33:15 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/21 21:04:34 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,8 +115,8 @@ void	case_three_moved(t_lst **a_stack, t_lst **b_stack);
 void	case_four_moved(t_lst **a_stack);
 void	case_five_moved(t_lst **a_stack);
 
-void	check_not_same_num(int size, int *value);
-int		*check_num_validation(int size, char const *argv[]);
+void	check_not_same_num(int size, int *value, t_lst **stack);
+int		*check_num_validation(int size, char const *argv[], t_lst **stack);
 int		is_no_more_than_pivot_after(int pivot, t_lst *b_stack);
 int		is_no_less_than_pivot_after(int pivot, t_lst *a_stack);
 

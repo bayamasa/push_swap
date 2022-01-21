@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtol.c                                        :+:      :+:    :+:   */
+/*   ft_strtoll.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 17:29:40 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/10 10:12:55 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/21 20:54:56 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ long long	ft_strtoll(const char *str, int *status)
 		return (0);
 	while (ft_isspace(str[i]))
 		i++;
-	if (str[i] == '+' || str[i] == '-')
+	if (str[i] == '-')
 		if (str[i++] == '-')
 			sign = -1;
 	while (str[i] >= '0' && str[i] <= '9')

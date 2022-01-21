@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 18:27:52 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 09:23:35 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/21 20:59:19 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,15 @@ int	ft_atoi_error(const char *str, int *status)
 
 	*status = true;
 	if (ft_strlen(str) == 0)
-	{
 		*status = false;
-		return (0);
-	}
 	if (ft_strlen(str) == 1)
-	{
 		if (*str == '+' || *str == ' ' || *str == '-')
-		{
 			*status = false;
-			return (0);
-		}
-	}
+	if (*str == '0')
+		if (ft_strlen(str) != 1)
+			*status = false;
+	if (*status == false)
+		return (0);
 	ret = ft_strtoll(str, status);
 	if (ret > INT_MAX || ret < INT_MIN)
 	{
