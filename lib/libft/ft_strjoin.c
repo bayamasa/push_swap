@@ -1,19 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_c.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 15:54:31 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 16:20:33 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:32:36 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/10/18 17:32:37 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	ft_print_c(char c)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	ft_putchar_fd_pf(c, 1);
-	return (1);
+	char	*new_str;
+	size_t	s1_len;
+	size_t	s2_len;
+
+	if (!s1 || !s2)
+		return (NULL);
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
+	new_str = (char *)malloc(sizeof(char) * (s1_len + s2_len + 1));
+	if (new_str == NULL)
+		return (NULL);
+	ft_strlcpy(new_str, s1, s1_len + 1);
+	ft_strlcat(new_str, s2, s1_len + s2_len + 1);
+	return (new_str);
 }

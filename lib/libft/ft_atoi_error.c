@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_d_and_u.c                                 :+:      :+:    :+:   */
+/*   ft_atoi_error.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 15:54:31 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 16:20:39 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/12/02 18:27:52 by mhirabay          #+#    #+#             */
+/*   Updated: 2022/01/21 09:23:35 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	ft_print_d_and_u(long nb, int digits)
+int	ft_atoi_error(const char *str, int *status)
 {
-	long	num;
+	long long	ret;
 
-	num = nb;
-	if (nb < 0)
+	*status = true;
+	if (ft_strlen(str) == 0)
 	{
-		ft_putchar_fd_pf('-', 1);
-		num = num * -1;
-		digits += 1;
+		*status = false;
+		return (0);
 	}
-	if (num >= 10)
+	if (ft_strlen(str) == 1)
 	{
-		digits = ft_print_d_and_u(num / 10, digits);
-		num = num % 10;
+		if (*str == '+' || *str == ' ' || *str == '-')
+		{
+			*status = false;
+			return (0);
+		}
 	}
-	if (num < 10)
+	ret = ft_strtoll(str, status);
+	if (ret > INT_MAX || ret < INT_MIN)
 	{
-		digits += 1;
-		ft_putchar_fd_pf('0' + num, 1);
+		*status = false;
+		return (0);
 	}
-	return (digits);
+	return ((int)ret);
 }

@@ -18,19 +18,15 @@ CFLAGS = -Wall -Wextra -Werror
 all:	${NAME}
 
 $(NAME): ${OBJS}
-		${MAKE} -C ./libft
-		cp libft/libft.a ${NAME}
 		ar rcs ${NAME} ${OBJS}
 
 .c.o:
 		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 clean:
-		make clean -C libft
 		${RM} ${OBJS}
 
 fclean:	clean
-		make fclean -C libft
 		${RM} ${NAME}
 
 re:		fclean all

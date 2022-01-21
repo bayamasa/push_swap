@@ -1,19 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_c.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 15:54:31 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 16:20:33 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:33:25 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/10/18 17:33:26 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	ft_print_c(char c)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	ft_putchar_fd_pf(c, 1);
-	return (1);
+	char			*str;
+	size_t			size;
+
+	if (s == NULL)
+		return (NULL);
+	size = ft_strlen(s);
+	if (size < start)
+		return (ft_strdup(""));
+	if (size < len)
+		len = size;
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (str == NULL)
+		return (NULL);
+	ft_strlcpy(str, s + start, len + 1);
+	return (str);
 }

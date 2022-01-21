@@ -1,19 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_c.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 15:54:31 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 16:20:33 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:33:33 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/10/18 17:33:34 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	ft_print_c(char c)
+int	ft_toupper(int c)
 {
-	ft_putchar_fd_pf(c, 1);
-	return (1);
+	if (c >= 'a' && c <= 'z')
+	{
+		c += ('A' - 'a');
+	}
+	return (c);
 }

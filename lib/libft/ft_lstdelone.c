@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_c.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 15:54:31 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 16:20:33 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:31:24 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/10/18 17:31:25 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	ft_print_c(char c)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	ft_putchar_fd_pf(c, 1);
-	return (1);
+	if (!lst || !del)
+		return ;
+	del(lst->content);
+	free(lst);
 }

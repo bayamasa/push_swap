@@ -1,19 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_c.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 15:54:31 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 16:20:33 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:32:07 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/10/18 17:32:08 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	ft_print_c(char c)
+void	ft_putendl_fd(char *s, int fd)
 {
-	ft_putchar_fd_pf(c, 1);
-	return (1);
+	size_t	len;
+	size_t	i;
+
+	if (!s)
+		return ;
+	i = 0;
+	len = ft_strlen(s);
+	while (len > STR_BUFF_SIZE)
+	{
+		write(fd, s + i, STR_BUFF_SIZE);
+		i = i + STR_BUFF_SIZE;
+		len = len - STR_BUFF_SIZE;
+	}
+	write(fd, s + i, len);
+	write(fd, "\n", 1);
 }

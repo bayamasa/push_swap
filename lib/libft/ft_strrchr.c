@@ -1,19 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_c.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 15:54:31 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 16:20:33 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:33:18 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/10/18 17:33:19 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	ft_print_c(char c)
+char	*ft_strrchr(const char *s, int c)
 {
-	ft_putchar_fd_pf(c, 1);
-	return (1);
+	size_t	i;
+	char	chr;
+
+	chr = (char)c;
+	if (chr == '\0')
+		return (ft_strchr(s, '\0'));
+	i = ft_strlen(s);
+	while (i--)
+	{
+		if (s[i] == chr)
+			return ((char *)&s[i]);
+	}
+	return (NULL);
 }

@@ -1,19 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_c.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 15:54:31 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 16:20:33 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:32:11 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/10/18 17:32:12 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	ft_print_c(char c)
+void	ft_putnbr_fd(int nb, int fd)
 {
-	ft_putchar_fd_pf(c, 1);
-	return (1);
+	long	num;
+
+	num = nb;
+	if (nb < 0)
+	{
+		ft_putchar_fd('-', fd);
+		num = num * -1;
+	}
+	if (num >= 10)
+	{
+		ft_putnbr_fd(num / 10, fd);
+		num = num % 10;
+	}
+	if (num < 10)
+	{
+		ft_putchar_fd('0' + num, fd);
+	}
 }

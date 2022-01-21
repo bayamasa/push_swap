@@ -6,7 +6,7 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2022/01/21 09:20:33 by mhirabay         ###   ########.fr        #
+#    Updated: 2022/01/21 16:29:41 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,12 +65,12 @@ CFLAGS = -Wall -Werror -Wextra
 all: ${LIB_NAME} ${NAME}
 
 ${LIB_NAME} :
+	make -C lib/libft
 	make -C lib/ft_printf
 	make -C ft_lst
-	make -C lib/ft_printf/libft
 
 $(NAME) : $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -Llib/ft_printf -lftprintf -Lft_lst -llst -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJS) -Llib/ft_printf -lftprintf -Lft_lst -llst -Llib/libft -lft -o $(NAME)
 
 lst : ${lst_OBJS}
 	ar rcs ${lst_NAME} ${lst_OBJS}
@@ -79,11 +79,13 @@ lst : ${lst_OBJS}
 		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 clean: 
-	make clean -C lib/ft_printf
+	make clean -C lib/ft_printf 
+	make clean -C lib/libft
 	make clean -C ft_lst
 	${RM} ${OBJS}
 
 fclean: clean
+	make fclean -C lib/libft
 	make fclean -C lib/ft_printf
 	make fclean -C ft_lst
 	${RM} ${NAME} ${lst_NAME} ${lst_OBJS}

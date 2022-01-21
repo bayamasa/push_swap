@@ -1,19 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_c.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 15:54:31 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 16:20:33 by mhirabay         ###   ########.fr       */
+/*   Created: 2021/10/18 17:31:51 by mhirabay          #+#    #+#             */
+/*   Updated: 2021/10/18 17:31:52 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	ft_print_c(char c)
+void	*ft_memcpy(void *buf1, const void *buf2, size_t n)
 {
-	ft_putchar_fd_pf(c, 1);
-	return (1);
+	unsigned char	*dest;
+	unsigned char	*src;
+	size_t			i;
+
+	if (n == 0 || buf1 == buf2)
+		return (buf1);
+	i = 0;
+	dest = (unsigned char *)buf1;
+	src = (unsigned char *)buf2;
+	while (n--)
+	{
+		*(dest + i) = *(src + i);
+		i++;
+	}
+	return (buf1);
 }
