@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/13 10:27:54 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/21 20:54:06 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,9 @@ t_lst	**store_all_values(t_lst **stack, int *value, int size)
 	while (i < size)
 	{
 		tmp = ft_lstnew(value[i]);
-		// tmp freeする。
+		if (tmp == NULL)
+			abort_ps_free_all(value, stack);
 		ft_lstadd_back(stack, tmp);
-		// ここの条件文謎。
-		if (*stack == NULL)
-			abort_push_swap(value);
 		i++;
 	}
 	return (stack);
@@ -41,9 +39,9 @@ static t_lst	**args_to_stack(int argc, char const *argv[])
 	stack = (t_lst **)malloc(sizeof(t_lst *));
 	if (stack == NULL)
 		abort_push_swap(NULL);
-	value = check_num_validation(size, argv);
-	check_not_same_num(size, value);
 	stack[0] = NULL;
+	value = check_num_validation(size, argv, stack);
+	check_not_same_num(size, value, stack);
 	store_all_values(stack, value, size);
 	free(value);
 	return (stack);

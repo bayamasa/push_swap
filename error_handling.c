@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/24 20:52:47 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/13 10:29:17 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/21 21:01:01 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,17 @@ void	abort_push_swap(void *heap)
 	exit(1);
 }
 
-void	check_not_same_num(int size, int *value)
+void	abort_ps_free_all(int *value, t_lst **stack)
+{
+	if (value != NULL)
+		free((void *)value);
+	if (stack != NULL)
+		free_all(stack);
+	ft_putstr_fd(ERROR, 2);
+	exit(1);
+}
+
+void	check_not_same_num(int size, int *value, t_lst **stack)
 {
 	int	i;
 	int	j;
@@ -32,14 +42,14 @@ void	check_not_same_num(int size, int *value)
 		while (j < size)
 		{
 			if (value[i] == value[j])
-				abort_push_swap((void *)value);
+				abort_ps_free_all(value, stack);
 			j++;
 		}
 		i++;
 	}
 }
 
-int	*check_num_validation(int size, char const *argv[])
+int	*check_num_validation(int size, char const *argv[], t_lst **stack)
 {
 	int	i;
 	int	status;
@@ -48,13 +58,12 @@ int	*check_num_validation(int size, char const *argv[])
 	i = 0;
 	value = (int *)malloc(sizeof(int) * (size));
 	if (value == NULL)
-		// stackもfreeしないとだめ
-		abort_push_swap((void *)value);
+		abort_ps_free_all(NULL, stack);
 	while (i < size)
 	{
 		*(value + i) = (int)ft_atoi_error(argv[i + 1], &status);
 		if (status == false)
-			abort_push_swap((void *)value);
+			abort_ps_free_all(value, stack);
 		i++;
 	}
 	return (value);
@@ -62,7 +71,6 @@ int	*check_num_validation(int size, char const *argv[])
 
 void	free_all(t_lst **stack)
 {
-
 	while ((*stack) != NULL)
 	{
 		free(*stack);
