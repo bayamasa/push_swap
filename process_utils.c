@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 10:56:58 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/12 13:52:28 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/21 21:35:26 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void	print_all(t_lst **stack)
 	tmp = *stack;
 	while (tmp != NULL)
 	{
-		printf("stack No.%d, is %d\n", i, (tmp)->num);
+		ft_printf("stack No.%d, is %d\n", i, (tmp)->num);
 		tmp = tmp->next;
 		i++;
 	}
