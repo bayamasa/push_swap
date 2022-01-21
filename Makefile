@@ -6,7 +6,7 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2022/01/21 16:29:41 by mhirabay         ###   ########.fr        #
+#    Updated: 2022/01/21 16:32:18 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,7 +61,10 @@ OBJS = ${SRCS:.c=.o}
 lst_OBJS = ${lst_SRCS:.c=.o}
 
 CC = gcc 
-CFLAGS = -Wall -Werror -Wextra 
+CFLAGS = -Wall -Werror -Wextra
+LDFLAG = -Llib/ft_printf -Lft_lst -Llib/libft
+LIBS = 
+
 all: ${LIB_NAME} ${NAME}
 
 ${LIB_NAME} :
@@ -70,7 +73,7 @@ ${LIB_NAME} :
 	make -C ft_lst
 
 $(NAME) : $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -Llib/ft_printf -lftprintf -Lft_lst -llst -Llib/libft -lft -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJS) ${LDFLAG} -lftprintf  -llst  -lft -o $(NAME)
 
 lst : ${lst_OBJS}
 	ar rcs ${lst_NAME} ${lst_OBJS}

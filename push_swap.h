@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 18:40:49 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 16:25:03 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/21 16:33:15 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <limits.h>
 # include <stdbool.h>
 # include <stdio.h>
-# include "ft_lst/ft_lst.h"
+# include "lib/ft_lst/ft_lst.h"
 # include "lib/ft_printf/ft_printf.h"
 # include "lib/libft/libft.h"
 # define ERROR "Error\n"
