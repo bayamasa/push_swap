@@ -56,9 +56,7 @@ int	a_to_b_utils(t_lst **a_stack, t_lst **b_stack, int pb_count, int first)
 	int	last_num;
 	int	pivot;
 	int	ra_count;
-	int	i;
 
-	i = 0;
 	ra_count = 0;
 	last_num = last_unsorted(*a_stack, pb_count);
 	pivot = median_by_last_num(*a_stack, last_num);

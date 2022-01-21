@@ -40,11 +40,9 @@ int	min_num(t_lst *stack)
 {
 	t_lst	*min;
 	int		index;
-	int		ret;
 
 	min = stack;
 	index = 0;
-	ret = index;
 	if (stack == NULL)
 		return (-1);
 	while (stack->next != NULL)
@@ -53,7 +51,6 @@ int	min_num(t_lst *stack)
 		if (min->num > stack->next->num)
 		{
 			min = stack->next;
-			ret = index;
 		}
 		stack = stack->next;
 	}

@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:39:27 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/12 18:05:15 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/13 10:27:54 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@ t_lst	**store_all_values(t_lst **stack, int *value, int size)
 	while (i < size)
 	{
 		tmp = ft_lstnew(value[i]);
+		// tmp freeする。
 		ft_lstadd_back(stack, tmp);
+		// ここの条件文謎。
 		if (*stack == NULL)
 			abort_push_swap(value);
 		i++;

@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/24 20:52:47 by mhirabay          #+#    #+#             */
-/*   Updated: 2021/12/24 21:00:08 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/13 10:29:17 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ int	*check_num_validation(int size, char const *argv[])
 	i = 0;
 	value = (int *)malloc(sizeof(int) * (size));
 	if (value == NULL)
+		// stackもfreeしないとだめ
 		abort_push_swap((void *)value);
 	while (i < size)
 	{
@@ -61,9 +62,7 @@ int	*check_num_validation(int size, char const *argv[])
 
 void	free_all(t_lst **stack)
 {
-	t_lst	*tmp;
 
-	tmp = *stack;
 	while ((*stack) != NULL)
 	{
 		free(*stack);
