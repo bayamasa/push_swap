@@ -6,12 +6,11 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2022/01/21 16:53:20 by mhirabay         ###   ########.fr        #
+#    Updated: 2022/01/21 17:08:45 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap 
-lst_NAME = lst.a
 
 LIB_NAME = libftprintf
 
@@ -47,27 +46,16 @@ SRCS = 	main.c \
 		sort_b_utils.c \
 		sort_utils.c \
 
-lst_SRCS = ft_lstadd_back.c \
-			ft_lstadd_front.c \
-			ft_lstdelone.c \
-			ft_lstiter.c \
-			ft_lstlast.c \
-			ft_lstsize.c \
-			ft_lstnew.c \
-			ft_lstdel_front.c \
-			ft_lstaddone_front.c \
-
 OBJS = ${SRCS:.c=.o}
-lst_OBJS = ${lst_SRCS:.c=.o}
 
 CC = gcc 
 CFLAGS = -Wall -Werror -Wextra
 LDFLAG = -Llib/libft -Llib/ft_lst -Llib/ft_printf
 LIBS = -lft -llst -lftprintf
 
-all: ${LIB_NAME} ${NAME}
+all: lmake ${NAME}
 
-${LIB_NAME} :
+lmake :
 	make -C lib/libft
 	make -C lib/ft_printf
 	make -C lib/ft_lst
