@@ -6,7 +6,7 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2022/01/21 16:32:18 by mhirabay         ###   ########.fr        #
+#    Updated: 2022/01/21 16:35:16 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,18 +62,18 @@ lst_OBJS = ${lst_SRCS:.c=.o}
 
 CC = gcc 
 CFLAGS = -Wall -Werror -Wextra
-LDFLAG = -Llib/ft_printf -Lft_lst -Llib/libft
-LIBS = 
+LDFLAG = -Llib/ft_printf -Llib/ft_lst -Llib/libft
+LIBS = -lftprintf  -llst  -lft
 
 all: ${LIB_NAME} ${NAME}
 
 ${LIB_NAME} :
 	make -C lib/libft
 	make -C lib/ft_printf
-	make -C ft_lst
+	make -C lib/ft_lst
 
 $(NAME) : $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) ${LDFLAG} -lftprintf  -llst  -lft -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJS) ${LDFLAG} ${LIBS} -o $(NAME)
 
 lst : ${lst_OBJS}
 	ar rcs ${lst_NAME} ${lst_OBJS}
@@ -84,13 +84,13 @@ lst : ${lst_OBJS}
 clean: 
 	make clean -C lib/ft_printf 
 	make clean -C lib/libft
-	make clean -C ft_lst
+	make clean -C lib/ft_lst
 	${RM} ${OBJS}
 
 fclean: clean
 	make fclean -C lib/libft
 	make fclean -C lib/ft_printf
-	make fclean -C ft_lst
+	make fclean -C lib/ft_lst
 	${RM} ${NAME} ${lst_NAME} ${lst_OBJS}
 re:		fclean all
 
