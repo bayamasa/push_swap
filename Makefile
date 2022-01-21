@@ -6,7 +6,7 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2022/01/21 16:35:16 by mhirabay         ###   ########.fr        #
+#    Updated: 2022/01/21 16:37:14 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,8 +62,8 @@ lst_OBJS = ${lst_SRCS:.c=.o}
 
 CC = gcc 
 CFLAGS = -Wall -Werror -Wextra
-LDFLAG = -Llib/ft_printf -Llib/ft_lst -Llib/libft
-LIBS = -lftprintf  -llst  -lft
+LDFLAG = -Llib/libft -Llib/ft_lst -Llib/ft_printf
+LIBS = -lft -llst -lftprintf
 
 all: ${LIB_NAME} ${NAME}
 
