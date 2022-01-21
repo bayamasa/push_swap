@@ -6,13 +6,11 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2022/01/21 17:08:45 by mhirabay         ###   ########.fr        #
+#    Updated: 2022/01/21 21:22:14 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap 
-
-LIB_NAME = libftprintf
 
 SRCS = 	main.c \
 		push.c \
@@ -79,4 +77,4 @@ fclean: clean
 	${RM} ${NAME} ${lst_NAME} ${lst_OBJS}
 re:		fclean all
 
-.PHONY: all clean fclean re .c.o 
+.PHONY: all clean fclean re .c.o lmake
