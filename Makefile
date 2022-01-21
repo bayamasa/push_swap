@@ -6,7 +6,7 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2022/01/20 10:33:24 by mhirabay         ###   ########.fr        #
+#    Updated: 2022/01/21 09:20:33 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,6 +67,7 @@ all: ${LIB_NAME} ${NAME}
 ${LIB_NAME} :
 	make -C lib/ft_printf
 	make -C ft_lst
+	make -C lib/ft_printf/libft
 
 $(NAME) : $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -Llib/ft_printf -lftprintf -Lft_lst -llst -o $(NAME)

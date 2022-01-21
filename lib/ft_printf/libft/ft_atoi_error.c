@@ -6,7 +6,7 @@
 /*   By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 18:27:52 by mhirabay          #+#    #+#             */
-/*   Updated: 2022/01/21 09:17:15 by mhirabay         ###   ########.fr       */
+/*   Updated: 2022/01/21 09:21:05 by mhirabay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int	ft_atoi_error(const char *str, int *status)
 	{
 		if (*str == '+' || *str == ' ' || *str == '-')
 		{
+			*status = false;
 			*status = false;
 			return (0);
 		}
