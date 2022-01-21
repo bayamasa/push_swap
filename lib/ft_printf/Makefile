@@ -9,6 +9,7 @@ SRCS =		ft_putstr.c \
 			ft_print_s.c \
 			ft_print_x.c \
 			ft_convert_dec_to_hexstr.c \
+			ft_printf_utils.c \
 
 OBJS = ${SRCS:.c=.o}
 CC		= gcc
