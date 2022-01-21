@@ -41,6 +41,8 @@ void	sort_less_than_seven(t_lst **a_stack);
 void	sort_greater_equal_seven(t_lst **a_stack);
 
 void	free_all(t_lst **stack);
+void	abort_ps_free_stack(int *value, t_lst **stack);
+void	abort_ps_free_all(int *value, t_lst **stack);
 void	abort_push_swap(void *heap);
 int		min(t_lst *stack);
 int		pa(t_lst **a, t_lst **b);
