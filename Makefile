@@ -6,7 +6,7 @@
 #    By: mhirabay <mhirabay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 13:21:26 by mhirabay          #+#    #+#              #
-#    Updated: 2022/01/21 16:37:14 by mhirabay         ###   ########.fr        #
+#    Updated: 2022/01/21 16:44:40 by mhirabay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,9 +74,6 @@ ${LIB_NAME} :
 
 $(NAME) : $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) ${LDFLAG} ${LIBS} -o $(NAME)
-
-lst : ${lst_OBJS}
-	ar rcs ${lst_NAME} ${lst_OBJS}
 
 .c.o:
 		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
